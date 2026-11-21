@@ -1,0 +1,3297 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ஷட் கருமங்கள் பயிற்சிப் பட்டறை வழிகாட்டி — 5 மணி நேர முழுமையான செயல்முறைக் கையேடு</title>
+    <meta name="description" content="ஸ்ரீ பாலசுந்தரம் அவர்களின் அருளுரையின் அடிப்படையில் அமைந்த சனாதன தர்ம ஷட் கருமங்கள்: நித்ய, நைமித்திக, காம்ய, நிஷ்காம்ய, பிராயச்சித்த, நிஷித்த கர்மாக்களின் 5 மணி நேர விரிவான பயிற்சிப் பட்டறை வழிகாட்டி, குழுச் செயல்பாடுகள் மற்றும் சுலோகப் பேழை.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Mukta+Malar:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        :root {
+            --bg-base: #07090e;
+            --bg-surface: #0f141f;
+            --bg-card: #141c2c;
+            --bg-card-hover: #1b263b;
+            --border-color: rgba(255, 255, 255, 0.12);
+            --border-focus: #f59e0b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            
+            --saffron-primary: #f59e0b;
+            --saffron-hover: #d97706;
+            --saffron-glow: rgba(245, 158, 11, 0.28);
+            
+            --karma-nitya: #10b981;
+            --karma-nitya-bg: rgba(16, 185, 129, 0.12);
+            --karma-naimittika: #3b82f6;
+            --karma-naimittika-bg: rgba(59, 130, 246, 0.12);
+            --karma-kamya: #f59e0b;
+            --karma-kamya-bg: rgba(245, 158, 11, 0.12);
+            --karma-nishkamya: #8b5cf6;
+            --karma-nishkamya-bg: rgba(139, 92, 246, 0.12);
+            --karma-prayaschitta: #06b6d4;
+            --karma-prayaschitta-bg: rgba(6, 182, 212, 0.12);
+            --karma-nishiddha: #ef4444;
+            --karma-nishiddha-bg: rgba(239, 68, 68, 0.12);
+            
+            --font-heading: 'Outfit', 'Cinzel', 'Noto Sans Tamil', sans-serif;
+            --font-tamil: 'Noto Sans Tamil', 'Mukta Malar', sans-serif;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --shadow-md: 0 10px 30px rgba(0,0,0,0.4);
+            --shadow-lg: 0 16px 40px rgba(0,0,0,0.6);
+        }
+
+        /* Bright Theme */
+        body.light-theme {
+            --bg-base: #f8fafc;
+            --bg-surface: #ffffff;
+            --bg-card: #f1f5f9;
+            --bg-card-hover: #e2e8f0;
+            --border-color: rgba(0, 0, 0, 0.12);
+            --text-main: #0f172a;
+            --text-muted: #334155;
+            --text-dim: #64748b;
+            --saffron-glow: rgba(217, 119, 6, 0.15);
+            --karma-nitya-bg: #ecfdf5;
+            --karma-naimittika-bg: #eff6ff;
+            --karma-kamya-bg: #fffbeb;
+            --karma-nishkamya-bg: #f5f3ff;
+            --karma-prayaschitta-bg: #ecfeff;
+            --karma-nishiddha-bg: #fef2f2;
+            --shadow-md: 0 8px 24px rgba(0,0,0,0.06);
+            --shadow-lg: 0 16px 36px rgba(0,0,0,0.09);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-tamil);
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 20, 31, 0.94);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 0;
+            transition: all 0.3s ease;
+        }
+        body.light-theme .navbar {
+            background: rgba(255, 255, 255, 0.95);
+        }
+        .navbar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+        .brand-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #f59e0b, #b45309);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            box-shadow: 0 4px 16px var(--saffron-glow);
+            font-size: 1.4rem;
+        }
+        .brand-text h1 {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 800;
+            line-height: 1.25;
+            color: var(--text-main);
+        }
+        .brand-text p {
+            font-size: 0.78rem;
+            color: var(--saffron-primary);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .btn-nav {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid var(--border-color);
+            background: var(--bg-surface);
+            color: var(--text-main);
+        }
+        .btn-nav:hover {
+            border-color: var(--saffron-primary);
+            color: var(--saffron-primary);
+            transform: translateY(-1px);
+        }
+        .btn-nav-primary {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #000;
+            border-color: var(--saffron-primary);
+            font-weight: 800;
+        }
+        .btn-nav-primary:hover {
+            background: #d97706;
+            color: #000;
+            box-shadow: 0 4px 14px var(--saffron-glow);
+        }
+
+        /* Hero Banner */
+        .hero {
+            padding: 48px 0 32px 0;
+            text-align: center;
+            background: radial-gradient(circle at 50% 15%, rgba(245, 158, 11, 0.16), transparent 70%);
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+        .hero-badge-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11, 0.14);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+            color: var(--saffron-primary);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 4vw, 2.7rem);
+            font-weight: 900;
+            line-height: 1.3;
+            margin-bottom: 14px;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+        .hero-title span {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-quote {
+            max-width: 880px;
+            margin: 0 auto 20px auto;
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            border-left: 4px solid var(--saffron-primary);
+            padding: 12px 20px;
+            background: rgba(245, 158, 11, 0.05);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            text-align: left;
+        }
+        .quick-stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+        .stat-chip {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            padding: 10px 18px;
+            border-radius: var(--radius-md);
+            font-size: 0.88rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+        }
+        .stat-chip:hover {
+            border-color: var(--saffron-primary);
+            transform: translateY(-2px);
+        }
+
+        /* Anchor Pill Bar */
+        .section-anchor-bar {
+            position: sticky;
+            top: 73px;
+            z-index: 900;
+            background: var(--bg-surface);
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 0;
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            white-space: nowrap;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+        }
+        .anchor-pill {
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.86rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+            color: var(--text-main);
+            transition: all 0.2s ease;
+        }
+        .anchor-pill:hover, .anchor-pill.active {
+            border-color: var(--saffron-primary);
+            background: var(--saffron-glow);
+            color: var(--saffron-primary);
+            transform: translateY(-1px);
+        }
+
+        /* Main Content Layout */
+        .main-layout {
+            padding: 40px 0 90px 0;
+        }
+        .section-block {
+            margin-bottom: 64px;
+            scroll-margin-top: 135px;
+        }
+        .section-header-title {
+            font-family: var(--font-heading);
+            font-size: 1.85rem;
+            font-weight: 900;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-main);
+        }
+        .section-header-subtitle {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 26px;
+            max-width: 950px;
+            line-height: 1.7;
+        }
+
+        /* 5-Hour Session Roadmap Timeline */
+        .timeline-track {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin: 24px 0 32px 0;
+        }
+        .timeline-hour-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            position: relative;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .timeline-hour-card:hover {
+            border-color: var(--saffron-primary);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+        .hour-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.76rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 6px;
+            width: fit-content;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .hour-1-b { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.35); }
+        .hour-2-b { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.35); }
+        .hour-3-b { background: rgba(59, 130, 246, 0.15); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.35); }
+        .hour-4-b { background: rgba(139, 92, 246, 0.15); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.35); }
+        .hour-5-b { background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.35); }
+
+        .hour-time {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-dim);
+            margin-bottom: 4px;
+        }
+        .hour-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--text-main);
+            line-height: 1.35;
+        }
+        .hour-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .hour-activity-chip {
+            background: var(--bg-card);
+            border: 1px dashed var(--border-color);
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--saffron-primary);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Karma 3-Ties Matrix (Sanchita, Prarabdha, Agami) */
+        .karma-ties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin: 24px 0;
+        }
+        .tie-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            position: relative;
+            box-shadow: var(--shadow-md);
+            transition: all 0.25s ease;
+        }
+        .tie-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--saffron-primary);
+        }
+        .tie-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        .tie-badge {
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+        }
+        .tie-title {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+        .tie-metaphor {
+            font-size: 0.92rem;
+            color: var(--saffron-primary);
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .tie-body {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* 6 Karma Overview Cards */
+        .karma-six-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 24px;
+            margin: 28px 0;
+        }
+        .karma-card {
+            background: var(--bg-surface);
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: all 0.25s ease;
+            box-shadow: var(--shadow-md);
+        }
+        .karma-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        .karma-card.card-nitya:hover { border-color: var(--karma-nitya); }
+        .karma-card.card-naimittika:hover { border-color: var(--karma-naimittika); }
+        .karma-card.card-kamya:hover { border-color: var(--karma-kamya); }
+        .karma-card.card-nishkamya:hover { border-color: var(--karma-nishkamya); }
+        .karma-card.card-prayaschitta:hover { border-color: var(--karma-prayaschitta); }
+        .karma-card.card-nishiddha:hover { border-color: var(--karma-nishiddha); }
+
+        .karma-tag-strip {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+        .karma-badge {
+            font-size: 0.78rem;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .b-nitya { background: var(--karma-nitya-bg); color: var(--karma-nitya); border: 1px solid rgba(16, 185, 129, 0.3); }
+        .b-naimittika { background: var(--karma-naimittika-bg); color: var(--karma-naimittika); border: 1px solid rgba(59, 130, 246, 0.3); }
+        .b-kamya { background: var(--karma-kamya-bg); color: var(--karma-kamya); border: 1px solid rgba(245, 158, 11, 0.3); }
+        .b-nishkamya { background: var(--karma-nishkamya-bg); color: var(--karma-nishkamya); border: 1px solid rgba(139, 92, 246, 0.3); }
+        .b-prayaschitta { background: var(--karma-prayaschitta-bg); color: var(--karma-prayaschitta); border: 1px solid rgba(6, 182, 212, 0.3); }
+        .b-nishiddha { background: var(--karma-nishiddha-bg); color: var(--karma-nishiddha); border: 1px solid rgba(239, 68, 68, 0.3); }
+
+        .karma-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.45rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+            color: var(--text-main);
+        }
+        .karma-motto {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--saffron-primary);
+            margin-bottom: 14px;
+        }
+        .karma-content {
+            font-size: 0.94rem;
+            color: var(--text-muted);
+            line-height: 1.75;
+            margin-bottom: 16px;
+        }
+        .karma-key-points {
+            list-style: none;
+            margin: 14px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .karma-key-points li {
+            font-size: 0.88rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+        }
+        .karma-key-points li i {
+            color: var(--saffron-primary);
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        /* 16 Shodasha Samskaras Interactive Grid */
+        .samskaras-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .samskara-pill-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 16px 18px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            transition: all 0.2s ease;
+        }
+        .samskara-pill-card:hover {
+            border-color: #3b82f6;
+            background: var(--bg-card);
+            transform: translateY(-2px);
+        }
+        .samskara-num {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: rgba(59, 130, 246, 0.15);
+            color: #3b82f6;
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+        .samskara-details h4 {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 2px;
+        }
+        .samskara-stage {
+            font-size: 0.78rem;
+            color: #3b82f6;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .samskara-desc {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* 5 Pancha Maha Yagnas Cards */
+        .yagnas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .yagna-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            transition: all 0.2s ease;
+        }
+        .yagna-card:hover {
+            border-color: #10b981;
+            transform: translateY(-2px);
+        }
+        .yagna-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .yagna-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .yagna-header h4 {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+        .yagna-target {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #10b981;
+            margin-bottom: 6px;
+        }
+        .yagna-desc {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        /* 9 Daily Prayers Interactive Shloka Cards */
+        .prayers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 20px;
+            margin: 24px 0;
+        }
+        .prayer-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.2s ease;
+        }
+        .prayer-card:hover {
+            border-color: var(--saffron-primary);
+            box-shadow: var(--shadow-md);
+        }
+        .prayer-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        .prayer-time-badge {
+            background: rgba(245, 158, 11, 0.12);
+            color: var(--saffron-primary);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 800;
+        }
+        .btn-copy-shloka {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.76rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.2s;
+        }
+        .btn-copy-shloka:hover {
+            border-color: var(--saffron-primary);
+            color: var(--saffron-primary);
+        }
+        .prayer-shloka-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 3px solid var(--saffron-primary);
+            padding: 14px 16px;
+            border-radius: 0 8px 8px 0;
+            font-family: var(--font-heading);
+            font-size: 0.96rem;
+            line-height: 1.8;
+            color: #fef3c7;
+            margin-bottom: 12px;
+        }
+        body.light-theme .prayer-shloka-box {
+            background: #fffbeb;
+            color: #92400e;
+        }
+        .prayer-meaning {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+        }
+        .prayer-meaning strong {
+            color: var(--text-main);
+        }
+
+        /* Activity Cards (Full Facilitator Engine) */
+        .activity-card-large {
+            background: var(--bg-surface);
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            transition: all 0.25s ease;
+        }
+        .activity-card-large:hover {
+            border-color: var(--saffron-primary);
+            box-shadow: var(--shadow-lg);
+        }
+        .act-header-strip {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+        .act-badge-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            padding: 6px 16px;
+            border-radius: 999px;
+            text-transform: uppercase;
+        }
+        .act-title-box h3 {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+        .act-tagline {
+            font-size: 0.95rem;
+            color: var(--saffron-primary);
+            font-weight: 700;
+        }
+
+        /* Material List Box */
+        .materials-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px dashed var(--border-color);
+            padding: 16px 20px;
+            border-radius: var(--radius-md);
+            margin: 18px 0 24px 0;
+        }
+        body.light-theme .materials-box {
+            background: #f8fafc;
+            border-color: rgba(0, 0, 0, 0.14);
+        }
+        .materials-title {
+            font-size: 0.84rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--saffron-primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .materials-items {
+            font-size: 0.92rem;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Steps Container */
+        .steps-container {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .step-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+        .step-num {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--saffron-primary);
+            border: 1px solid rgba(245, 158, 11, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.88rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .step-text {
+            font-size: 0.95rem;
+            line-height: 1.65;
+            color: var(--text-muted);
+        }
+        .step-text strong {
+            color: var(--text-main);
+        }
+
+        /* Debrief Callout (Aha! Moment) */
+        .debrief-box {
+            background: rgba(245, 158, 11, 0.08);
+            border-left: 4px solid var(--saffron-primary);
+            padding: 18px 22px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 20px 0;
+        }
+        .debrief-title {
+            font-size: 0.88rem;
+            font-weight: 800;
+            color: var(--saffron-primary);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .debrief-text {
+            font-size: 0.94rem;
+            font-style: italic;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        /* Timer Widget */
+        .timer-widget {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 14px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 14px 20px;
+            border-radius: var(--radius-md);
+            margin-top: 22px;
+        }
+        .timer-display {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--saffron-primary);
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .timer-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-timer {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 0.84rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+        .btn-timer:hover {
+            border-color: var(--saffron-primary);
+            color: var(--saffron-primary);
+        }
+
+        /* Vallalar 44 Sins Filterable Hub */
+        .vallalar-filter-bar {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .btn-v-filter {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-v-filter:hover, .btn-v-filter.active {
+            border-color: #ef4444;
+            background: rgba(239, 68, 68, 0.15);
+            color: #ef4444;
+        }
+        .vallalar-search-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .vallalar-search-input {
+            width: 100%;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            padding: 12px 16px 12px 42px;
+            border-radius: var(--radius-md);
+            color: var(--text-main);
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.2s;
+        }
+        .vallalar-search-input:focus {
+            border-color: #ef4444;
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+        }
+        .vallalar-search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-dim);
+        }
+
+        .vallalar-table-wrap {
+            max-height: 480px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            background: var(--bg-surface);
+        }
+        .vallalar-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+        .vallalar-table th {
+            background: var(--bg-card);
+            padding: 12px 16px;
+            font-weight: 800;
+            color: var(--text-main);
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .vallalar-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+        .vallalar-table tr:hover td {
+            background: rgba(239, 68, 68, 0.04);
+            color: var(--text-main);
+        }
+
+        /* Sacred Pledge Container */
+        .sacred-pledge-card {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(180, 83, 9, 0.18));
+            border: 2px solid #f59e0b;
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            margin: 24px 0;
+            box-shadow: 0 8px 30px rgba(245, 158, 11, 0.2);
+            position: relative;
+        }
+        .sacred-pledge-card::before {
+            content: '🙏 அறம் காக்கும் ஷட் கர்ம சங்கல்பம் (Sacred Pledge)';
+            position: absolute;
+            top: -14px;
+            left: 24px;
+            background: #d97706;
+            color: #ffffff;
+            padding: 2px 16px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .pledge-text {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #fffbeb;
+            font-weight: 600;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px 24px;
+            border-radius: var(--radius-md);
+            border-left: 4px solid #f59e0b;
+            margin-bottom: 16px;
+        }
+        body.light-theme .pledge-text {
+            background: rgba(245, 158, 11, 0.1);
+            color: #78350f;
+        }
+
+        /* Checklists */
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin: 24px 0;
+        }
+        .checklist-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 22px;
+        }
+        .checklist-card h4 {
+            font-size: 1.05rem;
+            font-weight: 800;
+            margin-bottom: 14px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        .check-item input[type="checkbox"] {
+            margin-top: 3px;
+            width: 17px;
+            height: 17px;
+            accent-color: var(--saffron-primary);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .check-item:hover {
+            color: var(--text-main);
+        }
+
+        /* Self-Audit Quiz Container */
+        .quiz-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            margin: 24px 0;
+        }
+        .quiz-q-block {
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+        .quiz-q-title {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .quiz-opt-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 10px 16px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            transition: all 0.2s;
+        }
+        .quiz-opt-label:hover {
+            border-color: var(--saffron-primary);
+            color: var(--text-main);
+        }
+        .quiz-opt-label input[type="radio"] {
+            accent-color: var(--saffron-primary);
+        }
+        .quiz-result-box {
+            display: none;
+            background: rgba(245, 158, 11, 0.12);
+            border: 2px solid var(--saffron-primary);
+            border-radius: var(--radius-md);
+            padding: 22px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            background: var(--bg-surface);
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.88rem;
+        }
+
+        /* Print styles */
+        @media print {
+            .navbar, .section-anchor-bar, .timer-widget, .nav-actions, .btn-v-filter, .vallalar-search-box {
+                display: none !important;
+            }
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            .activity-card-large, .tie-card, .karma-card, .prayer-card {
+                border: 1px solid #999 !important;
+                box-shadow: none !important;
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-actions {
+                width: 100%;
+                justify-content: flex-end;
+            }
+            .activity-card-large {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-inner">
+                <a href="#hero" class="brand">
+                    <div class="brand-logo">
+                        <i data-lucide="sun"></i>
+                    </div>
+                    <div class="brand-text">
+                        <h1>அறம் — ஷட் கருமங்கள் பயிற்சிப் பட்டறை</h1>
+                        <p>5 மணி நேர முழுமையான செயல்முறை வழிகாட்டி • ஸ்ரீ பாலசுந்தரம் உரை</p>
+                    </div>
+                </a>
+
+                <div class="nav-actions">
+                    <button class="btn-nav" onclick="toggleTheme()" id="btn-theme" title="பின்னணி நிறத்தை மாற்றுக">
+                        <i data-lucide="sun" id="theme-icon" style="width:16px; height:16px;"></i>
+                        <span id="theme-label">Bright Theme</span>
+                    </button>
+                    <button class="btn-nav" onclick="window.print()" title="அச்சிட அல்லது PDF சேமிக்க">
+                        <i data-lucide="printer" style="width:16px; height:16px;"></i> அச்சிடுக (Print)
+                    </button>
+                    <a href="#activities" class="btn-nav btn-nav-primary">
+                        <i data-lucide="play-circle" style="width:16px; height:16px;"></i> நேரடிச் செயல்பாடுகள்
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-badge-wrap">
+                <span class="hero-badge"><i data-lucide="flame" style="width:14px; height:14px;"></i> சனாதன தர்மத்தின் ஒளி (தேஜஸ்)</span>
+                <span class="hero-badge" style="border-color:#10b981; color:#10b981; background:rgba(16,185,129,0.12);"><i data-lucide="clock" style="width:14px; height:14px;"></i> 5 மணி நேர முழு அமர்வு</span>
+                <span class="hero-badge" style="border-color:#3b82f6; color:#3b82f6; background:rgba(59,130,246,0.12);"><i data-lucide="compass" style="width:14px; height:14px;"></i> ஷட் கருமங்கள் (6 வகை கர்மாக்கள்)</span>
+            </div>
+
+            <h1 class="hero-title">
+                பாரதப் பெருவழியில் <span>ஷட் கருமங்கள்</span><br>
+                5 மணி நேர ஊடாடும் பயிற்சிப் பட்டறை
+            </h1>
+
+            <div class="hero-quote">
+                <strong>"பாரத நாடு பழம்பெரும் நாடு - நீரதன் புதல்வர் இந்நினைவகற்றாதீர்!"</strong> — மகாகவி பாரதியார்.<br>
+                பாரத மாதாவின் பேரழகாக ஒளிரும் சனாதன தர்மமும், அதன் ஆபரணங்களாக மின்னும் ஆன்மீகமும் மனிதப்பிறவியை பக்குவப்படுத்தவே ஷட் கருமங்களாக வடிவமைக்கப்பட்டுள்ளன.
+                வேதம் நம்மை <em>“அமிருதஸ்ய புத்ரா:”</em> (அழிவற்ற அமிருதத்தின் குழந்தைகள்) என்று அழைக்கிறது. கீதையின்படி <strong>“யோக: கர்மஷு கௌசலம்”</strong> — செயலைச் சீராகச் செய்வதே யோகம்!
+            </div>
+
+            <div class="quick-stats-bar">
+                <div class="stat-chip"><i data-lucide="calendar" style="color:var(--saffron-primary); width:18px; height:18px;"></i> 5 மணி நேரத் திட்டம் (300 நிமி)</div>
+                <div class="stat-chip"><i data-lucide="layers" style="color:#10b981; width:18px; height:18px;"></i> 6 வகை கர்மாக்கள் முழு விளக்கம்</div>
+                <div class="stat-chip"><i data-lucide="sparkles" style="color:#3b82f6; width:18px; height:18px;"></i> பஞ்ச யக்ஞங்கள் &amp; 16 சம்ஸ்காரங்கள்</div>
+                <div class="stat-chip"><i data-lucide="shield-alert" style="color:#ef4444; width:18px; height:18px;"></i> வள்ளலாரின் 44 பாவ எச்சரிக்கைகள்</div>
+                <div class="stat-chip"><i data-lucide="book-open" style="color:#8b5cf6; width:18px; height:18px;"></i> 9 நித்ய பிரார்த்தனை சுலோகங்கள்</div>
+                <div class="stat-chip"><i data-lucide="users" style="color:#06b6d4; width:18px; height:18px;"></i> 6 நேரடி குழுச் செயல்பாடுகள்</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Section Anchor Navigation -->
+    <div class="section-anchor-bar">
+        <div class="container" style="display:flex; gap:10px; overflow-x:auto;">
+            <a href="#roadmap" class="anchor-pill active"><i data-lucide="clock" style="width:14px; height:14px;"></i> 5 மணி நேர அட்டவணை</a>
+            <a href="#foundation" class="anchor-pill"><i data-lucide="compass" style="width:14px; height:14px;"></i> கர்ம தத்துவ அடித்தளம்</a>
+            <a href="#six-karmas" class="anchor-pill"><i data-lucide="layers" style="width:14px; height:14px;"></i> ஷட் கருமங்கள் வழிகாட்டி</a>
+            <a href="#activities" class="anchor-pill"><i data-lucide="trophy" style="width:14px; height:14px;"></i> 6 பயிற்சிச் செயல்பாடுகள்</a>
+            <a href="#vallalar-hub" class="anchor-pill"><i data-lucide="list-checks" style="width:14px; height:14px;"></i> வள்ளலார் மனுமுறை 44 பாவங்கள்</a>
+            <a href="#prayers-hub" class="anchor-pill"><i data-lucide="sparkles" style="width:14px; height:14px;"></i> 9 நித்ய சுலோகப் பேழை</a>
+            <a href="#quiz-hub" class="anchor-pill"><i data-lucide="help-circle" style="width:14px; height:14px;"></i> கர்ம தராசு சுயமதிப்பீடு</a>
+            <a href="#facilitator-check" class="anchor-pill"><i data-lucide="clipboard-check" style="width:14px; height:14px;"></i> பயிற்றுநர் சரிபார்ப்புப் பட்டியல்</a>
+        </div>
+    </div>
+
+    <main class="main-layout">
+        <div class="container">
+
+            <!-- ========================================================= -->
+            <!-- 1. 5-HOUR MASTER WORKSHOP SESSION ROADMAP -->
+            <!-- ========================================================= -->
+            <section class="section-block" id="roadmap">
+                <div class="section-header-title">
+                    <i data-lucide="calendar-clock" style="color:var(--saffron-primary);"></i>
+                    5 மணி நேர முழுமையான பயிற்சிப் பட்டறை அமர்வு வழிகாட்டி (Session Roadmap)
+                </div>
+                <div class="section-header-subtitle">
+                    இந்த 5 மணி நேரப் பயிற்சிப் பட்டறை (300 நிமிடங்கள்), பங்கேற்பாளர்களை வெறும் பார்வையாளர்களாக அல்லாமல், தத்துவங்களை தங்களது சொந்த வாழ்வில் பரிசோதித்து உணரும் செயல்முறை வீரர்களாக மாற்ற வடிவமைக்கப்பட்டுள்ளது.
+                </div>
+
+                <div class="timeline-track">
+                    <!-- Hour 1 -->
+                    <div class="timeline-hour-card">
+                        <div>
+                            <span class="hour-badge hour-1-b"><i data-lucide="clock" style="width:12px; height:12px;"></i> மணி 1 (00:00 - 01:00)</span>
+                            <div class="hour-time">முதல் 60 நிமிடங்கள்</div>
+                            <h4 class="hour-title">பாரத தர்மமும் கர்ம மூட்டைகளும்</h4>
+                            <p class="hour-desc">
+                                பாரத தேஜஸ், சனாதன தர்மத்தின் மேன்மை, 'அமிருதஸ்ய புத்ரா:', சஞ்சிதம், பிராரப்தம், ஆகாமி — வினைகளின் 3 வகைகள் மற்றும் கீதையின் 'யோக: கர்மஷு கௌசலம்' சூத்திரம்.
+                            </p>
+                        </div>
+                        <div class="hour-activity-chip">
+                            <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 1: மூன்று முடிச்சுகளும் வினைக் கணக்கும் (25 நிமி)
+                        </div>
+                    </div>
+
+                    <!-- Hour 2 -->
+                    <div class="timeline-hour-card">
+                        <div>
+                            <span class="hour-badge hour-2-b"><i data-lucide="clock" style="width:12px; height:12px;"></i> மணி 2 (01:00 - 01:55)</span>
+                            <div class="hour-time">அடுத்த 55 நிமிடங்கள்</div>
+                            <h4 class="hour-title">நித்ய கர்மா &amp; பஞ்ச மகா யக்ஞங்கள்</h4>
+                            <p class="hour-desc">
+                                காலை விழிப்பது முதல் இரவு தூங்கும் வரை தினசரி கடமைகள், 9 நித்ய பிரார்த்தனைகள், இல்லத் தூய்மை, பெற்றோரை வணங்குதல் மற்றும் ரிஷி, பித்ரு, தேவ, பூத, மனுஷ்ய பஞ்ச யக்ஞங்கள்.
+                            </p>
+                        </div>
+                        <div class="hour-activity-chip">
+                            <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 2: 24-மணி நேர நித்ய சக்கரமும் 5 நாணயங்களும் (25 நிமி)
+                        </div>
+                    </div>
+
+                    <!-- Hour 3 -->
+                    <div class="timeline-hour-card">
+                        <div>
+                            <span class="hour-badge hour-3-b"><i data-lucide="clock" style="width:12px; height:12px;"></i> மணி 3 (01:55 - 02:45)</span>
+                            <div class="hour-time">அடுத்த 50 நிமிடங்கள் (தேநீர் இடைவேளை உட்பட)</div>
+                            <h4 class="hour-title">நைமித்திக கர்மா &amp; 16 சம்ஸ்காரங்கள்</h4>
+                            <p class="hour-desc">
+                                காலம், திதி, விரதங்கள் (சஷ்டி, கிருத்திகை, ஏகாதசி, அமாவாசை, பௌர்ணமி), விசேஷ பூஜைகள், பித்ரு தர்ப்பணம் மற்றும் மனித வாழ்வின் 16 ஷோடச சம்ஸ்காரங்களின் ஆழமான தத்துவம்.
+                            </p>
+                        </div>
+                        <div class="hour-activity-chip">
+                            <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 3: 16 வாழ்க்கைப் படிக்கட்டுகளும் காலப் புதிரும் (20 நிமி)
+                        </div>
+                    </div>
+
+                    <!-- Hour 4 -->
+                    <div class="timeline-hour-card">
+                        <div>
+                            <span class="hour-badge hour-4-b"><i data-lucide="clock" style="width:12px; height:12px;"></i> மணி 4 (02:45 - 03:40)</span>
+                            <div class="hour-time">அடுத்த 55 நிமிடங்கள்</div>
+                            <h4 class="hour-title">காம்ய கர்மா vs நிஷ்காம்ய கர்மா</h4>
+                            <p class="hour-desc">
+                                தர்மநெறி தவறாத லட்சியங்களும் ஆசைகளும் (காம்யம்: நேர்த்திக்கடன், யாகங்கள், விரதங்கள்) — அதனைத் தாண்டி பலன் எதிர்பாராத சமூகப் பொதுநலப் பணியாக மாற்றுதல் (நிஷ்காம்யம்: நீர்நிலை, சாலை, சூழலியல்).
+                            </p>
+                        </div>
+                        <div class="hour-activity-chip">
+                            <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 4: காம்யத்திலிருந்து நிஷ்காம்யத்திற்கு பாலமிடுதல் (25 நிமி)
+                        </div>
+                    </div>
+
+                    <!-- Hour 5 -->
+                    <div class="timeline-hour-card">
+                        <div>
+                            <span class="hour-badge hour-5-b"><i data-lucide="clock" style="width:12px; height:12px;"></i> மணி 5 (03:40 - 05:00)</span>
+                            <div class="hour-time">நிறைவு 80 நிமிடங்கள்</div>
+                            <h4 class="hour-title">நிஷித்த கர்மா, பிராயச்சித்தம் &amp; சங்கல்பம்</h4>
+                            <p class="hour-desc">
+                                தவிர்க்கப்பட வேண்டிய பாவங்கள் (வள்ளலார் மனுமுறை 44 பாவங்கள்), ஆக்கபூர்வ பரிகார தண்டனைகள் (மரம் நடுதல், குளம் வெட்டுதல், சாந்தி ஹோமங்கள்), இரவு சரணாகதி &amp; கூட்டு உறுதிமொழி.
+                            </p>
+                        </div>
+                        <div class="hour-activity-chip">
+                            <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 5 &amp; 6: வள்ளலார் கண்ணாடி &amp; புனித சங்கல்பம் (35 நிமி)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- 2. FOUNDATIONAL PHILOSOPHY: SANATANA DHARMA & KARMA DYNAMICS -->
+            <!-- ========================================================= -->
+            <section class="section-block" id="foundation">
+                <div class="section-header-title">
+                    <i data-lucide="compass" style="color:var(--saffron-primary);"></i>
+                    கர்ம தத்துவ அடித்தளம்: பாரத தேஜஸும் வினைகளின் மூன்று நிலைகளும்
+                </div>
+                <div class="section-header-subtitle">
+                    பாரத நாடு ரிஷிகள், முனிவர்கள், ஞானியர், மஹான்கள், அடியார்கள் மற்றும் சித்த புருஷர்களால் நிர்ணயிக்கப்பட்ட திருபூமி. இங்கு ஒவ்வொரு செயலுக்கும் காரண, காரியங்கள் உண்டு.
+                </div>
+
+                <!-- 3 Karmic Forces Cards -->
+                <div class="karma-ties-grid">
+                    <!-- Sanchita -->
+                    <div class="tie-card" style="border-top: 4px solid #f59e0b;">
+                        <div class="tie-header">
+                            <span class="tie-badge" style="background:rgba(245,158,11,0.15); color:#f59e0b; border:1px solid rgba(245,158,11,0.35);">பழவினைச் சேமிப்பு</span>
+                            <i data-lucide="package" style="color:#f59e0b;"></i>
+                        </div>
+                        <h3 class="tie-title">1. சஞ்சித கர்மா (Sanchita Karma)</h3>
+                        <div class="tie-metaphor">📦 உருவகம்: கிடங்கில் மூட்டை கட்டி வைக்கப்பட்டுள்ள விதைகள்</div>
+                        <p class="tie-body">
+                            முற்பிறவிகளில் நாம் செய்த பல்லாயிரக்கணக்கான பாவ புண்ணியங்களின் ஒட்டுமொத்தக் கிடங்கு. இது இன்னும் முளைக்கத் தொடங்காத சேமிப்பு வினை. ஆன்ம ஞானம் மற்றும் தீவிர இறை வழிபாட்டினால் மட்டுமே இந்த மூட்டையை எரிக்க முடியும்.
+                        </p>
+                    </div>
+
+                    <!-- Prarabdha -->
+                    <div class="tie-card" style="border-top: 4px solid #3b82f6;">
+                        <div class="tie-header">
+                            <span class="tie-badge" style="background:rgba(59,130,246,0.15); color:#3b82f6; border:1px solid rgba(59,130,246,0.35);">நிகழ்கால அனுபவம்</span>
+                            <i data-lucide="hourglass" style="color:#3b82f6;"></i>
+                        </div>
+                        <h3 class="tie-title">2. பிராரப்த கர்மா (Prarabdha Karma)</h3>
+                        <div class="tie-metaphor">🏹 உருவகம்: வில்லிலிருந்து புறப்பட்டுவிட்ட அம்பு</div>
+                        <p class="tie-body">
+                            சஞ்சித மூட்டையிலிருந்து எடுத்து, இந்த நடப்பு மனிதப் பிறவியில் அனுபவிப்பதற்காக ஒதுக்கப்பட்ட பங்கு. நமது பிறப்பு, பெற்றோர், உடல் அமைப்பு, சூழ்நிலைகள், இன்ப துன்பங்கள் பிராரப்தத்தினால் நிர்ணயிக்கப்படுகின்றன. இதனை பொறுமையோடும் தர்மத்தோடும் கடக்க வேண்டும்.
+                        </p>
+                    </div>
+
+                    <!-- Agami -->
+                    <div class="tie-card" style="border-top: 4px solid #10b981;">
+                        <div class="tie-header">
+                            <span class="tie-badge" style="background:rgba(16,185,129,0.15); color:#10b981; border:1px solid rgba(16,185,129,0.35);">வருங்கால விதைப்பு</span>
+                            <i data-lucide="sprout" style="color:#10b981;"></i>
+                        </div>
+                        <h3 class="tie-title">3. ஆகாமி கர்மா (Agami Karma)</h3>
+                        <div class="tie-metaphor">🌱 உருவகம்: இன்று நாம் நிலத்தில் விதைக்கும் புதிய விதைகள்</div>
+                        <p class="tie-body">
+                            இன்றைய சிந்தனைகள், வார்த்தைகள், செயல்களினால் எதிர்காலத்திற்கு நாம் ஈட்டி வைக்கும் புதிய வினைகள். இன்றைய புண்ணிய கர்மாக்களால் வருங்கால துன்பங்களைத் தடுத்து, அடுத்த பிறவிகளையும் முக்தியையும் ஒளிமயமாக மாற்றும் முழுமையான சுதந்திரம் நம்மிடம் உள்ளது!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Balance Formula Box -->
+                <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:24px; margin-top:20px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px;">
+                    <div style="max-width:760px;">
+                        <h4 style="font-family:var(--font-heading); font-size:1.25rem; font-weight:800; color:var(--text-main); margin-bottom:6px;">
+                            ⚖️ பாவம் vs புண்ணியம்: சதவீதத்தின் சூத்திரம்
+                        </h4>
+                        <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.7;">
+                            மனித வாழ்வை பாவம், புண்ணியம் என்ற இரண்டு கயிறுகள் பிணைத்து வழிநடத்துகின்றன. மற்றவருக்கு தீங்கு விளைவித்தால் அது பாவம்; நன்மை விளைந்தால் அது புண்ணியம்.
+                            <br>
+                            <strong>பாவங்கள் 0%, புண்ணியங்கள் 100% என்றிருந்தால் — அவனே பூரண அவதாரம் ஆகிறான்!</strong>
+                            இந்த சதவீதத்தின் அளவே நமது சுக-துக்கங்களைத் தீர்மானிக்கிறது. ஷட் கருமங்களை முறையாகக் கடைப்பிடிப்பதன் மூலமே பாவ சதவீதத்தைக் குறைத்து புண்ணியத்தை 100% ஆக்க முடியும்.
+                        </p>
+                    </div>
+                    <div style="background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); border-radius:var(--radius-md); padding:16px 20px; text-align:center;">
+                        <div style="font-size:0.8rem; font-weight:800; color:var(--saffron-primary); text-transform:uppercase; margin-bottom:4px;">கீதை 2.50 தாரக மந்திரம்</div>
+                        <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:900; color:#fef3c7;">"யோக: கர்மஷு கௌசலம்"</div>
+                        <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">செயலைத் திறம்படவும் நேர்த்தியாகவும் சீராகவும் செய்வதே யோகம்!</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- 3. DETAILED GUIDE TO THE 6 KARMAS (SHAT KARMAS) -->
+            <!-- ========================================================= -->
+            <section class="section-block" id="six-karmas">
+                <div class="section-header-title">
+                    <i data-lucide="layers" style="color:var(--saffron-primary);"></i>
+                    ஷட் கருமங்கள் விரிவான விளக்கம்: இரண்டு முப்பெரும் படிகள் (The Two Triads)
+                </div>
+                <div class="section-header-subtitle">
+                    ஸ்ரீ பாலசுந்தரம் அவர்களின் விளக்கத்தின்படி, ஆறு கர்மங்களை மூன்று மூன்றாகப் பிரிக்கலாம். முதல் மூன்று கர்மங்கள் நம் அன்றாட வாழ்வை சீராக்கி மன அமைதியைத் தரும்; அடுத்த மூன்று கர்மங்கள் சமூகப் பாதுகாப்பையும் அறநெறித் தூய்மையையும் நிலைநிறுத்தும்.
+                </div>
+
+                <!-- Triad 1 Header -->
+                <div style="background:linear-gradient(135deg, rgba(16,185,129,0.15), rgba(59,130,246,0.15)); border:1px solid rgba(16,185,129,0.3); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:20px; display:flex; align-items:center; gap:12px;">
+                    <i data-lucide="user-check" style="color:#10b981; width:28px; height:28px; flex-shrink:0;"></i>
+                    <div>
+                        <h4 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">
+                            முதல் மூன்று கர்மங்கள்: தனிமனித வாழ்வியல் ஒழுக்கம் &amp; மன அமைதி
+                        </h4>
+                        <p style="font-size:0.88rem; color:var(--text-muted);">நம்முடைய செயல்கள் எல்லாமே முதலில் இந்த மூன்றில்தான் அடங்கும். இவற்றைக் கடைப்பிடிக்கும்போது வாழ்க்கை 'ஏனோ தானோ' என்றிராமல் சீரானதாக அமையும்.</p>
+                    </div>
+                </div>
+
+                <!-- Karma Cards Grid Part 1 -->
+                <div class="karma-six-grid">
+                    <!-- 1. Nitya Karma -->
+                    <div class="karma-card card-nitya">
+                        <div>
+                            <div class="karma-tag-strip">
+                                <span class="karma-badge b-nitya">கர்மம் 1 • தினசரி கடமை</span>
+                                <i data-lucide="sun-medium" style="color:var(--karma-nitya);"></i>
+                            </div>
+                            <h3>1. நித்ய கர்மா (Nitya Karma)</h3>
+                            <div class="karma-motto">"காலை கண்விழிப்பது முதல் இரவு உறங்கும் வரை இடைவிடாது கடைப்பிடிக்கும் தர்மம்"</div>
+                            <p class="karma-content">
+                                நித்ய கர்மா என்பது நாம் தினமும் தவறாமல் செய்ய வேண்டிய இன்றியமையாத பணிகள். அனுஷ்டிப்பது என்பது கடைப்பிடிப்பது. இதனை தவறாமல் கடைப்பிடிப்பதே 'நித்ய கர்மானுஷ்டானம்' ஆகும். இதனால் புண்ணிய சதவீதம் கூடும், பாவ சதவீதம் குறையும்.
+                            </p>
+                            <ul class="karma-key-points">
+                                <li><i data-lucide="check-circle-2"></i> <strong>கரதர்சனம் &amp; பூமி வந்தனம்:</strong> கண்விழிக்கும்போது உள்ளங்கையைப் பார்த்து, பூமியில் கால் வைக்கும் முன் பூமித்தாயிடம் மன்னிப்புக் கோருதல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>புனித நீராடல் &amp; சமயச் சின்னங்கள்:</strong> கங்கை முதலிய புண்ணிய நதிகளை நினைத்து நீராடி, திருநீறு/குங்குமம்/திருமண் அணிதல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>சாத்வீக உணவு &amp; தாய் தந்தை வழிபாடு:</strong> நைவேத்யம் செய்து விருந்தோம்பலுடன் கூடி உண்ணுதல், பெற்றோரை வணங்குதல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>இல்லத் தூய்மை &amp; மாலை தீபம்:</strong> பூஜை அறை, சமையலறை, படுக்கை அறைகளைத் தூய்மையாக வைத்தல்; மாலை விளக்கேற்றி நாமம் ஜபித்தல்; இரவில் சரணாகதி பிரார்த்தனை.</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top:16px; padding-top:14px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center;">
+                            <span style="font-size:0.8rem; font-weight:700; color:var(--karma-nitya);">அடிப்படை: ஐம்பெரும் வேள்விகள்</span>
+                            <a href="#prayers-hub" class="btn-nav" style="padding:4px 10px; font-size:0.78rem;"><i data-lucide="book-open" style="width:12px; height:12px;"></i> சுலோகங்கள் பார்க்க</a>
+                        </div>
+                    </div>
+
+                    <!-- 2. Naimittika Karma -->
+                    <div class="karma-card card-naimittika">
+                        <div>
+                            <div class="karma-tag-strip">
+                                <span class="karma-badge b-naimittika">கர்மம் 2 • காலச் சந்தர்ப்பக் கடமை</span>
+                                <i data-lucide="calendar-heart" style="color:var(--karma-naimittika);"></i>
+                            </div>
+                            <h3>2. நைமித்திக கர்மா (Naimittika Karma)</h3>
+                            <div class="karma-motto">"தேவைப்படும் நேரத்தில், தேவைப்படும் இடத்தில், முறைப்படி செய்யும் சிறப்பு வழிபாடுகள்"</div>
+                            <p class="karma-content">
+                                நித்யம் தினமும் செய்ய வேண்டியதில்லை. ஆனால் வாரம், மாதம், வருடத்திற்கு ஒருமுறையோ அல்லது குறிப்பிட்ட சந்தர்ப்பங்களிலோ தவறாமல் செய்ய வேண்டியவை. இவை ஆன்ம பலத்தை அபரிமிதமாக உயர்த்தும்.
+                            </p>
+                            <ul class="karma-key-points">
+                                <li><i data-lucide="check-circle-2"></i> <strong>விரதங்கள் அனுஷ்டித்தல்:</strong> சஷ்டி, கிருத்திகை, ஏகாதசி, அமாவாசை, பௌர்ணமி போன்ற திதி விரதங்களை சீராகக் கடைப்பிடித்தல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>விசேஷ பூஜைகள்:</strong> ஆயுத பூஜை, சரஸ்வதி பூஜை, மகா சிவராத்திரி, தீபாவளி, பொங்கல் போன்ற பண்டிகைக் கால ஆராதனைகள்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>பித்ரு கடமைகள்:</strong> மூதாதையர்களுக்கு நன்றி செலுத்தும் சிராத்தம், தர்ப்பணம், திதி போன்றவற்றைத் தள்ளி ஒதுக்காமல் தவறாமல் செய்தல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>16 சம்ஸ்காரங்கள்:</strong> கர்ப்பாதானம் முதல் அந்த்யேஷ்டி வரை மனித வாழ்வின் 16 முக்கியப் படிக்கட்டுகளில் செய்யப்படும் தூய்மைச் சடங்குகள்.</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top:16px; padding-top:14px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center;">
+                            <span style="font-size:0.8rem; font-weight:700; color:var(--karma-naimittika);">வாழ்க்கை மைல்கற்கள்: 16 சம்ஸ்காரங்கள்</span>
+                            <a href="#samskaras-section" class="btn-nav" style="padding:4px 10px; font-size:0.78rem;"><i data-lucide="list" style="width:12px; height:12px;"></i> 16 சம்ஸ்காரங்கள்</a>
+                        </div>
+                    </div>
+
+                    <!-- 3. Kamya Karma -->
+                    <div class="karma-card card-kamya">
+                        <div>
+                            <div class="karma-tag-strip">
+                                <span class="karma-badge b-kamya">கர்மம் 3 • விருப்ப/பலன் நோக்கிய செயல்</span>
+                                <i data-lucide="target" style="color:var(--karma-kamya);"></i>
+                            </div>
+                            <h3>3. காம்ய கர்மா (Kamya Karma)</h3>
+                            <div class="karma-motto">"பலனை எதிர்பார்த்து தர்மநெறியில் ஆசையுடன் செய்யும் வழிபாடுகளும் முயற்சிகளும்"</div>
+                            <p class="karma-content">
+                                காம்யம் என்றால் பலனை எதிர்பார்த்து விருப்பத்துடன் செய்வது. நல்ல கல்வி, உத்தியோகம், வீடு, வசதிகள், புண்ணிய யாத்திரைகள், அசையும்-அசையா சொத்துக்களை சேர்க்க விரும்புவது இயல்பு. நேர்மையான வழியில் விருப்பங்களை நிறைவேற்றிக் கொள்வது ஒவ்வொருவரின் உரிமையாகும்.
+                            </p>
+                            <ul class="karma-key-points">
+                                <li><i data-lucide="check-circle-2"></i> <strong>சுய முயற்சி + தெய்வ அனுக்ரஹம்:</strong> தன் சொந்த முயற்சியால் அடைய முடியாதவற்றை வழிபாடுகள் மற்றும் பிரார்த்தனைகள் மூலம் இறைவனிடம் வேண்டுதல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>நேர்த்திக்கடன் &amp; விரதங்கள்:</strong> வேண்டுதலுக்காக அன்னதானம் செய்தல், தண்ணீர் பந்தல் அமைத்தல், யாகங்கள் செய்தல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>உடல் வருத்தி வழிபடுதல்:</strong> வேல் அலகுகுத்துதல், காவடி எடுத்தல், அங்க பிரதக்ஷிணம், அடி பிரதக்ஷிணம் செய்தல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>நம்பிக்கை வளர்ச்சி:</strong> இக்கர்மங்கள் நமக்கு தன்னம்பிக்கையை வளர்த்து வாழ்வை மகிழ்ச்சியுடனும் வளமையுடனும் வைக்க உதவுகிறது.</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top:16px; padding-top:14px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center;">
+                            <span style="font-size:0.8rem; font-weight:700; color:var(--karma-kamya);">தர்ம நெறிக்குட்பட்ட விருப்பங்கள்</span>
+                            <a href="#activities" class="btn-nav" style="padding:4px 10px; font-size:0.78rem;"><i data-lucide="play" style="width:12px; height:12px;"></i> செயல்பாடு 4</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Triad 2 Header -->
+                <div style="background:linear-gradient(135deg, rgba(139,92,246,0.15), rgba(239,68,68,0.15)); border:1px solid rgba(139,92,246,0.3); border-radius:var(--radius-md); padding:16px 20px; margin:32px 0 20px 0; display:flex; align-items:center; gap:12px;">
+                    <i data-lucide="globe" style="color:#8b5cf6; width:28px; height:28px; flex-shrink:0;"></i>
+                    <div>
+                        <h4 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">
+                            அடுத்த மூன்று கர்மங்கள்: சமூகக் கட்டமைப்புப் பாதுகாப்பு &amp; அறநெறித் தூய்மை
+                        </h4>
+                        <p style="font-size:0.88rem; color:var(--text-muted);">இவற்றைப் பார்க்கும்போது நமது சமுதாயக் கட்டமைப்பை முன்னோர்கள் எவ்வளவு உன்னதமாக அமைத்துள்ளார்கள் என்பது புரியும். தனிமனிதனின் பொறுப்புணர்வை முழுமையாக உணர வைக்கும் கர்மங்கள் இவை.</p>
+                    </div>
+                </div>
+
+                <!-- Karma Cards Grid Part 2 -->
+                <div class="karma-six-grid">
+                    <!-- 4. Nishkamya Karma -->
+                    <div class="karma-card card-nishkamya">
+                        <div>
+                            <div class="karma-tag-strip">
+                                <span class="karma-badge b-nishkamya">கர்மம் 4 • பலன் எதிர்பாராத பொதுநலப் பணி</span>
+                                <i data-lucide="heart-handshake" style="color:var(--karma-nishkamya);"></i>
+                            </div>
+                            <h3>4. நிஷ்காம்ய கர்மா (Nishkamya Karma)</h3>
+                            <div class="karma-motto">"எந்த தனிப்பட்ட விருப்பமும் இல்லாமல், சமூக நன்மையே நோக்கமாகக் கொண்டு இயங்குதல்"</div>
+                            <p class="karma-content">
+                                இதில் தனிமனித விருப்பங்களுக்கு இடமில்லை. பலனைத் தனக்கென எதிர்பாராது, ஈஸ்வரார்ப்பணமாக அனைத்து உயிர்களுக்கும் நலம் பயக்கும் பணிகளை ஆற்றுவதே நிஷ்காம்ய கர்மா ஆகும்.
+                            </p>
+                            <ul class="karma-key-points">
+                                <li><i data-lucide="check-circle-2"></i> <strong>பொது உட்கட்டமைப்பு அமைத்தல்:</strong> சமுதாய மக்கள் பயன்பெற சாலைகள் அமைத்தல், நீர்நிலைகள், குளங்கள், ஏரிகளை வெட்டுதல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>சுற்றுச்சூழல் &amp; ஜீவராசிகள் பாதுகாப்பு:</strong> மரங்கள் நடுதல், சோலைகளைப் பாதுகாத்தல், வாயில்லா விலங்கு பறவைகளுக்கு புகலிடமும் உணவும் தருதல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>மழை &amp; செழிப்பு வேண்டி பொதுவேள்வி:</strong> ஊர் நன்மைக்காக, வறட்சி நீங்கி மழை பெய்ய கூட்டுப் பிரார்த்தனைகளும் யாகங்களும் நடத்துதல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>பேரிடர் காலப் பாதுகாப்பு:</strong> வெள்ளம், பஞ்சம், ஆபத்து காலங்களில் சுயநலமின்றி பொதுமக்களுக்கு அடைக்கலமும் மருத்துவமும் அளித்தல்.</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top:16px; padding-top:14px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center;">
+                            <span style="font-size:0.8rem; font-weight:700; color:var(--karma-nishkamya);">ஈஸ்வரார்ப்பணம் &amp; லோகசங்கிரகம்</span>
+                            <a href="#activities" class="btn-nav" style="padding:4px 10px; font-size:0.78rem;"><i data-lucide="play" style="width:12px; height:12px;"></i> செயல்பாடு 4</a>
+                        </div>
+                    </div>
+
+                    <!-- 5. Prayaschitta Karma -->
+                    <div class="karma-card card-prayaschitta">
+                        <div>
+                            <div class="karma-tag-strip">
+                                <span class="karma-badge b-prayaschitta">கர்மம் 5 • தவறுகளுக்குப் பரிகாரம்</span>
+                                <i data-lucide="refresh-cw" style="color:var(--karma-prayaschitta);"></i>
+                            </div>
+                            <h3>5. பிராயச்சித்த கர்மா (Prayaschitta Karma)</h3>
+                            <div class="karma-motto">"அறிந்தும் அறியாமலும் செய்த தவறுகளுக்கு மனப்பூர்வ பரிகாரம் தேடுதல்"</div>
+                            <p class="karma-content">
+                                நமது செயல்களின் விளைவு பிறரை பாதிக்குமானால், அதற்குப் பரிகாரம் செய்யும் தார்மீகப் பொறுப்பு நம்முடையதே. அந்த காலங்களில் தண்டனையே ஆக்கபூர்வமான பரிகாரமாக அமைந்தது! தண்டனையும் ஒரு பரிகாரம்தானே!
+                            </p>
+                            <ul class="karma-key-points">
+                                <li><i data-lucide="check-circle-2"></i> <strong>முன்னோர்களின் சமூகப் பரிகாரங்கள்:</strong> செய்த தவறுக்கு ஈடாக மரம் நடுதல், பொதுக் குளம் வெட்டுதல், கோவில் திருப்பணி செய்தல், அசையாச் சொத்துக்களை தானமளித்தல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>சமய சாந்தி ஹோமங்கள்:</strong> ஆயுஷ் ஹோமம், 60-ஆம் வயதில் மணிவிழா (சஷ்டியப்தபூர்த்தி), 80-ஆம் வயதில் சதாபிஷேகம், 100-ஆம் வயதில் கனகாபிஷேக சாந்தி ஹோமங்கள்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>தனிப்பட்ட விரதங்கள்:</strong> மிருத்யுஞ்சய ஹோமம், வேத மந்திரங்கள் ஓதுதல், புராண இதிகாசங்கள் வாசித்தல், தன் தவறுக்கு உள்ளூர வருந்தி மன்னிப்புக் கேட்டல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>எளியோருக்கு உதவுதல்:</strong> வறியவர்களுக்கு ஆடை, உணவு, மருத்துவம், கல்வி வழங்குதல் மூலம் பாவச் சுமைகளைக் கரைத்தல்.</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top:16px; padding-top:14px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center;">
+                            <span style="font-size:0.8rem; font-weight:700; color:var(--karma-prayaschitta);">ஆக்கபூர்வ தண்டனை-பரிகார முறை</span>
+                            <a href="#activities" class="btn-nav" style="padding:4px 10px; font-size:0.78rem;"><i data-lucide="play" style="width:12px; height:12px;"></i> செயல்பாடு 5</a>
+                        </div>
+                    </div>
+
+                    <!-- 6. Nishiddha Karma -->
+                    <div class="karma-card card-nishiddha">
+                        <div>
+                            <div class="karma-tag-strip">
+                                <span class="karma-badge b-nishiddha">கர்மம் 6 • விலக்கப்பட வேண்டியவை</span>
+                                <i data-lucide="ban" style="color:var(--karma-nishiddha);"></i>
+                            </div>
+                            <h3>6. நிஷித்த கர்மா (Nishiddha Karma)</h3>
+                            <div class="karma-motto">"செய்யக்கூடாதவை, தவிர்க்கப்பட வேண்டியவை — தீவிர மன உறுதியுடன் விலக்குதல்"</div>
+                            <p class="karma-content">
+                                செய்யக்கூடாத செயல்களைச் செய்யாமல் இருப்பதே தனிநபர் வாழ்விற்கும் சமூகத்திற்கும் மிக்க நன்மை பயப்பதாகும். இவற்றைச் சரியாக அறிந்து தவிர்த்தால் பாவங்கள் நம்மை அண்டாது. இதனைத் தவிர்ப்பது மன உறுதி மற்றும் தீவிர வைராக்கியம் சம்பந்தப்பட்டது!
+                            </p>
+                            <ul class="karma-key-points">
+                                <li><i data-lucide="check-circle-2"></i> <strong>உயிர்களைத் துன்புறுத்தாமை:</strong> பிராணிகளையும் வாயில்லா ஜீவன்களையும் வதைக்காதிருத்தல்; ஊன்சுவைக்கு கொல்லாமை.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>பிறர் பொருள் விரும்பாமை:</strong> அடுத்தவர் சொத்துக்கள் மீது ஆசைப்படுதல், திருடுதல், பறித்தல், வஞ்சகம் செய்தலை முற்றாக விலக்குதல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>பொய் &amp; குடும்பச் சிதைவு தவிர்த்தல்:</strong> கோள் சொல்லி குடும்பம் குலைத்தல், நட்டாற்றில் கைவிடுதல், நம்பிக்கைத் துரோகம் செய்யாதிருத்தல்.</li>
+                                <li><i data-lucide="check-circle-2"></i> <strong>வள்ளலாரின் வழிகாட்டல்:</strong> 'மனுமுறை கண்ட வாசகத்தில்' பட்டியலிடப்பட்ட 44 மகா பாவங்களைத் தவிர்த்து வாழ்தல்.</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top:16px; padding-top:14px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center;">
+                            <span style="font-size:0.8rem; font-weight:700; color:var(--karma-nishiddha);">தீவிர வைராக்கியம் &amp; பாவம் விலக்குதல்</span>
+                            <a href="#vallalar-hub" class="btn-nav" style="padding:4px 10px; font-size:0.78rem;"><i data-lucide="shield-alert" style="width:12px; height:12px;"></i> 44 பாவங்கள் பட்டியல்</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deep-Dive: Pancha Maha Yagnas Sub-section -->
+                <div style="margin-top:40px; padding:28px; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-lg);">
+                    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
+                        <div>
+                            <h3 style="font-family:var(--font-heading); font-size:1.45rem; font-weight:800; color:var(--text-main);">
+                                ★ ஐம்பெரும் வேள்விகள் (பஞ்ச மகா யக்ஞங்கள்)
+                            </h3>
+                            <p style="font-size:0.92rem; color:var(--text-muted);">நித்ய கர்மாவின் ஆன்மக் கடமையாக ஒவ்வொரு குடும்பஸ்தனும் தினசரி ஆற்ற வேண்டிய 5 உன்னத வேள்விகள்:</p>
+                        </div>
+                        <span class="karma-badge b-nitya">நித்ய கர்மானுஷ்டானம்</span>
+                    </div>
+
+                    <div class="yagnas-grid">
+                        <!-- 1. Rishi Yagna -->
+                        <div class="yagna-card">
+                            <div class="yagna-header">
+                                <div class="yagna-icon"><i data-lucide="scroll"></i></div>
+                                <h4>1. ரிஷி யக்ஞம்</h4>
+                            </div>
+                            <div class="yagna-target">ஞானக் கடன் • முனிவர்கள் வழிபாடு</div>
+                            <p class="yagna-desc">
+                                அடுத்த தலைமுறையினருக்கு நமது இந்து சாஸ்திரங்களையும் பண்பாட்டையும் பயிற்றுவித்தல். நமக்கு சாஸ்திரங்களை கருணையுடன் வழங்கிய ரிஷிகள், முனிவர்களுக்கு நாம் செலுத்தும் நன்றி.
+                            </p>
+                        </div>
+
+                        <!-- 2. Pitru Yagna -->
+                        <div class="yagna-card">
+                            <div class="yagna-header">
+                                <div class="yagna-icon" style="color:#f59e0b; background:rgba(245,158,11,0.15);"><i data-lucide="users"></i></div>
+                                <h4>2. பித்ரு யக்ஞம்</h4>
+                            </div>
+                            <div class="yagna-target">முன்னோர் கடன் • தாய் தந்தை வழிபாடு</div>
+                            <p class="yagna-desc">
+                                தாய், தந்தையருக்கும் மூதாதையர்களுக்கும் நன்றியைத் தெரிவிப்பதற்காகச் செய்யும் வழிபாடு. தன் பிறப்பிற்கும் குலப் பண்பாட்டிற்கும் முன்னோர்களுக்கு கடன்பட்டவராக உணர்ந்து வணங்குதல்.
+                            </p>
+                        </div>
+
+                        <!-- 3. Deva Yagna -->
+                        <div class="yagna-card">
+                            <div class="yagna-header">
+                                <div class="yagna-icon" style="color:#3b82f6; background:rgba(59,130,246,0.15);"><i data-lucide="flame"></i></div>
+                                <h4>3. தேவ யக்ஞம்</h4>
+                            </div>
+                            <div class="yagna-target">பிரபஞ்சக் கடன் • இயற்கை வழிபாடு</div>
+                            <p class="yagna-desc">
+                                உலக நியதியிலும் உலகை ஆட்டுவிக்கும் இயற்கைப் பேராற்றலிலும் தெய்வத்தை உணர்ந்து, காற்று, நீர், நிலம், அக்னி, சூரியன் போன்ற இயற்கை தெய்வங்களுக்கு நாள்தோறும் செய்யும் வழிபாடு.
+                            </p>
+                        </div>
+
+                        <!-- 4. Bhuta Yagna -->
+                        <div class="yagna-card">
+                            <div class="yagna-header">
+                                <div class="yagna-icon" style="color:#ec4899; background:rgba(236,72,153,0.15);"><i data-lucide="heart"></i></div>
+                                <h4>4. பூத யக்ஞம்</h4>
+                            </div>
+                            <div class="yagna-target">உயிரினக் கடன் • பிற உயிர்கள் பேணல்</div>
+                            <p class="yagna-desc">
+                                மானிடரல்லாத பிற உயிரினங்களுக்கு உணவளித்தல். பறவைகள், பசுக்கள், எறும்புகள், நாய்கள், தாவரங்கள் போன்ற பிற ஜீவராசிகளுக்கு உணவளித்து பரிவோடு காப்பது பூத யக்ஞம்.
+                            </p>
+                        </div>
+
+                        <!-- 5. Manushya Yagna -->
+                        <div class="yagna-card">
+                            <div class="yagna-header">
+                                <div class="yagna-icon" style="color:#06b6d4; background:rgba(6,182,212,0.15);"><i data-lucide="home"></i></div>
+                                <h4>5. மனுஷ்ய யக்ஞம்</h4>
+                            </div>
+                            <div class="yagna-target">சமூகக் கடன் • விருந்தோம்பல் (அதிதி)</div>
+                            <p class="yagna-desc">
+                                காலம் குறிப்பிடாமல் பசியோடு வரும் விருந்தினர்களை (அதிதி) முகமலர்ச்சியோடு உபசரித்து உணவளித்தல், மனிதநேயத்தோடு இல்லாத ஏழை எளியவர்களுக்கு அன்பு காட்டி ஆதரித்தல்.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deep-Dive: 16 Shodasha Samskaras Sub-section -->
+                <div style="margin-top:40px; padding:28px; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-lg);" id="samskaras-section">
+                    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
+                        <div>
+                            <h3 style="font-family:var(--font-heading); font-size:1.45rem; font-weight:800; color:var(--text-main);">
+                                ✦ 16 ஷோடச சம்ஸ்காரங்கள் (Shodasha Samskaras)
+                            </h3>
+                            <p style="font-size:0.92rem; color:var(--text-muted);">ஒரு சநாதனி தனது வாழ்வில் பிறப்பிலிருந்து இறப்பு வரை மைல்கல்லாகக் கடைப்பிடிக்கும் 16 பண்பாட்டுத் தூய்மைச் சடங்குகள் (க்ருஹ்ய சூத்ரா):</p>
+                        </div>
+                        <span class="karma-badge b-naimittika">நைமித்திக கர்மானுஷ்டானம்</span>
+                    </div>
+
+                    <div class="samskaras-grid">
+                        <!-- 1. Garbhadhana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">1</div>
+                            <div class="samskara-details">
+                                <h4>கர்ப்பாதானம்</h4>
+                                <div class="samskara-stage">குழந்தை உருவாவதற்கு முன்</div>
+                                <div class="samskara-desc">தூய தெய்வீகக் குழந்தை வேண்டி கணவன்-மனைவி இருவரும் செய்யும் மன, உடல் சுத்தி மற்றும் வழிபாட்டுச் சடங்கு.</div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Pumsavana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">2</div>
+                            <div class="samskara-details">
+                                <h4>பும்ஸவனம்</h4>
+                                <div class="samskara-stage">கர்ப்பத்தின் 3 அல்லது 4-ஆம் மாதம்</div>
+                                <div class="samskara-desc">கருவின் வலிமைக்காகவும், உருவாகும் சிசுவின் உடல் மற்றும் மன ஆரோக்கியத்திற்காகவும் செய்யப்படும் சடங்கு.</div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Seemanthonnayana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">3</div>
+                            <div class="samskara-details">
+                                <h4>சீமந்தோந்நயனம் (வளைகாப்பு)</h4>
+                                <div class="samskara-stage">கர்ப்பத்தின் 6 முதல் 8-ஆம் மாதம்</div>
+                                <div class="samskara-desc">கருவிலுள்ள குழந்தையின் மனவளர்ச்சிக்கும், கருவுற்ற தாய்க்கு மன அமைதியும் மகிழ்ச்சியும் அளிப்பதற்காகச் செய்யப்படும் விழா.</div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Jatakarma -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">4</div>
+                            <div class="samskara-details">
+                                <h4>ஜாதகர்மா</h4>
+                                <div class="samskara-stage">குழந்தை பிறந்தவுடன்</div>
+                                <div class="samskara-desc">குழந்தை பிறந்த சில நாட்களில் நாக்கில் தேன், நெய் தொட்டுத் தடவி, ஆயுளும் புத்தியும் சிறக்க வேண்டி செய்யும் சடங்கு.</div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Namakarana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">5</div>
+                            <div class="samskara-details">
+                                <h4>நாமகரணம்</h4>
+                                <div class="samskara-stage">பிறந்த 11 அல்லது 16-ஆம் நாளில்</div>
+                                <div class="samskara-desc">முறைப்படி மங்களகரமான இறைப் பெயரை குழந்தைக்கு சூட்டும் உன்னதமான பெயர் சூட்டு வைபவம்.</div>
+                            </div>
+                        </div>
+
+                        <!-- 6. Nishkramana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">6</div>
+                            <div class="samskara-details">
+                                <h4>நிஷ்க்ரமணம்</h4>
+                                <div class="samskara-stage">பிறந்த 4-ஆம் மாதம்</div>
+                                <div class="samskara-desc">குழந்தையை முதன்முறையாக இல்லத்திற்கு வெளியே கொண்டுவந்து சூரிய ஒளி மற்றும் நிலவொளியைப் பெறச் செய்தல்.</div>
+                            </div>
+                        </div>
+
+                        <!-- 7. Annaprashana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">7</div>
+                            <div class="samskara-details">
+                                <h4>அன்னப்ராசனம்</h4>
+                                <div class="samskara-stage">பிறந்த 6-ஆம் மாதம்</div>
+                                <div class="samskara-desc">இறைவனுக்குப் படைக்கப்பட்ட பாயசம், அன்னத்தை முதன்முறையாக குழந்தைக்கு ஊட்டும் தொடக்க விழா.</div>
+                            </div>
+                        </div>
+
+                        <!-- 8. Chudakarana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">8</div>
+                            <div class="samskara-details">
+                                <h4>சூடாகரணம் (முடி காணிக்கை)</h4>
+                                <div class="samskara-stage">1 அல்லது 3-ஆம் வயதில்</div>
+                                <div class="samskara-desc">குலதெய்வ சன்னதியில் குழந்தையின் தலைமுடியை இறக்கி மொட்டையடித்து முடி காணிக்கை செலுத்துதல்.</div>
+                            </div>
+                        </div>
+
+                        <!-- 9. Karnavedha -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">9</div>
+                            <div class="samskara-details">
+                                <h4>கர்ணவேதம் (காது குத்துதல்)</h4>
+                                <div class="samskara-stage">குழந்தைப் பருவத்தில்</div>
+                                <div class="samskara-desc">உடல் நரம்பு தூண்டுதலுக்கும் அழகிற்கும் முறைப்படி காது குத்தி தங்கக் காதணிகள் அணிவிக்கும் சடங்கு.</div>
+                            </div>
+                        </div>
+
+                        <!-- 10. Vidyarambha -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">10</div>
+                            <div class="samskara-details">
+                                <h4>வித்யாரம்பம் (அக்ஷராப்யாசம்)</h4>
+                                <div class="samskara-stage">5-ஆம் வயதில்</div>
+                                <div class="samskara-desc">விஜயதசமி நாளில் குருவின் முன்னிலையில் நெல்லில் அல்லது அரிசியில் "ஓம்" அல்லது அகரத்தை எழுதி கல்வி தொடங்குதல்.</div>
+                            </div>
+                        </div>
+
+                        <!-- 11. Upanayana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">11</div>
+                            <div class="samskara-details">
+                                <h4>உபநயனம்</h4>
+                                <div class="samskara-stage">மாணவப் பருவம் (7-8 வயது)</div>
+                                <div class="samskara-desc">வேதக் கல்வி பயில ஆரம்பிக்கும் முன் தந்தையால் காயத்ரி மந்திர உபதேசம் செய்து பூணூல் (யக்ஞோபவீதம்) அணிவித்தல்.</div>
+                            </div>
+                        </div>
+
+                        <!-- 12. Vedarambha -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">12</div>
+                            <div class="samskara-details">
+                                <h4>வேதாரம்பம்</h4>
+                                <div class="samskara-stage">உபநயனத்திற்குப் பின்</div>
+                                <div class="samskara-desc">தகுதியான குருவின் முன்னிலையில் குருகுலத்தில் முறைப்படி வேத மந்திரங்களையும் உபநிடதங்களையும் கற்கத் தொடங்குதல்.</div>
+                            </div>
+                        </div>
+
+                        <!-- 13. Keshanta / Godana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">13</div>
+                            <div class="samskara-details">
+                                <h4>கேசாந்தம் (கோதானம்)</h4>
+                                <div class="samskara-stage">16-ஆம் வயதில்</div>
+                                <div class="samskara-desc">முதன்முறையாக சவரம் செய்துகொண்டு குடுமி வைத்தல்; குருவிற்கு பசுவை தானமாக வழங்கி ஆசி பெறுதல்.</div>
+                            </div>
+                        </div>
+
+                        <!-- 14. Samavarthana -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">14</div>
+                            <div class="samskara-details">
+                                <h4>சமாவர்த்தனம் (பட்டமளிப்பு)</h4>
+                                <div class="samskara-stage">படிப்பு முடிந்தவுடன்</div>
+                                <div class="samskara-desc">குருகுலக் கல்வி நிறைவடைந்து பட்டம் பெற்று, இல்லறத்திற்குத் தயாராக குருவின் அனுமதியுடன் வீடு திரும்புதல்.</div>
+                            </div>
+                        </div>
+
+                        <!-- 15. Vivaha -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">15</div>
+                            <div class="samskara-details">
+                                <h4>விவாஹம் (திருமணம்)</h4>
+                                <div class="samskara-stage">இல்லறத் தொடக்கம்</div>
+                                <div class="samskara-desc">அக்னி சாட்சியாக மாங்கல்ய தாரணம் செய்து இரு மனங்களையும் மந்திர சடங்குகள் மூலம் இணைக்கும் புனித பந்தம்.</div>
+                            </div>
+                        </div>
+
+                        <!-- 16. Antyeshti -->
+                        <div class="samskara-pill-card">
+                            <div class="samskara-num">16</div>
+                            <div class="samskara-details">
+                                <h4>அந்த்யேஷ்டி (இறுதி யாத்திரை)</h4>
+                                <div class="samskara-stage">மரணத்தின் போது</div>
+                                <div class="samskara-desc">காலமான பின் ஆன்மாவின் சாந்திக்காக மந்திர ரூபமாகச் செய்யப்படும் இறுதி யாத்திரை மற்றும் தகனச் சடங்குகள்.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- 4. 6 COMPREHENSIVE INTERACTIVE WORKSHOP ACTIVITIES -->
+            <!-- ========================================================= -->
+            <section class="section-block" id="activities">
+                <div class="section-header-title">
+                    <i data-lucide="trophy" style="color:var(--saffron-primary);"></i>
+                    5 மணி நேரப் பட்டறைக்கான 6 நேரடி ஊடாடும் குழுச் செயல்பாடுகள் (Facilitator Workshop Activities)
+                </div>
+                <div class="section-header-subtitle">
+                    ஒவ்வொரு செயல்பாடும் 15 முதல் 25 நிமிடங்கள் வரை நடைபெறும். பங்கேற்பாளர்கள் நேரடியாகத் தொட்டு, உணர்ந்து, உரையாடி, தங்கள் வாழ்வோடு பொருத்திப் பார்க்கும் விதமாக இந்த 6 பயிற்சிகள் வடிவமைக்கப்பட்டுள்ளன.
+                </div>
+
+                <!-- ACTIVITY 1 -->
+                <div class="activity-card-large" id="act-1">
+                    <div class="act-header-strip">
+                        <div class="act-title-box">
+                            <span class="act-badge-large" style="background:rgba(245,158,11,0.15); color:#f59e0b; border:1px solid rgba(245,158,11,0.35);">
+                                <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 1 • மணி 1
+                            </span>
+                            <h3 style="margin-top:8px;">மூன்று முடிச்சுகளும் வினைக் கணக்கும் (The 3 Karmic Knots &amp; Balance Scale)</h3>
+                            <div class="act-tagline">சஞ்சிதம், பிராரப்தம், ஆகாமி — முக்கால வினைகளை நேரில் உணரும் செயல்முறைப் பயிற்சி</div>
+                        </div>
+                        <div class="act-time" style="font-size:1rem; font-weight:800; color:var(--saffron-primary);">
+                            <i data-lucide="clock" style="width:18px; height:18px;"></i> காலம்: 25 நிமிடங்கள்
+                        </div>
+                    </div>
+
+                    <!-- Materials Box -->
+                    <div class="materials-box">
+                        <div class="materials-title">
+                            <i data-lucide="package-check"></i> தேவையான உபகரணங்கள் (Materials Needed per Group of 5):
+                        </div>
+                        <div class="materials-items">
+                            • 3 வண்ணக் கயிறுகள் / துணிப் பட்டைகள்: கருப்பு (சஞ்சிதம் - பெரிய சுமை), மஞ்சள் (பிராரப்தம் - கையில் ஏந்தும் சுமை), பச்சை (ஆகாமி - புதிய விதைப்பு).<br>
+                            • ஒரு சிறிய தராசு அல்லது 2 சமநிலைத் தட்டுகள்; 20 கருப்பு மணிகள் (பாவம்), 20 வெள்ளை மணிகள் (புண்ணியம்).<br>
+                            • வினைக் கணக்கு அட்டை (Karmic Ledger Worksheet) மற்றும் எழுதுகோல்.
+                        </div>
+                    </div>
+
+                    <!-- Step-by-Step Flow -->
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-text">
+                                <strong>அமைப்பும் பாத்திரப் பகிர்வும் (00 - 05 நிமி):</strong> 5 பேர் கொண்ட குழுக்களாகப் பிரிக்கவும். ஒரு பங்கேற்பாளர் 'ஜீவாத்மா'வாக நிற்பார். அவரது முதுகில் ஒரு பெரிய கருப்புப் பை (சஞ்சித மூட்டை) மாட்டப்படும்.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-text">
+                                <strong>பிராரப்தத்தை ஏந்துதல் (05 - 12 நிமி):</strong> பயிற்றுநர் சஞ்சித மூட்டையிலிருந்து 10 மணிகளை (5 கருப்பு, 5 வெள்ளை) எடுத்து மஞ்சள் நிறக் கூடையில் ஜீவாத்மாவின் கையில் கொடுப்பார். "இதுதான் உங்கள் தற்போதைய பிறவிக்கு ஒதுக்கப்பட்ட பங்கு (பிராரப்தம்). இதனை இன்ப-துன்பமாக நீங்கள் அனுபவித்தே தீர வேண்டும்!" என்று உணர வைக்கவும்.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-text">
+                                <strong>ஆகாமி விதைப்பும் தராசும் (12 - 18 நிமி):</strong> குழுவினருக்கு 3 நிஜ வாழ்க்கை சூழ்நிலைகள் தரப்படும் (எ.கா: சக ஊழியர் துரோகம் செய்யும்போது பழிவாங்குவதா? அல்லது மன்னித்து தர்மம் செய்வதா?). ஒவ்வொரு நல்ல முடிவிற்கும் ஒரு வெள்ளை மணி (புண்ணியம்) தராசில் சேரும்; தீய முடிவிற்கு கருப்பு மணி சேரும். தராசு எங்கு சாய்கிறது என்பதை குழுவினர் கண்கூடாகக் காண்பர்!
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">4</div>
+                            <div class="step-text">
+                                <strong>சதவீதக் கணக்கீடு (18 - 25 நிமி):</strong> குழுவினர் தங்கள் வினைக் கணக்கு அட்டையில் தங்களது நடப்பு புண்ணிய சதவீதத்தைக் கணக்கிட்டு, "0% பாவம், 100% புண்ணியம் = பூரண அவதாரம்" என்ற இலக்கை நோக்கி திட்டமிடுவர்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Debrief -->
+                    <div class="debrief-box">
+                        <div class="debrief-title"><i data-lucide="lightbulb"></i> பயிற்றுநர் நிறைவுரை (Aha! Moment):</div>
+                        <div class="debrief-text">
+                            "கடந்த கால சஞ்சிதத்தை மாற்ற முடியாது, நிகழ் கால பிராரப்தத்தைத் தப்ப முடியாது; ஆனால் அடுத்த விநாடிக்கான ஆகாமியை புண்ணியமாக விதைக்கும் முழு சுதந்திரமும் நம் கையில் மட்டுமே உள்ளது! இன்றைய நல்ல செயலே நாளைய நல்விதி!"
+                        </div>
+                    </div>
+
+                    <!-- Timer Widget -->
+                    <div class="timer-widget">
+                        <div class="timer-display" id="timer-1">
+                            <i data-lucide="timer"></i> <span id="display-1">20:00</span>
+                        </div>
+                        <div class="timer-controls">
+                            <button class="btn-timer" onclick="startTimer(1, 1200)"><i data-lucide="play" style="width:14px; height:14px;"></i> தொடங்கு (Start)</button>
+                            <button class="btn-timer" onclick="pauseTimer(1)"><i data-lucide="pause" style="width:14px; height:14px;"></i> இடைநிறுத்து (Pause)</button>
+                            <button class="btn-timer" onclick="resetTimer(1, 1200)"><i data-lucide="rotate-ccw" style="width:14px; height:14px;"></i> மீட்டமை (Reset)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY 2 -->
+                <div class="activity-card-large" id="act-2">
+                    <div class="act-header-strip">
+                        <div class="act-title-box">
+                            <span class="act-badge-large" style="background:rgba(16,185,129,0.15); color:#10b981; border:1px solid rgba(16,185,129,0.35);">
+                                <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 2 • மணி 2
+                            </span>
+                            <h3 style="margin-top:8px;">24 மணி நேர நித்ய சக்கரமும் 5 யக்ஞ நாணயங்களும் (24-Hour Dinacharya &amp; 5 Sacred Coins)</h3>
+                            <div class="act-tagline">நித்ய கர்மாவை வாழ்வியல் பழக்கமாகவும், 5 பஞ்ச யக்ஞங்களை அன்றாடக் கடமையாகவும் மாற்றுதல்</div>
+                        </div>
+                        <div class="act-time" style="font-size:1rem; font-weight:800; color:#10b981;">
+                            <i data-lucide="clock" style="width:18px; height:18px;"></i> காலம்: 25 நிமிடங்கள்
+                        </div>
+                    </div>
+
+                    <!-- Materials Box -->
+                    <div class="materials-box">
+                        <div class="materials-title">
+                            <i data-lucide="package-check"></i> தேவையான உபகரணங்கள்:
+                        </div>
+                        <div class="materials-items">
+                            • வட்ட வடிவ 24 மணி நேர நித்ய சக்கர வரைபடம் (Dinacharya 24-Hour Wheel Sheet - தலா 1 தாள்).<br>
+                            • 5 வண்ண ஸ்டிக்கர் வில்லைகள் / போலி நாணயங்கள்: நீலம் (ரிஷி), மஞ்சள் (பித்ரு), சிவப்பு (தேவ), பச்சை (பூத), ஆரஞ்சு (மனுஷ்ய).<br>
+                            • 9 தினசரி சுலோக அட்டைகள் (Shloka Cards) மற்றும் எழுதுகோல்.
+                        </div>
+                    </div>
+
+                    <!-- Step-by-Step Flow -->
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-text">
+                                <strong>விழிப்பிலிருந்து உறக்கம் வரை வரைபடம் (00 - 08 நிமி):</strong> பங்கேற்பாளர்கள் 24 மணி நேர சக்கரத்தில் தாங்கள் விழிக்கும் நேரம் (எ.கா: காலை 5:30), நீராடல், உணவு, வேலை, மாலை விளக்கேற்றுதல், இரவு உறங்கும் நேரத்தைக் குறிக்கின்றனர்.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-text">
+                                <strong>5 யக்ஞங்களை நடுவில் பொருத்துதல் (08 - 16 நிமி):</strong> 5 நாணயங்களை தங்கள் தினசரி நேரங்களில் எங்கு வைப்பது என்று திட்டமிடுகின்றனர்:
+                                <br>• <em>ரிஷி நாணயம்:</em> தினமும் 10 நிமிடம் சாஸ்திர நூல் வாசிப்பு / குழந்தைகளுக்கு நீதிபோதனை.
+                                <br>• <em>பித்ரு நாணயம்:</em> காலையில் பெற்றோரை வணங்குதல் / முன்னோரை நினைத்தல்.
+                                <br>• <em>தேவ நாணயம்:</em> சூரிய நமஸ்காரம் / மாலை விளக்கேற்றி காயத்ரி ஜபம்.
+                                <br>• <em>பூத நாணயம்:</em> காக்கைக்கு சோறு / தெரு நாய்க்கு பிஸ்கட் / செடிகளுக்கு நீர் ஊற்றுதல்.
+                                <br>• <em>மனுஷ்ய நாணயம்:</em> விருந்தினருக்கு முகமலர்ச்சியுடன் உபசரிப்பு / ஒருவருக்கு உதவி.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-text">
+                                <strong>சுலோக ஒத்திகை (16 - 25 நிமி):</strong> 9 நித்ய பிரார்த்தனைகளில் 3 முக்கியமான பிரார்த்தனைகளை (கரதர்சனம், பூமி வந்தனம், இரவு சமர்ப்பணம்) குழுவாக ராகத்துடன் உச்சரித்து பயிற்சி செய்கின்றனர்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Debrief -->
+                    <div class="debrief-box">
+                        <div class="debrief-title"><i data-lucide="lightbulb"></i> பயிற்றுநர் நிறைவுரை (Aha! Moment):</div>
+                        <div class="debrief-text">
+                            "ஆன்மீகம் என்பது காடுகளுக்குச் சென்று தவம் செய்வதல்ல; காலை கண்விழிப்பது முதல் இரவு படுக்கையில் விழும் வரை ஒவ்வொரு செயலையும் இறைவனின் வழிபாடாக மாற்றுவதே உண்மையான நித்ய கர்மா!"
+                        </div>
+                    </div>
+
+                    <!-- Timer Widget -->
+                    <div class="timer-widget">
+                        <div class="timer-display" id="timer-2" style="color:#10b981;">
+                            <i data-lucide="timer"></i> <span id="display-2">20:00</span>
+                        </div>
+                        <div class="timer-controls">
+                            <button class="btn-timer" onclick="startTimer(2, 1200)"><i data-lucide="play" style="width:14px; height:14px;"></i> தொடங்கு (Start)</button>
+                            <button class="btn-timer" onclick="pauseTimer(2)"><i data-lucide="pause" style="width:14px; height:14px;"></i> இடைநிறுத்து (Pause)</button>
+                            <button class="btn-timer" onclick="resetTimer(2, 1200)"><i data-lucide="rotate-ccw" style="width:14px; height:14px;"></i> மீட்டமை (Reset)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY 3 -->
+                <div class="activity-card-large" id="act-3">
+                    <div class="act-header-strip">
+                        <div class="act-title-box">
+                            <span class="act-badge-large" style="background:rgba(59,130,246,0.15); color:#3b82f6; border:1px solid rgba(59,130,246,0.35);">
+                                <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 3 • மணி 3
+                            </span>
+                            <h3 style="margin-top:8px;">16 வாழ்க்கைப் படிக்கட்டுகளும் காலப் புதிரும் (16 Samskaras &amp; Cosmic Calendar)</h3>
+                            <div class="act-tagline">மனிதனின் பிறப்பு முதல் மறைவு வரையிலான 16 சம்ஸ்காரங்களையும் திதி விரதங்களையும் பொருத்தும் குழு விளையாட்டு</div>
+                        </div>
+                        <div class="act-time" style="font-size:1rem; font-weight:800; color:#3b82f6;">
+                            <i data-lucide="clock" style="width:18px; height:18px;"></i> காலம்: 20 நிமிடங்கள்
+                        </div>
+                    </div>
+
+                    <!-- Materials Box -->
+                    <div class="materials-box">
+                        <div class="materials-title">
+                            <i data-lucide="package-check"></i> தேவையான உபகரணங்கள்:
+                        </div>
+                        <div class="materials-items">
+                            • 16 சம்ஸ்கார அட்டைகள் (பெயர் ஒரு புறம், அதன் நோக்கம் மறுபுறம் எழுதப்பட்ட கார்டுகள்).<br>
+                            • ஒரு மனித வாழ்வின் காலக்கோடு பலகை (கருவறை -> குழந்தைப் பருவம் -> மாணவப் பருவம் -> இல்லறம் -> முதுமை -> முக்தி).<br>
+                            • 5 விரத சவால் அட்டைகள் (சஷ்டி, கிருத்திகை, ஏகாதசி, அமாவாசை, பௌர்ணமி).
+                        </div>
+                    </div>
+
+                    <!-- Step-by-Step Flow -->
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-text">
+                                <strong>அட்டைக் குலுக்கல் &amp; பொருத்துதல் (00 - 08 நிமி):</strong> குழுவிடம் 16 கலக்கப்பட்ட சம்ஸ்கார அட்டைகள் தரப்படும். அவர்கள் காலக்கோட்டின் சரியான பருவத்தில் அந்த அட்டைகளை வரிசைப்படுத்த வேண்டும் (எ.கா: ஜாதகர்மா எப்போது? வித்யாரம்பம் எப்போது? சமாவர்த்தனம் எப்போது?).
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-text">
+                                <strong>நைமித்திக விரத சவால் (08 - 14 நிமி):</strong> பயிற்றுநர் சடாரென ஒரு திதியைக் கூறுவார் (எ.கா: "ஏகாதசி!"). உடனே குழுவினர் ஏகாதசியின் நோக்கம் என்ன? யாருக்கான விரதம்? இதனால் ஆன்ம பலம் எவ்வாறு கூடுகிறது? என்பதை 1 நிமிடத்தில் எடுத்துரைக்க வேண்டும்.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-text">
+                                <strong>நவீன வாழ்வியல் விவாதம் (14 - 20 நிமி):</strong> "இன்றைய காலகட்டத்தில் நாம் எந்தெந்த சம்ஸ்காரங்களை மறந்துவிட்டோம்? அவற்றை எவ்வாறு புத்துயிர் பெறச் செய்யலாம்?" என்ற தலைப்பில் குழுவினர் 2 நிமிடம் விவாதித்து ஒரு முடிவை முன்வைக்கின்றனர்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Debrief -->
+                    <div class="debrief-box">
+                        <div class="debrief-title"><i data-lucide="lightbulb"></i> பயிற்றுநர் நிறைவுரை (Aha! Moment):</div>
+                        <div class="debrief-text">
+                            "நைமித்திக கர்மாக்கள் என்பது வெறும் சடங்குகள் அல்ல; அவை மனிதனை விலங்கு நிலையிலிருந்து தெய்வீக நிலைக்கு உயர்த்தும் 16 பண்பாட்டுப் படிக்கட்டுகள்!"
+                        </div>
+                    </div>
+
+                    <!-- Timer Widget -->
+                    <div class="timer-widget">
+                        <div class="timer-display" id="timer-3" style="color:#3b82f6;">
+                            <i data-lucide="timer"></i> <span id="display-3">15:00</span>
+                        </div>
+                        <div class="timer-controls">
+                            <button class="btn-timer" onclick="startTimer(3, 900)"><i data-lucide="play" style="width:14px; height:14px;"></i> தொடங்கு (Start)</button>
+                            <button class="btn-timer" onclick="pauseTimer(3)"><i data-lucide="pause" style="width:14px; height:14px;"></i> இடைநிறுத்து (Pause)</button>
+                            <button class="btn-timer" onclick="resetTimer(3, 900)"><i data-lucide="rotate-ccw" style="width:14px; height:14px;"></i> மீட்டமை (Reset)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY 4 -->
+                <div class="activity-card-large" id="act-4">
+                    <div class="act-header-strip">
+                        <div class="act-title-box">
+                            <span class="act-badge-large" style="background:rgba(139,92,246,0.15); color:#8b5cf6; border:1px solid rgba(139,92,246,0.35);">
+                                <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 4 • மணி 4
+                            </span>
+                            <h3 style="margin-top:8px;">சுய விருப்பத்திலிருந்து சமூக சேவைக்கு: பக்தி-சேவைத் தராசு (Kamya to Nishkamya Bridge)</h3>
+                            <div class="act-tagline">தனிநபர் பலன் கருதிய ஆசைகளை சமூகத்திற்கு நலம் பயக்கும் நிஷ்காம்ய சேவையாக மாற்றும் கலை</div>
+                        </div>
+                        <div class="act-time" style="font-size:1rem; font-weight:800; color:#8b5cf6;">
+                            <i data-lucide="clock" style="width:18px; height:18px;"></i> காலம்: 25 நிமிடங்கள்
+                        </div>
+                    </div>
+
+                    <!-- Materials Box -->
+                    <div class="materials-box">
+                        <div class="materials-title">
+                            <i data-lucide="package-check"></i> தேவையான உபகரணங்கள்:
+                        </div>
+                        <div class="materials-items">
+                            • வழக்கு ஆய்வு அட்டைகள் (Case Study Cards - 4 வகையான நிஜ வாழ்வியல் ஆசைகள்).<br>
+                            • "காம்யம் ➔ நிஷ்காம்யம்" மாற்றப் படிவம் (Transformation Worksheet).<br>
+                            • வண்ண மார்க்கர் பேனாக்கள் மற்றும் குழு விளக்கப் பலகை.
+                        </div>
+                    </div>
+
+                    <!-- Step-by-Step Flow -->
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-text">
+                                <strong>ஆசையை அடையாளம் காணுதல் (00 - 06 நிமி):</strong> குழுவிற்கு ஒரு காம்ய கர்மா அட்டை தரப்படும்.
+                                <br><em>வழக்கு 1:</em> "எனக்கு பதவி உயர்வு வேண்டும், அதற்காக நான் கோவிலில் வேல் அலகு குத்தி நேர்த்திக்கடன் செலுத்துகிறேன்."
+                                <br><em>வழக்கு 2:</em> "என் மகன் பரீட்சையில் முதல் மதிப்பெண் பெற வேண்டும், அதற்காக அர்ச்சனை செய்கிறேன்."
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-text">
+                                <strong>சேவைப் பாலத்தை உருவாக்குதல் (06 - 16 நிமி):</strong> இந்த தனிநபர் ஆசையை எவ்வாறு நிஷ்காம்ய கர்மாவாக மாற்றுவது?
+                                <br>• <em>வழக்கு 1 மாற்றம்:</em> "என் பதவி உயர்வுக்கு இறைவனை வேண்டுவதோடு நின்றுவிடாமல், வேலையற்ற 2 கிராமத்து இளைஞர்களுக்கு வேலைவாய்ப்பு வழிகாட்டுதல் அல்லது இலவச பயிற்சி அளிக்கிறேன்!"
+                                <br>• <em>வழக்கு 2 மாற்றம்:</em> "என் மகன் படிப்போடு சேர்த்து, வசதியற்ற ஏழைப் பள்ளி மாணவர்களுக்கு புத்தகங்களும் மாலை நேரப் பாடமும் சொல்லித்தர ஏற்பாடு செய்கிறேன்!"
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-text">
+                                <strong>சமூகப் பிரகடனம் (16 - 25 நிமி):</strong> ஒவ்வொரு குழுவும் தங்களது மாற்றப் படிவத்தை அவையில் வாசித்து, "சுயநல ஆசை ➔ பொதுநல சேவையாக மலர்ந்தது!" என்று முழங்குவர்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Debrief -->
+                    <div class="debrief-box">
+                        <div class="debrief-title"><i data-lucide="lightbulb"></i> பயிற்றுநர் நிறைவுரை (Aha! Moment):</div>
+                        <div class="debrief-text">
+                            "காம்ய கர்மா நமக்கு வாழ ஆசையையும் நம்பிக்கையையும் தருகிறது; ஆனால் நிஷ்காம்ய கர்மாவோ உலகையே வாழ்விக்கும் பேரருளாக நம்மை மாற்றுகிறது!"
+                        </div>
+                    </div>
+
+                    <!-- Timer Widget -->
+                    <div class="timer-widget">
+                        <div class="timer-display" id="timer-4" style="color:#8b5cf6;">
+                            <i data-lucide="timer"></i> <span id="display-4">20:00</span>
+                        </div>
+                        <div class="timer-controls">
+                            <button class="btn-timer" onclick="startTimer(4, 1200)"><i data-lucide="play" style="width:14px; height:14px;"></i> தொடங்கு (Start)</button>
+                            <button class="btn-timer" onclick="pauseTimer(4)"><i data-lucide="pause" style="width:14px; height:14px;"></i> இடைநிறுத்து (Pause)</button>
+                            <button class="btn-timer" onclick="resetTimer(4, 1200)"><i data-lucide="rotate-ccw" style="width:14px; height:14px;"></i> மீட்டமை (Reset)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY 5 -->
+                <div class="activity-card-large" id="act-5">
+                    <div class="act-header-strip">
+                        <div class="act-title-box">
+                            <span class="act-badge-large" style="background:rgba(239,68,68,0.15); color:#ef4444; border:1px solid rgba(239,68,68,0.35);">
+                                <i data-lucide="play" style="width:14px; height:14px;"></i> செயல்பாடு 5 • மணி 5
+                            </span>
+                            <h3 style="margin-top:8px;">வள்ளலார் மனுமுறை சுயஆய்வுக் கண்ணாடியும் பசுமைப் பரிகாரத் திட்டமும் (Mirror Audit &amp; Restitution)</h3>
+                            <div class="act-tagline">நிஷித்த கர்மாவைத் தவிர்த்து, தவறுகளுக்கு ஆக்கபூர்வ பிராயச்சித்தம் (மரம் நடுதல், குளம் தூர்த்தல்) திட்டமிடுதல்</div>
+                        </div>
+                        <div class="act-time" style="font-size:1rem; font-weight:800; color:#ef4444;">
+                            <i data-lucide="clock" style="width:18px; height:18px;"></i> காலம்: 25 நிமிடங்கள்
+                        </div>
+                    </div>
+
+                    <!-- Materials Box -->
+                    <div class="materials-box">
+                        <div class="materials-title">
+                            <i data-lucide="package-check"></i> தேவையான உபகரணங்கள்:
+                        </div>
+                        <div class="materials-items">
+                            • வள்ளலார் மனுமுறை 44 பாவங்கள் சுயஆய்வுப் படிவம் (ரகசியமாகத் தனிநபர் பூர்த்தி செய்ய).<br>
+                            • பசுமைப் பரிகார உறுதி அட்டை (Green Restitution Action Card).<br>
+                            • மரக்கன்றுகள் / விதைப்பந்துகள் அல்லது கோவில் தூய்மைப் பணிக்கான செயல் திட்டப் படிவம்.
+                        </div>
+                    </div>
+
+                    <!-- Step-by-Step Flow -->
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-text">
+                                <strong>அமைதியான சுயபரிசோதனை (00 - 08 நிமி):</strong> முழு அமைதியில், வள்ளலாரின் 44 பாவப் பட்டியலில் ஏதேனும் ஒன்று நமது அன்றாட வாழ்வில் அறியாமல் நடந்துள்ளதா என்று ரகசியமாக டிக் செய்கின்றனர் (எ.கா: பசித்தோர் முகம் பாராதிருத்தல், மரத்தின் நிழலை அழித்தல், கோள் சொல்லி உறவைக் குலைத்தல்). இது யாருக்கும் காட்டப்பட மாட்டாது!
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-text">
+                                <strong>முன்னோர்களின் பரிகாரத் திட்டம் (08 - 18 நிமி):</strong> நமது முன்னோர்கள் தவறுக்குத் தண்டனையாக ஆக்கபூர்வ பரிகாரங்களை வகுத்தனர்: மரம் நடுதல், குளம் வெட்டுதல், பொதுமண்டபம் கட்டுதல்! பங்கேற்பாளர்கள் தங்கள் தவறுக்கு ஈடாக:
+                                <br>• குறைந்தது 3 மரக்கன்றுகளை நட்டு வளர்ப்பேன்!
+                                <br>• அருகிலுள்ள கோவில் குளத்தை அல்லது நீர்நிலையைத் தூய்மை செய்வேன்!
+                                <br>• ஒரு ஏழை மாணவரின் கல்விக் கட்டணத்திற்கு உதவுவேன்! என்று பசுமைப் பரிகார அட்டையில் உறுதி பூணுகின்றனர்.
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-text">
+                                <strong>பரிகார சங்கல்பம் (18 - 25 நிமி):</strong> உறுதி அட்டையை மார்போடு அணைத்து, தங்களது பாவச் சுமைகள் கரைந்து புண்ணிய விருட்சமாக மாற சங்கல்பம் செய்கின்றனர்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Debrief -->
+                    <div class="debrief-box">
+                        <div class="debrief-title"><i data-lucide="lightbulb"></i> பயிற்றுநர் நிறைவுரை (Aha! Moment):</div>
+                        <div class="debrief-text">
+                            "குற்ற உணர்ச்சியில் தவிப்பது பிராயச்சித்தம் அல்ல; செய்த தவறை உணர்ந்து, சமுதாயத்திற்கும் இயற்கைக்கும் பன்மடங்கு நன்மையைச் செய்து ஈடுசெய்வதே சனாதன தர்மத்தின் உண்மையான பிராயச்சித்தம்!"
+                        </div>
+                    </div>
+
+                    <!-- Timer Widget -->
+                    <div class="timer-widget">
+                        <div class="timer-display" id="timer-5" style="color:#ef4444;">
+                            <i data-lucide="timer"></i> <span id="display-5">20:00</span>
+                        </div>
+                        <div class="timer-controls">
+                            <button class="btn-timer" onclick="startTimer(5, 1200)"><i data-lucide="play" style="width:14px; height:14px;"></i> தொடங்கு (Start)</button>
+                            <button class="btn-timer" onclick="pauseTimer(5)"><i data-lucide="pause" style="width:14px; height:14px;"></i> இடைநிறுத்து (Pause)</button>
+                            <button class="btn-timer" onclick="resetTimer(5, 1200)"><i data-lucide="rotate-ccw" style="width:14px; height:14px;"></i> மீட்டமை (Reset)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY 6 -->
+                <div class="activity-card-large" id="act-6" style="border-color:#f59e0b; background:linear-gradient(180deg, var(--bg-surface), rgba(245,158,11,0.06));">
+                    <div class="act-header-strip">
+                        <div class="act-title-box">
+                            <span class="act-badge-large" style="background:#f59e0b; color:#000; font-weight:900;">
+                                <i data-lucide="award" style="width:14px; height:14px;"></i> செயல்பாடு 6 • அமர்வு நிறைவு
+                            </span>
+                            <h3 style="margin-top:8px;">அறம் காக்கும் ஷட் கர்ம சங்கல்பமும் இரவு சமர்ப்பணமும் (Sacred Pledge &amp; Valedictory)</h3>
+                            <div class="act-tagline">5 மணி நேரப் பயிற்சியின் ஒட்டுமொத்தப் பயனை வாழ்நாள் உறுதிமொழியாகவும் ஈஸ்வரார்ப்பணமாகவும் மாற்றுதல்</div>
+                        </div>
+                        <div class="act-time" style="font-size:1rem; font-weight:800; color:var(--saffron-primary);">
+                            <i data-lucide="clock" style="width:18px; height:18px;"></i> காலம்: 15 நிமிடங்கள்
+                        </div>
+                    </div>
+
+                    <!-- Sacred Pledge Box -->
+                    <div class="sacred-pledge-card">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+                            <span style="font-size:0.85rem; font-weight:800; color:var(--saffron-primary);">அனைவரும் எழுந்து நின்று வலது கையை நெஞ்சில் வைத்து ஓதும் சங்கல்பம்:</span>
+                            <button class="btn-nav" onclick="copyPledgeText('pledge-content')" style="padding:4px 10px; font-size:0.78rem;">
+                                <i data-lucide="copy" style="width:12px; height:12px;"></i> சங்கல்பத்தை நகலெடு (Copy Pledge)
+                            </button>
+                        </div>
+                        <div class="pledge-text" id="pledge-content">
+"பாரத மாதாவின் புதல்வனாகிய நான், எமது முன்னோர் வகுத்தளித்த சனாதன தர்மத்தின் ஒளிவழியில் நடப்பேன் என உறுதி ஏற்கிறேன்.
+
+1. நித்ய கர்மாவாகிய காலை கரதர்சனம், பூமி வந்தனம், இல்லத் தூய்மை மற்றும் ஐம்பெரும் வேள்விகளை தினசரி தவறாது ஆற்றுவேன்.
+2. நைமித்திக கர்மாவாகிய விரதங்களையும், 16 சம்ஸ்கார விழுமியங்களையும், பித்ருக்களுக்கான வழிபாடுகளையும் சிரத்தையோடு காப்பேன்.
+3. காம்ய கர்மாவில் தர்மநெறி தவறாது நியாயமான முயற்சிகளோடு இறையருளை நாடி வாழ்வேன்.
+4. நிஷ்காம்ய கர்மாவாக பலன் எதிர்பாராது சமுதாயத்திற்கும், நீர்நிலைகளுக்கும், வாயில்லா ஜீவன்களுக்கும் பொதுநலத் தொண்டு செய்வேன்.
+5. நிஷித்த கர்மாவாகிய தீய பழக்கங்களையும் பிறருக்குத் தீங்கு விளைவிக்கும் பாவங்களையும் தீவிர வைராக்கியத்துடன் தவிர்ப்பேன்.
+6. அறிந்தும் அறியாமலும் செய்த தவறுகளுக்கு பசுமைப் பணிகளாலும் தர்மங்களாலும் ஆக்கபூர்வ பிராயச்சித்தம் தேடுவேன்.
+
+இறுதியாக, ஸ்ரீ பாலசுந்தரம் அவர்கள் அருளிய இரவு சரணாகதி பிரார்த்தனையின்படி:
+'உண்ணலும் உனதே! உயிர்த்தலும் உனதே!
+உடல், உயிர், மனம் எல்லாம் உனதே!
+எண்ணலும் உனதே! இச்சையும் உனதே!
+எண்செயல் பயனெல்லாம் உனதே!'
+என எனது அனைத்து கர்மங்களையும் சர்வேஸ்வரனின் திருவடிகளில் சமர்ப்பிக்கிறேன்!
+ஓம் சாந்தி: சாந்தி: சாந்தி: !"
+                        </div>
+                    </div>
+
+                    <!-- Debrief -->
+                    <div class="debrief-box" style="border-left-color:#10b981; background:rgba(16,185,129,0.08);">
+                        <div class="debrief-title" style="color:#10b981;"><i data-lucide="check-circle-2"></i> பயிற்றுநர் மங்கள உரை:</div>
+                        <div class="debrief-text">
+                            "5 மணி நேரப் பயிற்சி முடிவடைந்துவிட்டது; ஆனால் உங்கள் சனாதன தர்ம வாழ்வியல் இன்றே தொடங்குகிறது! இந்த ஷட் கருமங்களை குடும்பத்தினருக்கும், உறவினர்களுக்கும், வருங்கால தலைமுறைக்கும் கற்றுக்கொடுத்து பாரதத்தின் தேஜஸை உலகெங்கும் ஒளிரச் செய்வோம்!"
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- 5. VALLALAR'S 44 CONFESSIONS & PROHIBITIONS HUB -->
+            <!-- ========================================================= -->
+            <section class="section-block" id="vallalar-hub">
+                <div class="section-header-title">
+                    <i data-lucide="shield-alert" style="color:#ef4444;"></i>
+                    வள்ளலாரின் மனுமுறை கண்ட வாசகம்: 44 பாவங்களின் முழுமையான ஆய்வு மையம்
+                </div>
+                <div class="section-header-subtitle">
+                    இராமலிங்க வள்ளலார் அவர்கள், மனிதர்கள் அறியாமல் என்னவெல்லாம் பாவங்கள் செய்ய முடியும் என்பதைத் தனது 'மனுமுறை கண்ட வாசகத்தில்' நெஞ்சை உலுக்கும் வகையில் பட்டியலிடுகிறார். எவை எவை பாவம் என்று தெரிந்தால்தான் அவற்றை நாம் தீவிர வைராக்கியத்துடன் தவிர்க்க முடியும்!
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="vallalar-filter-bar">
+                    <button class="btn-v-filter active" onclick="filterVallalar('all', this)">அனைத்தும் (All 44)</button>
+                    <button class="btn-v-filter" onclick="filterVallalar('society', this)">1. சமூகம் &amp; நீதி (Society &amp; Justice)</button>
+                    <button class="btn-v-filter" onclick="filterVallalar('poor', this)">2. ஏழை &amp; பசியுள்ளோர் (Poor &amp; Hungry)</button>
+                    <button class="btn-v-filter" onclick="filterVallalar('nature', this)">3. இயற்கை &amp; உயிரினங்கள் (Nature &amp; Animals)</button>
+                    <button class="btn-v-filter" onclick="filterVallalar('family', this)">4. பெண்மை &amp; குடும்பம் (Women &amp; Family)</button>
+                    <button class="btn-v-filter" onclick="filterVallalar('spiritual', this)">5. குரு &amp; தெய்வம் (Guru &amp; Divine)</button>
+                </div>
+
+                <!-- Search Input -->
+                <div class="vallalar-search-box">
+                    <i data-lucide="search" class="vallalar-search-icon" style="width:18px; height:18px;"></i>
+                    <input type="text" id="vallalar-search" class="vallalar-search-input" placeholder="வள்ளலாரின் பாவப் பட்டியலில் தேடுக (எ.கா: பசி, மரம், குளம், குரு, நட்பு, நெல்)..." onkeyup="searchVallalar()">
+                </div>
+
+                <!-- Vallalar Interactive Table -->
+                <div class="vallalar-table-wrap">
+                    <table class="vallalar-table" id="vallalar-table">
+                        <thead>
+                            <tr>
+                                <th style="width:60px;">எண்</th>
+                                <th style="width:340px;">வள்ளலாரின் மூல வாசகம் (பாடல் வரி)</th>
+                                <th>பொருள் &amp; நவீன வாழ்வில் இதன் வடிவம்</th>
+                                <th style="width:160px;">தவிர்க்கும் வைராக்கியம்</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Category 1: Society & Justice -->
+                            <tr data-cat="society">
+                                <td>1</td>
+                                <td><strong>நல்லோர் மனத்தை நடுங்கச் செய்தேனோ!</strong></td>
+                                <td>சான்றோர்களையும் நற்குணமுடையோரையும் அச்சுறுத்தி பயமுறுத்துதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>2</td>
+                                <td><strong>வலிய வழக்கிட்டு மானங் கெடுத்தேனோ!</strong></td>
+                                <td>காரணமின்றி வலிந்து வழக்குப் போட்டு பிறரின் மானத்தை பொதுவில் பறித்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>3</td>
+                                <td><strong>தானங் கொடுப்போரைத் தடுத்து நின்றேனோ!</strong></td>
+                                <td>ஒருவர் நற்காரியங்களுக்கு தானம் செய்வதைத் தடுத்து நிறுத்துதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>4</td>
+                                <td><strong>கலந்த சிநேகரைக்கலகஞ் செய்தேனோ!</strong></td>
+                                <td>ஒற்றுமையாக இணைந்திருக்கும் நண்பர்களிடையே குழப்பம் விளைவித்து பிரித்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>5</td>
+                                <td><strong>மனமொத்த நட்புக்கு வஞ்சகஞ் செய்தேனோ!</strong></td>
+                                <td>உளப்பூர்வமாக நம்பிய நண்பனுக்கு முதுகில் குத்தி வஞ்சகம் செய்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>6</td>
+                                <td><strong>குடிவரி யுயர்த்திக் கொள்ளை கொண்டேனோ!</strong></td>
+                                <td>அதிகார பலத்தால் அதிகப்படியான வரிகளைத் திணித்து மக்களைக் கொள்ளையடித்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>7</td>
+                                <td><strong>தருமம் பாராது தண்டஞ் செய்தேனோ!</strong></td>
+                                <td>அறநெறியையும் நீதியையும் ஆராயாமல் அப்பாவி மக்களுக்கு தண்டனை விதித்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>8</td>
+                                <td><strong>மண்ணோரம் பேசி வாழ்வழித்தேனோ!</strong></td>
+                                <td>நிலத்தின் எல்லைப் பிரச்சினையில் ஒருதலைப்பட்சமாகப் பேசி அடுத்தவர் வாழ்வை அழித்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>9</td>
+                                <td><strong>களவு செய்வோர்க்கு உளவு சொன்னேனோ!</strong></td>
+                                <td>திருடர்களுக்கும் குற்றவாளிகளுக்கும் உடந்தையாக இருந்து உளவு தகவல்களைக் கூறுதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>10</td>
+                                <td><strong>பொருளை இச்சித்துப் பொய் சொன்னேனோ!</strong></td>
+                                <td>அடுத்தவர் செல்வத்தின் மீது கொண்ட பேராசையினால் பொய் பேசி ஏமாற்றுதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>11</td>
+                                <td><strong>ஆசைகாட்டி மோசஞ் செய்தேனோ!</strong></td>
+                                <td>போலி வாக்குறுதிகளை அள்ளிவீசி பேராசையைத் தூண்டி மோசடி செய்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>12</td>
+                                <td><strong>வரவுபோக்கு ஒழிய வழியடைத்தேனோ!</strong></td>
+                                <td>பொதுமக்கள் சென்றுவரும் பொதுப் பாதைகளையும் நடைவழிகளையும் ஆக்கிரமித்து அடைத்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>13</td>
+                                <td><strong>கல்லும் நெல்லும் கலந்து விற்றேனோ!</strong></td>
+                                <td>லாப வெறியினால் உணவுப் பொருட்களில் கலப்படம் செய்து விற்று மக்களின் உயிரைப் பறித்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>14</td>
+                                <td><strong>அன்புடையவர்க்குத் துன்பஞ் செய்தேனோ!</strong></td>
+                                <td>நம்மிடம் மெய்யன்பும் பாசமும் கொண்டவர்களுக்கு வேதனையையும் துன்பத்தையும் தருதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="society">
+                                <td>15</td>
+                                <td><strong>கலங்கி பயாளித்தோரைக் காட்டிக்கொடுத்தேனோ!</strong></td>
+                                <td>பயந்து அடைக்கலம் தேடி ஒளிந்திருப்பவர்களை எதிரிகளிடம் காட்டிக் கொடுத்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+
+                            <!-- Category 2: Poor & Hungry -->
+                            <tr data-cat="poor">
+                                <td>16</td>
+                                <td><strong>ஏழைகள் வயிறு எரியச் செய்தேனோ!</strong></td>
+                                <td>ஆதரவற்ற ஏழைகளின் வயிற்றில் அடித்து அவர்களைப் பசியிலும் கண்ணீரிலும் ஆழ்த்துதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="poor">
+                                <td>17</td>
+                                <td><strong>வேலையிட்டுக் கூலி குறைத்தேனோ!</strong></td>
+                                <td>உழைப்பாளிகளை கசக்கிப் பிழிந்துவிட்டு அவர்களின் வியர்வைக்குரிய நியாயமான கூலியைக் குறைத்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="poor">
+                                <td>18</td>
+                                <td><strong>பசித்தோர் முகத்தைப் பாராதிருந்தேனோ!</strong></td>
+                                <td>பசியோடு வந்து வாசலில் நிற்போரின் வாடிய முகத்தைப் பாராமல் உதாசீனப்படுத்துதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="poor">
+                                <td>19</td>
+                                <td><strong>இரப்போர்க்குப் பிச்சை இல்லையென்றேனோ!</strong></td>
+                                <td>வீடு தேடி வந்து பிச்சை கேட்கும் வறியவர்களுக்கு இருந்தும் 'இல்லை' என்று விரட்டுதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+
+                            <!-- Category 3: Nature & Animals -->
+                            <tr data-cat="nature">
+                                <td>20</td>
+                                <td><strong>உயிர்க்கொலை செய்வோர்க்க உபகாரஞ் செய்தேனோ!</strong></td>
+                                <td>வாயில்லா பிராணிகளையும் ஜீவன்களையும் வதைத்துக் கொல்வோருக்கு உதவி செய்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="nature">
+                                <td>21</td>
+                                <td><strong>பக்ஷியைக் கூண்டில் பதைக்க அடைத்தேனோ!</strong></td>
+                                <td>வானில் சுதந்திரமாகப் பறக்கும் பறவைகளைப் பிடித்து கூண்டில் அடைத்து வேதனைப்படுத்துதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="nature">
+                                <td>22</td>
+                                <td><strong>கன்றுக்குப் பாலூட்டாது கட்டிவைத்தேனோ!</strong></td>
+                                <td>தாய்ப் பசுவின் பாலை பசியோடிருக்கும் அதன் கன்றுக்கு ஊட்டவிடாமல் பேராசையினால் கட்டிவைத்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="nature">
+                                <td>23</td>
+                                <td><strong>ஊன்சுவை யுண்டு உடல் வளர்த்தேனோ!</strong></td>
+                                <td>நாக்கின் சுவைக்காக பிற உயிர்களைக் கொன்று அவற்றின் மாமிசத்தை உண்டு உடலை வளர்த்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="nature">
+                                <td>24</td>
+                                <td><strong>குடிக்கின்ற நீருள்ள குளந் தூர்த்தேனோ!</strong></td>
+                                <td>மக்களும் பிராணிகளும் குடிக்கும் நன்னீர் குளத்தை குப்பையைக் கொட்டி பாழாக்குதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="nature">
+                                <td>25</td>
+                                <td><strong>வெயிலுக் கொதுங்கும் விருக்ஷ மழித்தேனோ!</strong></td>
+                                <td>கோடை வெயிலில் மக்கள் இளைப்பாறும் நிழல் தரும் ஆல, அரச மரங்களை வெட்டி அழித்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="nature">
+                                <td>26</td>
+                                <td><strong>பகைகொண்டு அயலோர் பயிரழித்தேனோ!</strong></td>
+                                <td>அக்கம்பக்கத்தினர் மீதான பொறாமையால் அவர்கள் கஷ்டப்பட்டு விளைவித்த பயிர்களை அழித்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="nature">
+                                <td>27</td>
+                                <td><strong>பொதுமண்டபத்தைப் போயிடித்தேனோ!</strong></td>
+                                <td>பொதுமக்கள் தங்கி இளைப்பாறும் சத்திரங்கள், மண்டபங்களை இடித்து பாழாக்குதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+
+                            <!-- Category 4: Women & Family -->
+                            <tr data-cat="family">
+                                <td>28</td>
+                                <td><strong>கோள் சொல்லிக் குடும்பங் குலைத்தேனோ!</strong></td>
+                                <td>புறம்பேசி, கோள் மூட்டி ஒற்றுமையான குடும்பத்திற்குள் பிளவையும் பகையையும் உருவாக்குதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="family">
+                                <td>29</td>
+                                <td><strong>நட்டாற்றிற் கையை நழுவவிட்டேனோ!</strong></td>
+                                <td>ஆபத்து காலத்தில் உடன் நின்று காப்பாற்றுவதாக வாக்களித்துவிட்டு நடுவழியில் கையை விடுதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="family">
+                                <td>30</td>
+                                <td><strong>கற்பழிந்தவளைக் கலந்திருந்தேனோ!</strong></td>
+                                <td>ஒழுக்கக் கேடான வழிகளில் பெண்மையை இழிவுபடுத்தி சிற்றின்பத்தில் மூழ்குதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="family">
+                                <td>31</td>
+                                <td><strong>காவல் கொண்டிருந்த கன்னியை அழித்தேனோ!</strong></td>
+                                <td>குடும்பக் காவலில் இருக்கும் பெண்களின் கற்பையும் பாதுகாப்பையும் சிதைத்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="family">
+                                <td>32</td>
+                                <td><strong>கணவன்வழி நிற்போரைக் கற்பழித்தேனோ!</strong></td>
+                                <td>கற்புநெறி தவறாது வாழும் இல்லத்தரசிகளை சீரழித்து துன்புறுத்துதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="family">
+                                <td>33</td>
+                                <td><strong>கருப்பமழித்துக் களித்திருந்தேனோ!</strong></td>
+                                <td>கருவில் வளரும் குழந்தையை அழித்து (கருக்கலைப்பு) ஈவிரக்கமின்றி களிப்படைதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="family">
+                                <td>34</td>
+                                <td><strong>தந்தைதாய் மொழியைத் தள்ளி நடந்தேனோ!</strong></td>
+                                <td>தாய் தந்தையரின் அனுபவமிக்க நல்லுரைகளையும் வழிகாட்டல்களையும் புறக்கணித்து நடத்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+
+                            <!-- Category 5: Spiritual, Guru & Divine -->
+                            <tr data-cat="spiritual">
+                                <td>35</td>
+                                <td><strong>குருவை வணங்கக் கூசிநின்றேனோ!</strong></td>
+                                <td>மெய்ஞ்ஞானம் போதித்த குருவின் பாதங்களை தலைவணங்க கர்வத்தால் கூசி நிற்றல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="spiritual">
+                                <td>36</td>
+                                <td><strong>குருவின் காணிக்கை கொடுக்க மறந்தேனோ!</strong></td>
+                                <td>கல்வியும் ஞானமும் தந்த ஆசானுக்குரிய நன்றிக் காணிக்கையை செலுத்த மறத்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="spiritual">
+                                <td>37</td>
+                                <td><strong>கற்றவர் தம்மைக் கடுகடுத்தேனோ!</strong></td>
+                                <td>நூற்களைக் கற்றுணர்ந்த அறிஞர்களைப் பார்த்து பொறாமையுடன் கடுகடுத்துப் பேசுதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="spiritual">
+                                <td>38</td>
+                                <td><strong>பெரியோர் பாட்டிற் பிழைசொன்னேனோ!</strong></td>
+                                <td>அருளாளர்கள் பாடிய தெய்வீகப் பாடல்களில் அகந்தையால் குதர்க்கமாக குற்றம் காணுதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="spiritual">
+                                <td>39</td>
+                                <td><strong>ஆலயக் கதவை அடைத்து வைத்தேனோ!</strong></td>
+                                <td>பக்தர்கள் இறைவனைத் தரிசிக்க முடியாதபடி ஆலயக் கதவுகளை காரணமின்றி மூடிவைத்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="spiritual">
+                                <td>40</td>
+                                <td><strong>சிவனடியாரைச் சீறி வைதேனோ!</strong></td>
+                                <td>இறைவனின் மெய்யடியார்களைக் கோபத்தோடு சீறித் திட்டி அவமானப்படுத்துதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="spiritual">
+                                <td>41</td>
+                                <td><strong>தவஞ் செய்வோரைத் தாழ்வு சொன்னேனோ!</strong></td>
+                                <td>கடுந்தவம் செய்யும் ஆன்மீக சாதகர்களை இழிவாகப் பேசி பரிகசித்தல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="spiritual">
+                                <td>42</td>
+                                <td><strong>சுத்த ஞானிகளைத் தூஷணஞ் செய்தேனோ!</strong></td>
+                                <td>காமக்குரோதம் கடந்த பரிசுத்த ஞானிகளை அவதூறு பேசித் தூற்றுதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="spiritual">
+                                <td>43</td>
+                                <td><strong>தெய்வ மிகழ்ந்து செருக்கடைந்தேனோ!</strong></td>
+                                <td>இறைவனை இகழ்ந்து, எல்லாம் நானே செய்கிறேன் என்ற மமதையோடு செருக்கடைதல்.</td>
+                                <td><span class="karma-badge b-nishiddha">விலக்குக</span></td>
+                            </tr>
+                            <tr data-cat="spiritual">
+                                <td>44</td>
+                                <td><strong>என்ன பாவம் செய்தேனோ! இன்னதென்றறியேனே!</strong></td>
+                                <td>தெரிந்தோ தெரியாமலோ செய்த வினைகளை உணர்ந்து இறைவனிடம் சரணடைந்து மன்னிப்பு வேண்டுதல்.</td>
+                                <td><span class="karma-badge b-prayaschitta">சரணாகதி</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- 6. 9 DAILY SACRED PRAYERS (NITYA PRARTHANA SHLOKA HUB) -->
+            <!-- ========================================================= -->
+            <section class="section-block" id="prayers-hub">
+                <div class="section-header-title">
+                    <i data-lucide="sparkles" style="color:var(--saffron-primary);"></i>
+                    தினசரி சொல்ல வேண்டிய 9 நித்ய பிரார்த்தனை சுலோகங்கள் (Daily Shlokas)
+                </div>
+                <div class="section-header-subtitle">
+                    ஸ்ரீ பாலசுந்தரம் அவர்கள் தொகுத்து வழங்கிய, விழிப்பிலிருந்து உறங்கும் வரை நாள்தோறும் சொல்ல வேண்டிய 9 தெய்வீக சுலோகங்களும், தமிழ் விளக்கங்களும்:
+                </div>
+
+                <div class="prayers-grid">
+                    <!-- Shloka 1 -->
+                    <div class="prayer-card" id="shloka-1">
+                        <div>
+                            <div class="prayer-meta">
+                                <span class="prayer-time-badge">1. காலை துயிலெழும் போது</span>
+                                <button class="btn-copy-shloka" onclick="copyShlokaText('shloka-1-txt')">
+                                    <i data-lucide="copy" style="width:12px; height:12px;"></i> நகலெடு
+                                </button>
+                            </div>
+                            <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">கரதர்சனம் (உள்ளங்கை தரிசனம்)</h4>
+                            <div class="prayer-shloka-box" id="shloka-1-txt">
+கராக்ரே வஸதே லக்ஷ்மீ கரமத்யே ஸரஸ்வதீ |<br>
+கரமூலே ஸ்திதா கௌரி: ப்ரபாதே கரதர்சனம் ||
+                            </div>
+                            <div class="prayer-meaning">
+                                <strong>பொருள்:</strong> நமது விரல்களின் நுனியில் லக்ஷ்மி தேவியும், உள்ளங்கையின் மத்தியில் ஸரஸ்வதி தேவியும், உள்ளங்கையின் அடிப்பகுதியில் கௌரி (பார்வதி) தேவியும் வீற்றிருக்கிறார்கள். காலையில் கண்விழிக்கும் போது உள்ளங்கையைப் பார்த்து இவர்களைத் தரிசிப்பதன் மூலம் அன்றைய நாள் மங்களகரமாக விடியட்டும்!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shloka 2 -->
+                    <div class="prayer-card" id="shloka-2">
+                        <div>
+                            <div class="prayer-meta">
+                                <span class="prayer-time-badge">2. பூமியில் கால் வைக்கும் முன்</span>
+                                <button class="btn-copy-shloka" onclick="copyShlokaText('shloka-2-txt')">
+                                    <i data-lucide="copy" style="width:12px; height:12px;"></i> நகலெடு
+                                </button>
+                            </div>
+                            <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">பூமி வந்தனம் (க்ஷமா பிரார்த்தனை)</h4>
+                            <div class="prayer-shloka-box" id="shloka-2-txt">
+ஸமுத்ர வஸனே தேவி பர்வத ஸ்தன மண்டலே |<br>
+விஷ்ணு பத்னி நமஸ்துப்யம் பாத ஸ்பர்சம் க்ஷமஸ்வமே ||
+                            </div>
+                            <div class="prayer-meaning">
+                                <strong>பொருள்:</strong> சமுத்திரங்களை ஆடையாகவும், மலைகளைப் பால்சுரக்கும் மார்பகங்களாகவும் கொண்டு எங்கும் வியாபித்திருக்கும் விஷ்ணுவின் பத்தினியான பூமாதேவியே! உன்னை எனது கால்களால் தீண்டுவதற்கு என்னை மன்னித்தருள்வாயாக! பூமி நம்மைத் தாங்குவதால் மன்னிப்புக் கேட்கிறோம்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shloka 3 -->
+                    <div class="prayer-card" id="shloka-3">
+                        <div>
+                            <div class="prayer-meta">
+                                <span class="prayer-time-badge">3. நீராடும் போது</span>
+                                <button class="btn-copy-shloka" onclick="copyShlokaText('shloka-3-txt')">
+                                    <i data-lucide="copy" style="width:12px; height:12px;"></i> நகலெடு
+                                </button>
+                            </div>
+                            <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">புண்ணிய நதிகள் ஆவாகனம்</h4>
+                            <div class="prayer-shloka-box" id="shloka-3-txt">
+கங்கே ச யமுனே சைவ கோதாவரி ஸரஸ்வதீ |<br>
+நர்மதே ஸிந்து காவேரீ ஜலேஸ்மின் சன்னிதிம் குரு ||
+                            </div>
+                            <div class="prayer-meaning">
+                                <strong>பொருள்:</strong> புனித நதிகளான கங்கை, யமுனை, கோதாவரி, சரஸ்வதி, நர்மதை, சிந்து, காவிரி ஆகிய புண்ணிய நதிகளே! நான் குளிக்கும் இந்த நீரில் பிரசன்னமாகி (தோன்றி) என்னை உடலாலும் மனதாலும் புனிதப்படுத்துங்கள்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shloka 4 -->
+                    <div class="prayer-card" id="shloka-4">
+                        <div>
+                            <div class="prayer-meta">
+                                <span class="prayer-time-badge">4. குங்குமம் வைக்கும் போது</span>
+                                <button class="btn-copy-shloka" onclick="copyShlokaText('shloka-4-txt')">
+                                    <i data-lucide="copy" style="width:12px; height:12px;"></i> நகலெடு
+                                </button>
+                            </div>
+                            <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">மங்கள கௌரி சுலோகம்</h4>
+                            <div class="prayer-shloka-box" id="shloka-4-txt">
+ஸர்வ மங்கள மாங்கல்யே சிவே ஸர்வார்த்த ஸாதிகே |<br>
+ஸரண்யே த்ரயம்பகே கௌரி நாராயணி நமோஸ்துதே ||
+                            </div>
+                            <div class="prayer-meaning">
+                                <strong>பொருள்:</strong> எல்லா மங்களங்களுக்கும் நாயகியே! எல்லாவற்றையும் சாதித்துத் தருபவளே! முப்புரமும் எரித்த சிவபெருமானின் தேவியே! கௌரியே! நாராயணனின் சகோதரியே! உன்னை சரணடைந்து நமஸ்கரிக்கிறேன்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shloka 5 -->
+                    <div class="prayer-card" id="shloka-5">
+                        <div>
+                            <div class="prayer-meta">
+                                <span class="prayer-time-badge">5. திருநீறு அணியும் போது</span>
+                                <button class="btn-copy-shloka" onclick="copyShlokaText('shloka-5-txt')">
+                                    <i data-lucide="copy" style="width:12px; height:12px;"></i> நகலெடு
+                                </button>
+                            </div>
+                            <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">தேவாரத் திருநீற்றுப் பதிகம்</h4>
+                            <div class="prayer-shloka-box" id="shloka-5-txt">
+மந்திர மாவது நீறு வானவர் மேலது நீறு<br>
+சுந்தர மாவது நீறு துதிக்கப் படுவது நீறு<br>
+தந்திர மாவது நீறு சமயத்தி லுள்ளது நீறு<br>
+செந்துவர் வாயுமை பங்கன் திருஆல வாயான் திருநீறே.
+                            </div>
+                            <div class="prayer-meaning">
+                                <strong>பொருள்:</strong> திருஞானசம்பந்தர் அருளிய தேவாரம்: செவ்வாய் உமையம்மையின் பங்கனும் மதுரை திருஆலவாயில் உறையும் சிவபெருமானின் திருநீறே மந்திரமாகவும், அழகாகவும், வழிபடத்தக்கதாகவும் விளங்கி நம்மை சகல வினைகளிலிருந்தும் காக்கிறது!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shloka 6 -->
+                    <div class="prayer-card" id="shloka-6">
+                        <div>
+                            <div class="prayer-meta">
+                                <span class="prayer-time-badge">6. கோபி / திருமண் இடும் போது</span>
+                                <button class="btn-copy-shloka" onclick="copyShlokaText('shloka-6-txt')">
+                                    <i data-lucide="copy" style="width:12px; height:12px;"></i> நகலெடு
+                                </button>
+                            </div>
+                            <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">வாஸுதேவ கிருஷ்ண தியானம்</h4>
+                            <div class="prayer-shloka-box" id="shloka-6-txt">
+க்ருஷ்ணாய வாஸுதேவாய தேவகீ நந்தநாய ச |<br>
+நந்தகோப குமாராய கோவிந்தாய நமோ நம: ||
+                            </div>
+                            <div class="prayer-meaning">
+                                <strong>பொருள்:</strong> வாசுதேவரின் மைந்தனும், தேவகியின் ஆனந்தமும், நந்தகோபனின் செல்லக் குழந்தையும், அனைத்து ஜீவன்களையும் ரட்சிக்கும் கோவிந்தனுமான ஸ்ரீ கிருஷ்ண பரமாத்மாவை மீண்டும் மீண்டும் வணங்குகிறேன்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shloka 7 -->
+                    <div class="prayer-card" id="shloka-7">
+                        <div>
+                            <div class="prayer-meta">
+                                <span class="prayer-time-badge">7. திருவிளக்கு ஏற்றும் போது</span>
+                                <button class="btn-copy-shloka" onclick="copyShlokaText('shloka-7-txt')">
+                                    <i data-lucide="copy" style="width:12px; height:12px;"></i> நகலெடு
+                                </button>
+                            </div>
+                            <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">தீபஜ்யோதி வணக்கம்</h4>
+                            <div class="prayer-shloka-box" id="shloka-7-txt">
+சுபம் கரோதி கல்யாணம் ஆரோக்யம் தன-ஸம்பதா |<br>
+சத்ரு-புத்தி-விநாசாய தீபஜ்யோதிர்-நமோஸ்துதே ||
+                            </div>
+                            <div class="prayer-meaning">
+                                <strong>பொருள்:</strong> மங்களத்தையும், நற்பேற்றினையும், நீண்ட ஆயுளையும் ஆரோக்கியத்தையும், செல்வச் செழிப்பையும் தந்து, அறிவின் பகை ஆகிய அஞ்ஞானத்தை அகற்றும் மகா வல்லமை பொருந்திய தீப ஜோதியே! உன்னை பணிந்து வணங்குகிறேன்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shloka 8 -->
+                    <div class="prayer-card" id="shloka-8">
+                        <div>
+                            <div class="prayer-meta">
+                                <span class="prayer-time-badge">8. உணவு உண்ணும் முன்</span>
+                                <button class="btn-copy-shloka" onclick="copyShlokaText('shloka-8-txt')">
+                                    <i data-lucide="copy" style="width:12px; height:12px;"></i> நகலெடு
+                                </button>
+                            </div>
+                            <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">அன்னபூரணி பிரார்த்தனை</h4>
+                            <div class="prayer-shloka-box" id="shloka-8-txt">
+அன்னபூர்ணே ஸதாபூர்ணே சங்கரப்ராணவல்லபே |<br>
+ஞானவைராக்ய ஸித்யர்த்தம் பிக்ஷாம் தேஹி ச பார்வதீ ||
+                            </div>
+                            <div class="prayer-meaning">
+                                <strong>பொருள்:</strong> எப்போதுமே பரிபூரணமாய் நிறைந்திருக்கும் அன்னபூரணியே! சங்கரரின் உயிர்த் துணையே! பார்வதி தேவியே! எனக்கு உணவோடு சேர்த்து மெய்ஞ்ஞானமும் உலகப் பற்றற்ற வைராக்கியமும் கிடைப்பதற்காக உன்னிடம் பிச்சை கேட்கிறேன்.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shloka 9 -->
+                    <div class="prayer-card" id="shloka-9" style="border-color:#f59e0b;">
+                        <div>
+                            <div class="prayer-meta">
+                                <span class="prayer-time-badge" style="background:#f59e0b; color:#000;">9. இரவில் உறங்கும் முன்</span>
+                                <button class="btn-copy-shloka" onclick="copyShlokaText('shloka-9-txt')">
+                                    <i data-lucide="copy" style="width:12px; height:12px;"></i> நகலெடு
+                                </button>
+                            </div>
+                            <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">பூரண சரணாகதி சமர்ப்பணம்</h4>
+                            <div class="prayer-shloka-box" id="shloka-9-txt">
+"உண்ணலும் உனதே! உயிர்த்தலும் உனதே!<br>
+உடல், உயிர், மனம் எல்லாம் உனதே!<br>
+எண்ணலும் உனதே! இச்சையும் உனதே!<br>
+எண்செயல் பயனெல்லாம் உனதே!"
+                            </div>
+                            <div class="prayer-meaning">
+                                <strong>பொருள்:</strong> ஸ்ரீ பாலசுந்தரம் அவர்கள் அருளியது: பகல் முழுவதும் செய்த செயல்களின் பயன்களையெல்லாம் இறைவனுக்கு அர்ப்பணித்து, தெரிந்தும் தெரியாமலும் செய்த தவறுகளுக்கு மன்னிப்புக் கேட்டு, முழுமையான சரணாகதி மனநிலையுடன் உறங்கச் செல்வது மிகச் சிறந்ததாகும்!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- 7. INTERACTIVE KARMA BALANCE SELF-AUDIT QUIZ -->
+            <!-- ========================================================= -->
+            <section class="section-block" id="quiz-hub">
+                <div class="section-header-title">
+                    <i data-lucide="help-circle" style="color:var(--saffron-primary);"></i>
+                    கர்ம தராசு சுயமதிப்பீட்டு வினாடி வினா (Karma Self-Audit Quiz)
+                </div>
+                <div class="section-header-subtitle">
+                    கீழே உள்ள 6 எளிய சூழ்நிலைக் கேள்விகளுக்கு உங்கள் உண்மை நிலையைத் தேர்வு செய்து, உங்கள் நடப்பு கர்ம தராசு எந்தப் பக்கம் சாய்கிறது என்பதை உடனடியாகக் கண்டறியுங்கள்:
+                </div>
+
+                <div class="quiz-card">
+                    <form id="karma-quiz-form" onsubmit="calculateKarmaScore(event)">
+                        <!-- Q1: Nitya Karma -->
+                        <div class="quiz-q-block">
+                            <div class="quiz-q-title">
+                                <span>1.</span> காலையில் கண்விழிக்கும் போது உங்கள் வழக்கம் என்ன? (நித்ய கர்மா)
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q1" value="3" required>
+                                    உள்ளங்கையைப் பார்த்து (கரதர்சனம்) பூமித்தாயிடம் மன்னிப்புக் கேட்டு இறைவனை நினைத்து அமைதியாக எழுகிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q1" value="2">
+                                    நேரம் கிடைக்கும்போது கடவுளை நினைப்பேன்; சில நாட்களில் அவசரமாக கிளம்பிவிடுவேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q1" value="1">
+                                    கண்விழித்தவுடன் மொபைல் போனைப் பார்த்து டென்ஷனுடன் எழுகிறேன்.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Q2: Pancha Yagnas -->
+                        <div class="quiz-q-block">
+                            <div class="quiz-q-title">
+                                <span>2.</span> பிற உயிர்களுக்கு உணவளிப்பது &amp; பெற்றோரை மதிப்பது குறித்து: (பஞ்ச யக்ஞங்கள்)
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q2" value="3" required>
+                                    தினமும் காக்கை/நாய்களுக்கு உணவிட்டு, பெற்றோரை வணங்கி ஆசி பெறுகிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q2" value="2">
+                                    அமாவாசை அல்லது விசேஷ நாட்களில் மட்டும் முன்னோரை நினைத்து தானம் செய்கிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q2" value="1">
+                                    இதற்கெல்லாம் நேரம் இருப்பதில்லை; என்னை மட்டுமே கவனித்துக் கொள்கிறேன்.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Q3: Naimittika Karma -->
+                        <div class="quiz-q-block">
+                            <div class="quiz-q-title">
+                                <span>3.</span> விரதங்கள், விசேஷ பூஜைகள் &amp; குடும்ப சம்ஸ்காரங்களை அணுகும் முறை: (நைமித்திகம்)
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q3" value="3" required>
+                                    சஷ்டி, ஏகாதசி போன்ற விரதங்களையும், 16 சம்ஸ்கார விழுமியங்களையும் முறைப்படி சிரத்தையோடு அனுஷ்டிக்கிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q3" value="2">
+                                    குடும்பத்தினர் வற்புறுத்தினால் மட்டும் சடங்குகளில் ஒப்புக்கு பங்கேற்கிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q3" value="1">
+                                    இவை தேவையில்லாத பழமைவாதம் என்று புறக்கணிக்கிறேன்.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Q4: Kamya Karma -->
+                        <div class="quiz-q-block">
+                            <div class="quiz-q-title">
+                                <span>4.</span> வாழ்க்கையில் பதவி, சொத்து, வெற்றி போன்ற ஆசைகளை அடையும் வழி: (காம்யம்)
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q4" value="3" required>
+                                    100% நேர்மையான முயற்சியுடன், இறைவனிடம் நல்வழி வேண்டி பிரார்த்தனை செய்து அடைகிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q4" value="2">
+                                    வெற்றி பெற வேண்டும் என்பதற்காக குறுக்கு வழிகளை யோசித்ததுண்டு.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q4" value="1">
+                                    அடுத்தவருக்கு தீங்கு நேர்ந்தாலும் பரவாயில்லை, எனக்கு வெற்றி மட்டுமே முக்கியம்.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Q5: Nishkamya Karma -->
+                        <div class="quiz-q-block">
+                            <div class="quiz-q-title">
+                                <span>5.</span> சமூக நலன், நீர்நிலைகள் &amp; பொதுச் சேவை பற்றிய உங்கள் பங்கு: (நிஷ்காம்யம்)
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q5" value="3" required>
+                                    எந்தப் பெயரோ புகழோ எதிர்பாராமல் ஏழைகளுக்கு கல்வி, மரக்கன்றுகள் நடுதல், பொதுத்தொண்டு செய்கிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q5" value="2">
+                                    நால்வர் பார்த்துப் பாராட்டுவார்கள் என்றால் மட்டுமே பொதுநலப் பணிகளில் ஈடுபடுகிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q5" value="1">
+                                    சமூகம் எப்படியோ போகட்டும், எனக்கும் என் குடும்பத்திற்கும் எந்தப் பாதிப்பும் இல்லையென்றால் போதும்.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Q6: Nishiddha & Prayaschitta -->
+                        <div class="quiz-q-block">
+                            <div class="quiz-q-title">
+                                <span>6.</span> வள்ளலார் சுட்டிக்காட்டிய தவறுகளைத் தவிர்ப்பதும் பரிகாரமும்: (நிஷித்த &amp; பிராயச்சித்தம்)
+                            </div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q6" value="3" required>
+                                    அறிந்தும் அறியாமலும் தவறிழைத்தால், உடனே வருந்தி மன்னிப்புக் கேட்டு ஆக்கபூர்வ பரிகாரம் (மரம் நடுதல்/தானம்) செய்கிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q6" value="2">
+                                    தவறு என்று தெரிந்தாலும் சில சூழ்நிலைகளில் நியாயப்படுத்திக் கொள்கிறேன்.
+                                </label>
+                                <label class="quiz-opt-label">
+                                    <input type="radio" name="q6" value="1">
+                                    நான் செய்வது எதுவுமே தவறில்லை என்ற அகந்தையுடன் வாழ்கிறேன்.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div style="text-align:center; margin-top:24px;">
+                            <button type="submit" class="btn-nav btn-nav-primary" style="padding:12px 28px; font-size:1rem;">
+                                <i data-lucide="scale" style="width:18px; height:18px;"></i> எனது கர்ம தராசைக் கணக்கிடுக! (Calculate Score)
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Quiz Result -->
+                    <div class="quiz-result-box" id="quiz-result">
+                        <h3 style="font-family:var(--font-heading); font-size:1.5rem; font-weight:800; color:var(--text-main); margin-bottom:8px;" id="result-title">
+                            மதிப்பீட்டு முடிவு
+                        </h3>
+                        <div style="font-size:2.2rem; font-weight:900; color:var(--saffron-primary); margin:10px 0;" id="result-score">
+                            0 / 18
+                        </div>
+                        <p style="font-size:1rem; color:var(--text-main); max-width:760px; margin:0 auto; line-height:1.7;" id="result-desc">
+                            விளக்கம்
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- 8. FACILITATOR MASTER EQUIPMENT & READINESS CHECKLIST -->
+            <!-- ========================================================= -->
+            <section class="section-block" id="facilitator-check">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+                    <div>
+                        <div class="section-header-title">
+                            <i data-lucide="clipboard-check" style="color:#10b981;"></i>
+                            பயிற்றுநர் உபகரணங்கள் &amp; சரிபார்ப்புப் பட்டியல் (Facilitator Checklist)
+                        </div>
+                        <div class="section-header-subtitle">
+                            5 மணி நேரப் பயிற்சிப் பட்டறை தொடங்குவதற்கு முன் தேவையான அனைத்து உபகரணங்களையும் சரிபார்த்து டிக் செய்யவும்:
+                        </div>
+                    </div>
+                    <button class="btn-nav" onclick="resetChecklist()" style="font-size:0.82rem;">
+                        <i data-lucide="rotate-ccw" style="width:14px; height:14px;"></i> அனைத்து டிக் மீட்டமை (Clear All)
+                    </button>
+                </div>
+
+                <div class="checklist-grid">
+                    <!-- Activity 1 Checklist -->
+                    <div class="checklist-card" style="border-top:4px solid #f59e0b;">
+                        <h4><span class="karma-badge b-kamya">செயல்பாடு 1</span> வினைக் கணக்கு &amp; தராசு</h4>
+                        <label class="check-item"><input type="checkbox" id="chk-1-1"> <span>கருப்பு, மஞ்சள், பச்சை வண்ணத் துணிப் பட்டைகள் / கயிறுகள்</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-1-2"> <span>சிறிய இருதட்டு தராசு அல்லது சமநிலை பலகை</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-1-3"> <span>20 கருப்பு மணிகள் (பாவம்) &amp; 20 வெள்ளை மணிகள் (புண்ணியம்)</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-1-4"> <span>வினைக் கணக்கு அட்டை (Karmic Ledger Worksheet)</span></label>
+                    </div>
+
+                    <!-- Activity 2 Checklist -->
+                    <div class="checklist-card" style="border-top:4px solid #10b981;">
+                        <h4><span class="karma-badge b-nitya">செயல்பாடு 2</span> நித்ய சக்கரம் &amp; யக்ஞ நாணயங்கள்</h4>
+                        <label class="check-item"><input type="checkbox" id="chk-2-1"> <span>24 மணி நேர நித்ய சக்கர வரைபடத் தாள்கள் (தலா 1)</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-2-2"> <span>5 வண்ண யக்ஞ வில்லைகள் (ரிஷி, பித்ரு, தேவ, பூத, மனுஷ்ய)</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-2-3"> <span>9 நித்ய சுலோக பாக்கெட் அட்டைகள் (Shloka Pocket Cards)</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-2-4"> <span>எழுதுகோல்கள் மற்றும் வண்ணக் குறிப்பான்கள்</span></label>
+                    </div>
+
+                    <!-- Activity 3 Checklist -->
+                    <div class="checklist-card" style="border-top:4px solid #3b82f6;">
+                        <h4><span class="karma-badge b-naimittika">செயல்பாடு 3</span> 16 சம்ஸ்காரங்கள் &amp; விரதங்கள்</h4>
+                        <label class="check-item"><input type="checkbox" id="chk-3-1"> <span>16 சம்ஸ்கார விரிவுரை அட்டைகள் (Samskara Flashcards)</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-3-2"> <span>மனித வாழ்வு காலக்கோடு பலகை (Life Timeline Board)</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-3-3"> <span>திதி விரத சவால் அட்டைகள் (சஷ்டி, கிருத்திகை, ஏகாதசி போன்றவை)</span></label>
+                    </div>
+
+                    <!-- Activity 4 Checklist -->
+                    <div class="checklist-card" style="border-top:4px solid #8b5cf6;">
+                        <h4><span class="karma-badge b-nishkamya">செயல்பாடு 4</span> காம்யம் ➔ நிஷ்காம்யம் பாலம்</h4>
+                        <label class="check-item"><input type="checkbox" id="chk-4-1"> <span>4 வகையான விருப்ப வழக்கு ஆய்வு அட்டைகள் (Case Studies)</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-4-2"> <span>காம்யம் ➔ நிஷ்காம்யம் மாற்றப் படிவம் (Worksheets)</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-4-3"> <span>குழு விளக்க சார்ட் பேப்பர்கள் மற்றும் மார்க்கர்கள்</span></label>
+                    </div>
+
+                    <!-- Activity 5 Checklist -->
+                    <div class="checklist-card" style="border-top:4px solid #ef4444;">
+                        <h4><span class="karma-badge b-nishiddha">செயல்பாடு 5</span> வள்ளலார் கண்ணாடி &amp; பசுமைப் பரிகாரம்</h4>
+                        <label class="check-item"><input type="checkbox" id="chk-5-1"> <span>வள்ளலார் மனுமுறை 44 பாவங்கள் சுயஆய்வுப் படிவம்</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-5-2"> <span>பசுமைப் பரிகார உறுதி அட்டை (Green Restitution Card)</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-5-3"> <span>விதைப்பந்துகள் / மரக்கன்றுகள் உறுதிப் பதிவு புத்தகம்</span></label>
+                    </div>
+
+                    <!-- Activity 6 Checklist -->
+                    <div class="checklist-card" style="border-top:4px solid var(--saffron-primary);">
+                        <h4><span class="karma-badge" style="background:var(--saffron-glow); color:var(--saffron-primary);">செயல்பாடு 6</span> சங்கல்பம் &amp; மங்கள நிறைவு</h4>
+                        <label class="check-item"><input type="checkbox" id="chk-6-1"> <span>அறம் காக்கும் ஷட் கர்ம சங்கல்ப வாசக அட்டை</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-6-2"> <span>குத்துவிளக்கு, மலர்கள், ஊதுபத்தி மற்றும் தீப ஆராதனை</span></label>
+                        <label class="check-item"><input type="checkbox" id="chk-6-3"> <span>பயிற்சிப் பட்டறை நிறைவுச் சான்றிதழ்கள் (Certificates)</span></label>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p style="margin-bottom:8px; font-weight:800; font-size:1.05rem; color:var(--text-main);">
+                அறம் — ஷட் கருமங்கள் பயிற்சிப் பட்டறை வழிகாட்டி (5-Hour Interactive Workshop Manual)
+            </p>
+            <p style="color:var(--text-muted); font-size:0.86rem; margin-bottom:12px;">
+                அறம்வளர்த்தநாயகி சேவை மையம் • ஸ்ரீ பாலசுந்தரம் அவர்களின் அருளுரை தொகுப்பின் அடிப்படையில் வடிவமைக்கப்பட்டது.
+            </p>
+            <p style="color:var(--text-dim); font-size:0.78rem;">
+                Created with Devotion &amp; Precision for Sanatana Dharma Trainers &amp; Volunteers • 2026 Edition
+            </p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript Logic -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 1. Theme Toggle
+        function toggleTheme() {
+            const body = document.body;
+            const isLight = body.classList.toggle('light-theme');
+            const icon = document.getElementById('theme-icon');
+            const label = document.getElementById('theme-label');
+            if (isLight) {
+                if (label) label.innerText = 'Dark Mode';
+                if (icon) icon.setAttribute('data-lucide', 'moon');
+                localStorage.setItem('karma-theme', 'light');
+            } else {
+                if (label) label.innerText = 'Bright Theme';
+                if (icon) icon.setAttribute('data-lucide', 'sun');
+                localStorage.setItem('karma-theme', 'dark');
+            }
+            lucide.createIcons();
+        }
+
+        // Load saved theme
+        if (localStorage.getItem('karma-theme') === 'light') {
+            document.body.classList.add('light-theme');
+            const icon = document.getElementById('theme-icon');
+            const label = document.getElementById('theme-label');
+            if (label) label.innerText = 'Dark Mode';
+            if (icon) icon.setAttribute('data-lucide', 'moon');
+        }
+
+        // 2. Web Audio Synthesizer Chime for Timers
+        function playChime() {
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(523.25, ctx.currentTime); // C5
+                osc.frequency.exponentialRampToValueAtTime(783.99, ctx.currentTime + 0.3); // G5
+                osc.frequency.exponentialRampToValueAtTime(1046.50, ctx.currentTime + 0.6); // C6
+                gain.gain.setValueAtTime(0.3, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.2);
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start();
+                osc.stop(ctx.currentTime + 1.2);
+            } catch (e) {
+                console.log('Audio not supported or permitted');
+            }
+        }
+
+        // 3. Countdown Timers State & Handlers
+        const timers = {};
+
+        function formatTime(seconds) {
+            const m = Math.floor(seconds / 60);
+            const s = seconds % 60;
+            return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function startTimer(id, defaultDuration) {
+            if (timers[id] && timers[id].interval) return;
+            if (!timers[id]) {
+                timers[id] = { remaining: defaultDuration, interval: null };
+            }
+            timers[id].interval = setInterval(() => {
+                if (timers[id].remaining > 0) {
+                    timers[id].remaining--;
+                    const el = document.getElementById(`display-${id}`);
+                    if (el) el.innerText = formatTime(timers[id].remaining);
+                } else {
+                    clearInterval(timers[id].interval);
+                    timers[id].interval = null;
+                    playChime();
+                    alert(`⏰ செயல்பாடு ${id} நேரம் நிறைவடைந்தது! (Activity ${id} Time Completed)`);
+                }
+            }, 1000);
+        }
+
+        function pauseTimer(id) {
+            if (timers[id] && timers[id].interval) {
+                clearInterval(timers[id].interval);
+                timers[id].interval = null;
+            }
+        }
+
+        function resetTimer(id, defaultDuration) {
+            pauseTimer(id);
+            timers[id] = { remaining: defaultDuration, interval: null };
+            const el = document.getElementById(`display-${id}`);
+            if (el) el.innerText = formatTime(defaultDuration);
+        }
+
+        // 4. Vallalar 44 Table Filtering & Real-time Search
+        let currentVallalarCat = 'all';
+
+        function filterVallalar(cat, btn) {
+            currentVallalarCat = cat;
+            const buttons = document.querySelectorAll('.btn-v-filter');
+            buttons.forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+            searchVallalar();
+        }
+
+        function searchVallalar() {
+            const query = (document.getElementById('vallalar-search').value || '').toLowerCase().trim();
+            const rows = document.querySelectorAll('#vallalar-table tbody tr');
+
+            rows.forEach(row => {
+                const cat = row.getAttribute('data-cat');
+                const text = row.innerText.toLowerCase();
+                const matchesCat = (currentVallalarCat === 'all' || cat === currentVallalarCat);
+                const matchesQuery = (!query || text.includes(query));
+
+                if (matchesCat && matchesQuery) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        // 5. Clipboard Copy Functions
+        function copyShlokaText(elementId) {
+            const el = document.getElementById(elementId);
+            if (!el) return;
+            const text = el.innerText.trim();
+            navigator.clipboard.writeText(text).then(() => {
+                alert('சுலோகம் வெற்றிகரமாக நகலெடுக்கப்பட்டது!');
+            }).catch(err => {
+                console.error('Clipboard copy failed:', err);
+            });
+        }
+
+        function copyPledgeText(elementId) {
+            const el = document.getElementById(elementId);
+            if (!el) return;
+            const text = el.innerText.trim();
+            navigator.clipboard.writeText(text).then(() => {
+                alert('ஷட் கர்ம புனித சங்கல்ப வாசகம் நகலெடுக்கப்பட்டது!');
+            }).catch(err => {
+                console.error('Clipboard copy failed:', err);
+            });
+        }
+
+        // 6. Checklist Persistence with LocalStorage
+        const chkBoxes = document.querySelectorAll('.checklist-card input[type="checkbox"]');
+        chkBoxes.forEach(chk => {
+            const saved = localStorage.getItem(`karma-chk-${chk.id}`);
+            if (saved === 'true') chk.checked = true;
+            chk.addEventListener('change', () => {
+                localStorage.setItem(`karma-chk-${chk.id}`, chk.checked);
+            });
+        });
+
+        function resetChecklist() {
+            if (confirm('அனைத்து சரிபார்ப்பு டிக் குறியீடுகளையும் மீட்டமைக்க வேண்டுமா?')) {
+                chkBoxes.forEach(chk => {
+                    chk.checked = false;
+                    localStorage.removeItem(`karma-chk-${chk.id}`);
+                });
+            }
+        }
+
+        // 7. Karma Quiz Score Calculation
+        function calculateKarmaScore(e) {
+            e.preventDefault();
+            const form = document.getElementById('karma-quiz-form');
+            const formData = new FormData(form);
+            let score = 0;
+            let answered = 0;
+
+            for (let i = 1; i <= 6; i++) {
+                const val = formData.get(`q${i}`);
+                if (val) {
+                    score += parseInt(val, 10);
+                    answered++;
+                }
+            }
+
+            if (answered < 6) {
+                alert('தயவுசெய்து அனைத்து 6 கேள்விகளுக்கும் விடையளிக்கவும்!');
+                return;
+            }
+
+            const resultBox = document.getElementById('quiz-result');
+            const scoreDisplay = document.getElementById('result-score');
+            const descDisplay = document.getElementById('result-desc');
+            const titleDisplay = document.getElementById('result-title');
+
+            scoreDisplay.innerText = `${score} / 18 புள்ளிகள்`;
+            resultBox.style.display = 'block';
+
+            if (score >= 16) {
+                titleDisplay.innerText = '🌟 உத்தம சநாதனி • புண்ணியப் பாதை (Divine Balance)';
+                descDisplay.innerHTML = '<strong>அற்புதம்!</strong> உங்கள் தினசரி வாழ்க்கை ஷட் கருமங்களுடன் இயைந்து பெருமளவில் புண்ணியப் பாதையில் பயணிக்கிறது. நித்ய கர்மானுஷ்டானத்தையும் நிஷ்காம்ய சேவையையும் தொடர்ந்து உலகிற்கு வழிகாட்டியாகத் திகழுங்கள்!';
+                resultBox.style.borderColor = '#10b981';
+                resultBox.style.background = 'rgba(16, 185, 129, 0.12)';
+            } else if (score >= 11) {
+                titleDisplay.innerText = '⚖️ சாதக நிலை • சமநிலை மாற்றம் தேவை (Striving Seeker)';
+                descDisplay.innerHTML = '<strong>நன்று!</strong> அடிப்படை தர்மங்களை அறிந்துள்ளீர்கள்; ஆனால் நித்ய கர்மாக்களையும் பஞ்ச யக்ஞங்களையும் அன்றாட வழக்கமாக மாற்ற வேண்டியுள்ளது. காம்ய ஆசைகளைக் குறைத்து நிஷ்காம்ய சேவையில் அதிக கவனம் செலுத்துங்கள்!';
+                resultBox.style.borderColor = '#f59e0b';
+                resultBox.style.background = 'rgba(245, 158, 11, 0.12)';
+            } else {
+                titleDisplay.innerText = '🚩 விழிப்புணர்வுத் தொடக்கம் • உடனடியாக சீரமைக்க (Awakening Stage)';
+                descDisplay.innerHTML = '<strong>கவலை வேண்டாம்!</strong> இன்று தொடங்கும் இந்த 5 மணி நேரப் பயிற்சிப் பட்டறை உங்கள் வாழ்க்கையை முற்றிலுமாக மாற்றப்போகிறது. வள்ளலாரின் 44 பாவங்களைத் தவிர்த்து, காலை விழிப்பிலிருந்து இரவு சமர்ப்பணம் வரை சிறு நற்பழக்கங்களைத் இன்றே தொடங்குங்கள்!';
+                resultBox.style.borderColor = '#ef4444';
+                resultBox.style.background = 'rgba(239, 68, 68, 0.12)';
+            }
+
+            resultBox.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
