@@ -248,45 +248,101 @@ def main():
             padding: 0 16px;
         }}
 
-        /* Master Path Flow Banner */
-        .pathway-banner {{
+        /* Master 5-Hour Agenda Table */
+        .agenda-table-card {{
             background: var(--bg-surface);
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--border-color);
             border-radius: var(--radius-md);
-            padding: 16px 20px;
-            margin: 0 auto 24px auto;
-            max-width: 1100px;
+            padding: 24px;
+            margin: 0 auto 28px auto;
+            max-width: 1260px;
+            box-shadow: var(--shadow-md);
+            text-align: left;
+        }}
+        .agenda-table-header-wrap {{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 12px;
-            overflow-x: auto;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 10px;
         }}
-        .pathway-step {{
+        .agenda-table-title {{
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--saffron-primary);
             display: flex;
             align-items: center;
-            gap: 10px;
-            white-space: nowrap;
-            font-weight: 700;
-            font-size: 0.95rem;
+            gap: 8px;
         }}
-        .path-badge {{
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
+        .agenda-master-table-wrap {{
+            width: 100%;
+            overflow-x: auto;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-color);
+        }}
+        .agenda-master-table {{
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            text-align: left;
+        }}
+        .agenda-master-table th {{
+            background: var(--bg-card);
+            color: var(--saffron-primary);
+            font-family: var(--font-heading);
+            font-weight: 800;
+            padding: 14px 16px;
+            border-bottom: 2px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            white-space: nowrap;
+        }}
+        .agenda-master-table td {{
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            vertical-align: top;
+            background: var(--bg-surface);
+            line-height: 1.65;
+        }}
+        .agenda-master-table tr:hover td {{
+            background: var(--bg-card-hover);
+        }}
+        .agenda-master-table .col-title {{
+            width: 25%;
+            min-width: 200px;
+        }}
+        .agenda-master-table .col-brief {{
+            width: 38%;
+            min-width: 280px;
+        }}
+        .agenda-master-table .col-activities {{
+            width: 37%;
+            min-width: 280px;
+        }}
+        .session-badge-tag {{
+            display: inline-block;
             background: rgba(245, 158, 11, 0.15);
             color: var(--saffron-primary);
             border: 1px solid var(--saffron-primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
             font-weight: 800;
+            margin-bottom: 6px;
         }}
-        .path-arrow {{
-            color: var(--text-dim);
-            font-size: 1.2rem;
-            padding: 0 4px;
+        .activity-bullet {{
+            margin-bottom: 8px;
+            padding-left: 18px;
+            position: relative;
+        }}
+        .activity-bullet::before {{
+            content: "•";
+            position: absolute;
+            left: 4px;
+            color: var(--saffron-primary);
+            font-weight: bold;
         }}
 
         /* Session Master Timer Bar */
@@ -296,7 +352,7 @@ def main():
             border-radius: var(--radius-md);
             padding: 14px 20px;
             margin: 0 auto 28px auto;
-            max-width: 1100px;
+            max-width: 1260px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -330,6 +386,7 @@ def main():
             display: inline-flex;
             align-items: center;
             gap: 6px;
+            text-decoration: none;
         }}
         .btn-timer:hover {{
             border-color: var(--saffron-primary);
@@ -945,23 +1002,163 @@ def main():
             }}
         }}
 
+        /* ============================================================== */
+        /* PRINT FORMAT STYLES — CONVERTED TO CLEAN TABLE WITHOUT SCROLLBARS */
+        /* ============================================================== */
         @media print {{
-            .navbar, .sticky-agenda-wrap, .btn-nav, .timer-strip, .btn-timer, .rishi-toolbar {{
+            .navbar, .sticky-agenda-wrap, .btn-nav, .timer-strip, .btn-timer, .rishi-toolbar, 
+            .category-pill-group, #ego-input, .search-input-box, #picked-rishis-display, 
+            .star-action-btns, button, a.btn-timer {{
                 display: none !important;
             }}
             body {{
-                background: #fff !important;
+                background: #ffffff !important;
+                color: #000000 !important;
+                font-size: 10pt !important;
+                line-height: 1.45 !important;
+            }}
+            .container {{
+                max-width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                width: 100% !important;
+            }}
+            .hero {{
+                padding: 10px 0 !important;
+                background: none !important;
+                border: none !important;
+                text-align: left !important;
+            }}
+            .hero-badge-wrap {{
+                display: none !important;
+            }}
+            .hero-title {{
+                font-size: 1.6rem !important;
+                color: #000 !important;
+                margin-bottom: 6px !important;
+                text-align: center !important;
+            }}
+            .hero-title span {{
+                color: #000 !important;
+                -webkit-text-fill-color: initial !important;
+            }}
+            .hero-quote {{
+                font-size: 9pt !important;
+                color: #222 !important;
+                margin-bottom: 14px !important;
+                padding: 0 !important;
+                text-align: justify !important;
+            }}
+            
+            /* Clean Full Table for Print */
+            .agenda-table-card {{
+                background: #ffffff !important;
+                border: 2px solid #222 !important;
+                padding: 10px !important;
+                box-shadow: none !important;
+                page-break-inside: avoid;
+                margin: 10px 0 20px 0 !important;
+                display: block !important;
+                width: 100% !important;
+            }}
+            .agenda-table-title {{
+                color: #000 !important;
+                font-size: 12pt !important;
+                font-weight: bold !important;
+                margin-bottom: 8px !important;
+            }}
+            .agenda-master-table-wrap {{
+                overflow: visible !important;
+                border: 1px solid #333 !important;
+                display: block !important;
+                width: 100% !important;
+            }}
+            .agenda-master-table {{
+                width: 100% !important;
+                border-collapse: collapse !important;
+                table-layout: fixed !important;
+                display: table !important;
+            }}
+            .agenda-master-table th, .agenda-master-table td {{
+                border: 1px solid #444 !important;
+                background: #ffffff !important;
+                color: #000000 !important;
+                padding: 8px 10px !important;
+                font-size: 8.5pt !important;
+                word-wrap: break-word !important;
+                overflow: visible !important;
+                white-space: normal !important;
+            }}
+            .agenda-master-table th {{
+                background: #f0f0f0 !important;
+                font-weight: bold !important;
+                color: #000 !important;
+                border-bottom: 2px solid #000 !important;
+            }}
+            .session-badge-tag {{
+                border: 1px solid #444 !important;
+                color: #000 !important;
+                background: #eee !important;
+                padding: 2px 4px !important;
+                font-size: 7.5pt !important;
+            }}
+            .row-title-text {{
+                color: #000 !important;
+                font-size: 9.5pt !important;
+                font-weight: bold !important;
+            }}
+            .activity-bullet {{
+                margin-bottom: 6px !important;
+                font-size: 8.5pt !important;
+                color: #111 !important;
+            }}
+            .activity-bullet::before {{
                 color: #000 !important;
             }}
+            .col-title {{
+                width: 25% !important;
+            }}
+            .col-brief {{
+                width: 38% !important;
+            }}
+            .col-activities {{
+                width: 37% !important;
+            }}
+
+            /* All content cards print clean */
             .base-card, .activity-card-large, .interactive-widget {{
-                border: 1px solid #ccc !important;
-                background: #fff !important;
+                border: 1px solid #777 !important;
+                background: #ffffff !important;
+                color: #000000 !important;
+                page-break-inside: avoid;
+                box-shadow: none !important;
+                margin: 12px 0 !important;
+                padding: 12px !important;
+            }}
+            .activity-card-large::before {{
+                background: #444 !important;
+                width: 4px !important;
+            }}
+            .quote-callout, .debrief-box {{
+                background: #fafafa !important;
+                border-color: #666 !important;
                 color: #000 !important;
-                break-inside: avoid;
+                page-break-inside: avoid;
             }}
             .rishi-list-scroll {{
                 max-height: none !important;
                 overflow: visible !important;
+                display: block !important;
+            }}
+            .rishi-item-card {{
+                break-inside: avoid;
+                margin-bottom: 8px !important;
+                border: 1px solid #ccc !important;
+            }}
+            * {{
+                overflow: visible !important;
+                box-shadow: none !important;
+                text-shadow: none !important;
             }}
         }}
     </style>
@@ -993,8 +1190,8 @@ def main():
                     <button class="btn-nav" onclick="window.print()" title="அச்சிட அல்லது PDF சேமிக்க">
                         <i data-lucide="printer" style="width:16px; height:16px;"></i> அச்சிடுக (Print)
                     </button>
-                    <a href="#hour-1" class="btn-nav btn-nav-primary">
-                        <i data-lucide="play-circle" style="width:16px; height:16px;"></i> பாடத்திட்டம் தொடங்கு
+                    <a href="#agenda-table-section" class="btn-nav btn-nav-primary">
+                        <i data-lucide="table" style="width:16px; height:16px;"></i> அட்டவணை காண்க
                     </a>
                 </div>
             </div>
@@ -1020,31 +1217,201 @@ def main():
                 மனிதன் முதலில் கர்மாவின் இயல்பை உணர்ந்து, அதன் பந்தங்களிலிருந்து விடுபட்டு, பஞ்ச மகா யக்ஞங்கள் வழி கர்ம யோகியாக்கி, இறுதியில் தன்னலமற்ற நிஷ்காமிய நிலையை அடைவதற்கான 5 மணி நேரப் படிநிலைப் பயிற்சி வழிகாட்டி.
             </p>
 
-            <!-- Master Pathway Flow -->
-            <div class="pathway-banner">
-                <div class="pathway-step">
-                    <span class="path-badge">1</span>
-                    <span>கர்மா (உடல் &amp; மனம்)</span>
+            <!-- 5-Hour Master Agenda Table (Replaces scrollbar with clean printable table) -->
+            <div class="agenda-table-card" id="agenda-table-section">
+                <div class="agenda-table-header-wrap">
+                    <div class="agenda-table-title">
+                        <i data-lucide="calendar-check"></i>
+                        <span>5 மணி நேர முழுமையான செயல்திட்ட அட்டவணை (5-Hour Master Workshop Curriculum Table)</span>
+                    </div>
+                    <span style="font-size:0.8rem; color:var(--text-muted); font-weight:700;">
+                        அச்சிடும்போது முழுப் பக்க அட்டவணையாக விரியும் (Print-Friendly Format)
+                    </span>
                 </div>
-                <span class="path-arrow">➔</span>
-                <div class="pathway-step">
-                    <span class="path-badge">2</span>
-                    <span>கர்ம பந்தம் (நான் &amp; எனது)</span>
-                </div>
-                <span class="path-arrow">➔</span>
-                <div class="pathway-step">
-                    <span class="path-badge">3</span>
-                    <span>ஷட் கரும விளக்கம் (6 வகைகள்)</span>
-                </div>
-                <span class="path-arrow">➔</span>
-                <div class="pathway-step">
-                    <span class="path-badge">4</span>
-                    <span>கர்ம யோகம் (பஞ்ச யக்ஞம்)</span>
-                </div>
-                <span class="path-arrow">➔</span>
-                <div class="pathway-step">
-                    <span class="path-badge">5</span>
-                    <span>நிஷ்காமியப் பயிற்சி &amp; முக்தி</span>
+
+                <div class="agenda-master-table-wrap">
+                    <table class="agenda-master-table">
+                        <thead>
+                            <tr>
+                                <th class="col-title"><i data-lucide="clock" style="width:14px; height:14px; display:inline;"></i> அமர்வு & தலைப்பு (Title & Duration)</th>
+                                <th class="col-brief"><i data-lucide="book-open" style="width:14px; height:14px; display:inline;"></i> பாடச் சுருக்கம் (What is Covered)</th>
+                                <th class="col-activities"><i data-lucide="play-circle" style="width:14px; height:14px; display:inline;"></i> நேரடிச் செயல்பாடுகள் & விவரங்கள் (Activity Names & Details)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Hour 1 -->
+                            <tr>
+                                <td class="col-title">
+                                    <span class="session-badge-tag">மணி 1 • 60 நிமிடங்கள்</span>
+                                    <h4 class="row-title-text" style="font-family:var(--font-heading); color:var(--saffron-primary); font-size:1.05rem; margin-bottom:4px;">
+                                        1. கர்மா என்றால் என்ன? (What is Karma?)
+                                    </h4>
+                                    <small style="color:var(--text-dim); font-size:0.8rem;">நேரம்: 00:00 - 01:00</small><br>
+                                    <a href="#hour-1" class="btn-timer" style="margin-top:8px; display:inline-flex; font-size:0.75rem; padding:3px 8px;">
+                                        பகுதிக்குச் செல்க ➔
+                                    </a>
+                                </td>
+                                <td class="col-brief">
+                                    <ul style="margin:0; padding-left:16px;">
+                                        <li><strong>செயல் தத்துவம்:</strong> கர்மா என்பது உடலாலும் உள்ளத்தாலும் செய்யும் செயல் (Action done by body and mind).</li>
+                                        <li><strong>5 கர்மேந்திரியங்கள்:</strong> கை (செயல்), கால் (நடத்தல்), வாக்கு (பேச்சு), பாயு (கழிவுநீக்கம்), உபஸ்தம் (இனப்பெருக்கம்).</li>
+                                        <li><strong>5 ஞானேந்திரியங்கள்:</strong> கண் (பார்வை), காது (கேட்டல்), மூக்கு (நுகர்தல்), நாக்கு (சுவை), தோல் (தொடுதல்).</li>
+                                        <li><strong>மனதின் முக்கியத்துவம்:</strong> இந்திரியங்களுக்குப் பின்னால் மனம் இயங்கினால் மட்டுமே செயல் நடக்கும் (வகுப்பறை மாணவன், சினிமா தியேட்டர் உதாரணங்கள்).</li>
+                                        <li><strong>சங்கல்பமே கர்மாவைத் தீர்மானிக்கிறது:</strong> மருத்துவர் மற்றும் திருடன் இருவரும் ஒரே கத்தியால் குத்தினாலும் மனதின் நோக்கமே புண்ணிய பாவத்தைத் தீர்மானிக்கிறது.</li>
+                                    </ul>
+                                </td>
+                                <td class="col-activities">
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 1.1 — பந்து வீச்சு நீக்கல் விளையாட்டு:</strong> வட்டமாக அமர்ந்து பந்தை மாற்றி மாற்றி வீசுதல்; ஒரே நபருக்கு வீசினால் வெளியேற்றம். <em>பயன்பட்ட உறுப்பு: கை (கர்மேந்திரியம்).</em>
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 1.2 — காதில் ரகசிய வாக்கியத் தொடர் ஓட்டம்:</strong> <em>"ஒரு மனிதன் கோயிலுக்குள் செல்கிறான்; முதலில் தன்னையே அறிகிறான்..."</em> வாக்கியத்தை வரிசையாகக் காதில் ஓதி உருமாறுதலைக் கவனித்தல். <em>உறுப்பு: காது (ஞானேந்திரியம்).</em>
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 1.3 — இந்திரிய விரைவுப் பயிற்சி நிலைகள்:</strong> கண், மூக்கு (சந்தனம்/கற்பூரம்), நாக்கு (சுவை), தோல் (தொடுதல்) பரிசோதனைகள்.
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 1.4 — 1-நிமிட பத்மாசன மௌன தியானம்:</strong> இந்திரியங்கள் அசைவற்று நின்றாலும் மனம் இடைவிடாது இயங்கிக் கொண்டே இருக்கிறது என்பதை உணரும் நேரடிப் பரிசோதனை.
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Hour 2 -->
+                            <tr>
+                                <td class="col-title">
+                                    <span class="session-badge-tag" style="border-color:#ef4444; color:#ef4444; background:rgba(239,68,68,0.12);">மணி 2 • 60 நிமிடங்கள்</span>
+                                    <h4 class="row-title-text" style="font-family:var(--font-heading); color:#ef4444; font-size:1.05rem; margin-bottom:4px;">
+                                        2. கர்ம பந்தம் என்றால் என்ன? (What is Karma Bandham?)
+                                    </h4>
+                                    <small style="color:var(--text-dim); font-size:0.8rem;">நேரம்: 01:00 - 02:00</small><br>
+                                    <a href="#hour-2" class="btn-timer" style="margin-top:8px; display:inline-flex; font-size:0.75rem; padding:3px 8px;">
+                                        பகுதிக்குச் செல்க ➔
+                                    </a>
+                                </td>
+                                <td class="col-brief">
+                                    <ul style="margin:0; padding-left:16px;">
+                                        <li><strong>பந்தத்தின் தோற்றம்:</strong> கர்மாவில் குற்றமில்லை; அச்செயலோடு பந்தம் <strong>("நான்" Ahankara மற்றும் "எனது" Mamakara)</strong> இணையும் போதே துன்பம் உண்டாகிறது.</li>
+                                        <li><strong>மூலக் காரணம்:</strong> காமம் (பேராசை, சுய நலம் மற்றும் கர்ம பலனைப் பிடித்துத் தொங்கும் எதிர்பார்ப்பு).</li>
+                                        <li><strong>தனி மனித ஆற்றலின் பொய்மை:</strong> பிரபஞ்சத்தில் *"நான் தனியாக எதையுமே செய்துவிட முடியாது"* என்ற பிரபஞ்ச சார்புநிலை (Universal Interdependence).</li>
+                                        <li><strong>குடும்ப பந்தம்:</strong> மனைவி, குழந்தைகள் மீது அன்பு செலுத்தும்போது பதிலுக்கு எதிர்பார்ப்புகளை வைப்பதால் மனக்கசப்பும் பந்தமும் உருவாகிறது; பலனை இறைவனிடம் விடும்போது அமைதி கிட்டுகிறது.</li>
+                                    </ul>
+                                </td>
+                                <td class="col-activities">
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 2.1 — ஒரு பிடி சோற்றின் பிரபஞ்ச வலைப்பின்னல்:</strong> தட்டில் உள்ள ஒரு கவளம் சோறு நம்மை அடைய மண், சூரியன், மழை, மண்புழு, உழவு மாடு, உழவர், லாரி டிரைவர், மண்டி, மளிகைக் கடை, உப்பு, பாத்திரம், சிலிண்டர் என 16 அமைப்புகள் தேவைப்படுவதைக் கண்டறிதல்.
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 2.2 — சங்கிலி முறிவு பரிசோதனை:</strong> ஏதேனும் ஓர் இணைப்பு இல்லாவிட்டாலும் உணவு கிடைக்காது என உணர்ந்து, 'நான் சம்பாதித்தேன்' என்ற அகந்தையைக் களையும் நேரடி ஆய்வு.
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 2.3 — எதிர்பார்ப்பு vs விடுதலை தராசு:</strong> கடமையை 100% நேர்த்தியாகச் செய்துவிட்டு அதன் பலனை இறைவன்/காலத்தின் கைகளில் விட்டுவிடும் விவேகப் பயிற்சி.
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Hour 3 -->
+                            <tr>
+                                <td class="col-title">
+                                    <span class="session-badge-tag" style="border-color:#10b981; color:#10b981; background:rgba(16,185,129,0.12);">மணி 3 • 60 நிமிடங்கள்</span>
+                                    <h4 class="row-title-text" style="font-family:var(--font-heading); color:#10b981; font-size:1.05rem; margin-bottom:4px;">
+                                        3. ஷட் கருமங்களின் விரிவான விளக்கம் (Detailing of Karma)
+                                    </h4>
+                                    <small style="color:var(--text-dim); font-size:0.8rem;">நேரம்: 02:00 - 03:00</small><br>
+                                    <a href="#hour-3" class="btn-timer" style="margin-top:8px; display:inline-flex; font-size:0.75rem; padding:3px 8px;">
+                                        பகுதிக்குச் செல்க ➔
+                                    </a>
+                                </td>
+                                <td class="col-brief">
+                                    <ul style="margin:0; padding-left:16px;">
+                                        <li><strong>நித்ய கர்மா (Nitya):</strong> தினசரி செய்ய வேண்டிய கட்டாயக் கடமைகள் (விழிப்பு, தூய்மை, சூரிய நமஸ்காரம், சந்தியாவந்தனம், பஞ்ச யக்ஞம்).</li>
+                                        <li><strong>நைமித்திக கர்மா (Naimittika):</strong> அமாவாசை தர்ப்பணம், திதி, பண்டிகைகள், 16 சம்ஸ்கார காலக் கடமைகள்.</li>
+                                        <li><strong>காம்ய கர்மா (Kamya):</strong> சுய ஆசை மற்றும் பலாபலன்களை முன்னிறுத்திச் செய்யப்படும் விருப்பக் கர்மாக்கள்.</li>
+                                        <li><strong>நிஷ்காம்ய கர்மா (Nishkamya):</strong> பலன் எதிர்பாராது லோக க்ஷேமத்திற்காகவும் இறை அர்ப்பணமாகவும் செய்யப்படும் தூய சேவை.</li>
+                                        <li><strong>பிராயச்சித்த கர்மா (Prayaschitta):</strong> செய்த தவறுகளுக்கு வருந்தி மனச்சுத்தி தேடும் பரிகாரங்கள் (விரதம், தானம், மரம் நடுதல்).</li>
+                                        <li><strong>நிஷித்த கர்மா (Nishiddha):</strong> அறத்திற்குப் புறம்பான, அறவே தவிர்க்கப்பட வேண்டிய 44 தீய பாவச் செயல்கள்.</li>
+                                    </ul>
+                                </td>
+                                <td class="col-activities">
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 3.1 — 12 நிஜ வாழ்க்கைச் சூழல் வகைப்பாட்டு போட்டி:</strong> அமாவாசை தர்ப்பணம், விபத்து முதலுதவி, லஞ்சம் கொடுத்தல், பரீட்சை அர்ச்சனை... போன்ற 12 சூழல்களுக்கான கர்ம வகையை அடையாளம் காணும் ஊடாடும் வினாடி வினா.
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 3.2 — காம்யத்திலிருந்து நிஷ்காமியத்திற்கு மாற்றும் பயிற்சி:</strong> சுய நலத்திற்காகச் செய்யும் சமையல், உழைப்பு, கல்வியை பிறர் பசி தீர்க்கும் மற்றும் இறை அர்ப்பண சேவையாக மாற்றும் மனோபாவப் பயிற்சி.
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Hour 4 -->
+                            <tr>
+                                <td class="col-title">
+                                    <span class="session-badge-tag" style="border-color:#3b82f6; color:#3b82f6; background:rgba(59,130,246,0.12);">மணி 4 • 75 நிமிடங்கள்</span>
+                                    <h4 class="row-title-text" style="font-family:var(--font-heading); color:#3b82f6; font-size:1.05rem; margin-bottom:4px;">
+                                        4. பஞ்ச மகா யக்ஞம் வழி கர்ம யோகம் (Karma as Karma Yoga)
+                                    </h4>
+                                    <small style="color:var(--text-dim); font-size:0.8rem;">நேரம்: 03:00 - 04:15</small><br>
+                                    <a href="#hour-4" class="btn-timer" style="margin-top:8px; display:inline-flex; font-size:0.75rem; padding:3px 8px;">
+                                        பகுதிக்குச் செல்க ➔
+                                    </a>
+                                </td>
+                                <td class="col-brief">
+                                    <ul style="margin:0; padding-left:16px;">
+                                        <li><strong>பித்ரு யக்ஞம்:</strong> பெற்றோர் வழிபாடு; மனிதன் வெறும் Hardware ஆகப் பிறக்கிறான் (Software ஏற்றுவது பெற்றோரே). முதுமையில் அவர்கள் குழந்தையாவதால் காப்பது கடமை.</li>
+                                        <li><strong>பூத யக்ஞம்:</strong> இயற்கையின் 10 கொடைகள்; ஆவுரஞ்சிக் கல், மரம் நடுதல்; பூமி 10 மில்லியன் வகை உயிர்களுக்கும் சொந்தமானது.</li>
+                                        <li><strong>நர / மனுஷ்ய யக்ஞம்:</strong> சமுதாயத் தொழிலாளர்களுக்கு நன்றி, கருணை, நியாயமான ஊதியம், அதிதி உபசரிப்பு.</li>
+                                        <li><strong>ரிஷி யக்ஞம்:</strong> நைமிசாரண்யத்தில் 100 ஆண்டுக்கொருமுறை கூடிய மகா சபை; பண்டிகைகள் & 16 சம்ஸ்காரங்கள் வகுத்த ரிஷிகள்; ரிஷி நூல் படித்து வாழ்வாக்குதல்.</li>
+                                        <li><strong>தெய்வ யக்ஞம்:</strong> மாணிக்கவாசகர் சிவபுராண பாராயணம்; உடலின் 4 தானியங்கி அற்புதங்கள் (இதயம், செரிமானம்...); பிரபஞ்ச ஜூம் & <strong>தத்துவமசி</strong>.</li>
+                                    </ul>
+                                </td>
+                                <td class="col-activities">
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 4.1 — நட்சத்திர நினைவுக் கட்டப் பலகை (0-5 vs >60 வயது):</strong> 10 நட்சத்திரங்களைப் பகிர்ந்து வைத்து, குழந்தைப் பருவத்திலும் முதுமையிலும் பெற்றோர் நம்மைக் காப்பதையும் நாம் அவர்களைக் காப்பதையும் உணர்தல்.
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 4.2 — பூத யக்ஞ 10 கொடைகள் ஆய்வு:</strong> மரங்கள் (O2), தேனீக்கள் (மகரந்தம்), மண்புழுக்களின் நன்மையை உணர்ந்து நீர் & நிலம் காக்கும் உறுதிமொழி.
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 4.3 — நர யக்ஞ இரு அணிகள் விவாதச் சங்கிலி:</strong> ஆசிரியர், துப்புரவுப் பணியாளர், உழவர்... என சமுதாயத் தொழிலாளர்களின் பணிகளை மாறி மாறிக் கூறி நன்றி பாராட்டுதல்.
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 4.4 — பாரதத்தின் 200 ரிஷிகள் தேடல் & 2 ரிஷிகள் தேர்வு:</strong> 200 ரிஷிகள் பட்டியலை ஆராய்ந்து தன் வாழ்விற்கான 2 வழிகாட்டி ரிஷிகளைத் தேர்ந்தெடுத்தல்.
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 4.5 — சிவபுராண கூட்டுப் பாராயணம் & பிரபஞ்ச ஜூம்:</strong> அரங்கம் முதல் 2 லட்சம் கோடி விண்மீன் மண்டலங்கள் வரை அளவிட்டு அகந்தையைக் கரைத்தல்.
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Hour 5 -->
+                            <tr>
+                                <td class="col-title">
+                                    <span class="session-badge-tag" style="border-color:#8b5cf6; color:#8b5cf6; background:rgba(139,92,246,0.12);">மணி 5 • 45 நிமிடங்கள்</span>
+                                    <h4 class="row-title-text" style="font-family:var(--font-heading); color:#8b5cf6; font-size:1.05rem; margin-bottom:4px;">
+                                        5. சுயநலமற்ற நிஷ்காமியப் பயிற்சி & சங்கல்பம் (Slowly Practice Nishkamya)
+                                    </h4>
+                                    <small style="color:var(--text-dim); font-size:0.8rem;">நேரம்: 04:15 - 05:00</small><br>
+                                    <a href="#hour-5" class="btn-timer" style="margin-top:8px; display:inline-flex; font-size:0.75rem; padding:3px 8px;">
+                                        பகுதிக்குச் செல்க ➔
+                                    </a>
+                                </td>
+                                <td class="col-brief">
+                                    <ul style="margin:0; padding-left:16px;">
+                                        <li><strong>4 ஆசிரம நிலைகள்:</strong> பிரம்மச்சர்யம் (கல்வி) ➔ கிரஹஸ்தம் (குடும்பம்/தியாகம்) ➔ வானபிரஸ்தம் (பொதுப்பணி) ➔ சன்யாசம் (பேரன்பு/முக்தி).</li>
+                                        <li><strong>குடும்பமே ஆன்மீக உலைக்களம்:</strong> மனைவி, குழந்தைகள், பெற்றோருக்காகத் தன் தூக்கத்தையும் உணவையும் தியாகம் செய்து *நான் ➔ குடும்பம் ➔ சமுதாயம் ➔ தேசம் ➔ பிரபஞ்சம்* என அன்பை விரித்தல்.</li>
+                                        <li><strong>கைகளை விடுவித்தல்:</strong> பற்றுகளைப் பிடித்துத் தொங்குவதை விடுத்து இறைவனிடம் சமர்ப்பித்தால் மட்டுமே இரு கைகளாலும் பிறருக்குச் சேவை செய்ய முடியும்.</li>
+                                        <li><strong>நிறைவு சங்கல்பம்:</strong> வாழ்நாள் முழுவதும் கடைப்பிடிக்க வேண்டிய 5 நன்னெறி உறுதிமொழிகள்.</li>
+                                    </ul>
+                                </td>
+                                <td class="col-activities">
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 5.1 — ஈஸ்வர சமர்ப்பண பலூன் / காகிதப் பற்று நீக்கும் பயிற்சி:</strong> தன் அகந்தை, கோபம், பாராட்டு ஆசையை எழுதி சமர்ப்பிக்கையில் பலூன் ஒளிப்பிழம்பில் கரைந்து கைகள் விடுபடும் சிமுலேட்டர்.
+                                    </div>
+                                    <div class="activity-bullet">
+                                        <strong>செயல்பாடு 5.2 — 5-அம்ச வாழ்நாள் நிறைவுச் சங்கல்பம்:</strong> நித்ய விழிப்பு, பெற்றோர் வழிபாடு, இயற்கைப் பாதுகாப்பு, நிஷ்காமியச் சேவை மற்றும் பணிவுக்கான உறுதிமொழி ஏற்பு.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
