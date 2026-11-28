@@ -892,7 +892,7 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
             color: var(--saffron-primary);
         }}
 
-        /* 200 Rishis Explorer */
+        /* Top 50 Rishis Explorer */
         .rishi-toolbar {{
             display: flex;
             gap: 12px;
@@ -1655,7 +1655,7 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                                         <li><strong>பித்ரு யக்ஞம்:</strong> பெற்றோர் வழிபாடு; Hardware &amp; Software; முதுமையில் காக்கும் கடன்.</li>
                                         <li><strong>பூத யக்ஞம்:</strong> இயற்கையின் 10 கொடைகள்; ஆவுரஞ்சிக் கல்; 10 மில்லியன் உயிரினங்கள்.</li>
                                         <li><strong>நர / மனுஷ்ய யக்ஞம்:</strong> சமுதாயத் தொழிலாளர்களுக்கு நன்றி, கருணை, அதிதி உபசரிப்பு.</li>
-                                        <li><strong>ரிஷி யக்ஞம்:</strong> நைமிசாரண்ய மாநாடு; 16 சம்ஸ்காரங்கள்; 200 ரிஷிகள் களஞ்சியம்.</li>
+                                        <li><strong>ரிஷி யக்ஞம்:</strong> நைமிசாரண்ய மாநாடு; 16 சம்ஸ்காரங்கள்; 50 முக்கிய ரிஷிகள் களஞ்சியம்.</li>
                                         <li><strong>தெய்வ யக்ஞம்:</strong> சிவபுராணம்; உடலின் 4 தானியங்கி அதிசயங்கள்; பிரபஞ்ச ஜூம் &amp; தத்துவமசி.</li>
                                     </ul>
                                 </td>
@@ -1670,7 +1670,7 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                                         <span class="time-pill-tag">02:54 - 03:16</span> <strong>3.3 நர:</strong> இரு அணிகள் ஆதரவுச் சங்கிலி <a href="#annexure-5" class="annex-ref-pill">அனுபந்தம் 5</a>
                                     </div>
                                     <div class="activity-bullet">
-                                        <span class="time-pill-tag">03:16 - 03:38</span> <strong>3.4 ரிஷி:</strong> 200 ரிஷிகள் தேடல் &amp; 2 தேர்வு <a href="#annexure-6" class="annex-ref-pill">அனுபந்தம் 6</a>
+                                        <span class="time-pill-tag">03:16 - 03:38</span> <strong>3.4 ரிஷி:</strong> 50 முக்கிய ரிஷிகள் தேடல் &amp; 2 தேர்வு <a href="#annexure-6" class="annex-ref-pill">அனுபந்தம் 6</a>
                                     </div>
                                     <div class="activity-bullet">
                                         <span class="time-pill-tag">03:38 - 04:00</span> <strong>3.5 தெய்வ:</strong> சிவபுராணம் &amp; பிரபஞ்ச ஜூம் <a href="#annexure-7" class="annex-ref-pill">அனுபந்தம் 7</a>
@@ -1798,7 +1798,7 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                         <span class="dur-tag">2 மணி (120 நிமி)</span>
                     </div>
                     <div class="topic-name">3. பஞ்ச மகா யக்ஞம்</div>
-                    <div class="activity-peek">⭐ பித்ரு • 🌿 பூத • 🤝 நர • 📜 200 ரிஷி • 🌌 தெய்வ</div>
+                    <div class="activity-peek">⭐ பித்ரு • 🌿 பூத • 🤝 நர • 📜 50 ரிஷி • 🌌 தெய்வ</div>
                 </a>
 
                 <a href="#session-4" class="agenda-card-btn" id="agenda-link-4">
@@ -2299,11 +2299,11 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                     <div class="activity-header">
                         <div class="activity-title" style="color:#8b5cf6;">
                             <i data-lucide="scroll"></i>
-                            3.4 ரிஷி யக்ஞம்: பாரதத்தின் 200 ரிஷிகள் &amp; நைமிசாரண்ய மகா சபை (Rishi Yagnam &amp; The 200 Rishis Repository)
+                            3.4 ரிஷி யக்ஞம்: பாரதத்தின் 50 முக்கிய ரிஷிகள் &amp; நைமிசாரண்ய மகா சபை (Rishi Yagnam &amp; Top 50 Rishis)
                         </div>
                         <div class="activity-meta">
                             <span class="badge-pill" style="background:rgba(59,130,246,0.15); color:#3b82f6;"><i data-lucide="clock"></i> 03:16 - 03:38 (22 நிமிடங்கள்)</span>
-                            <span class="badge-pill" style="background:rgba(16,185,129,0.15); color:#10b981;"><i data-lucide="book-open"></i> 200 ரிஷிகள் களஞ்சியம்</span>
+                            <span class="badge-pill" style="background:rgba(16,185,129,0.15); color:#10b981;"><i data-lucide="book-open"></i> 50 முக்கிய ரிஷிகள் களஞ்சியம்</span>
                             <a href="#annexure-6" class="annex-ref-pill"><i data-lucide="paperclip" style="width:12px; height:12px;"></i> அச்சுப் பிரதி: அனுபந்தம் 6</a>
                         </div>
                     </div>
@@ -2322,7 +2322,7 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                         </p>
                     </div>
 
-                    <!-- 200 Rishis Interactive Database -->
+                    <!-- Top 50 Rishis Interactive Database -->
                     <div class="interactive-widget" style="margin-top:20px;">
                         <div class="rishi-toolbar">
                             <div class="search-input-box">
@@ -2330,13 +2330,13 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                                 <input type="text" id="rishi-search-box" placeholder="ரிஷியின் பெயர் அல்லது பங்களிப்பைத் தேடுக (Search by Name or Wisdom)..." oninput="filterRishis()">
                             </div>
                             <span style="font-size:0.85rem; font-weight:700; color:var(--saffron-primary);" id="rishi-counter-text">
-                                காண்கிறது: 200 / 200 ரிஷிகள்
+                                காண்கிறது: 50 / 50 ரிஷிகள்
                             </span>
                         </div>
 
                         <!-- Category Filter Pills -->
                         <div class="category-pill-group" id="rishi-cat-pills">
-                            <button class="btn-cat-pill active" onclick="setRishiCategory('all', this)">அனைத்தும் (All 200)</button>
+                            <button class="btn-cat-pill active" onclick="setRishiCategory('all', this)">அனைத்தும் (Top 50)</button>
                             <button class="btn-cat-pill" onclick="setRishiCategory('saptarishi', this)">சப்தரிஷிகள் &amp; பிரஜாபதிகள்</button>
                             <button class="btn-cat-pill" onclick="setRishiCategory('vedic', this)">வேத ரிஷிகள்</button>
                             <button class="btn-cat-pill" onclick="setRishiCategory('rishika', this)">வேத ரிஷிகைகள் (பெண் ஞானிகள்)</button>
@@ -2693,7 +2693,7 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                 </span>
                 <h2 class="section-heading">தேவையான அனுபந்தங்கள் (Annexures 1 - 9)</h2>
                 <p class="section-lead" style="margin:0 auto;">
-                    5 மணி நேர சுருக்கப் பட்டறையின் அனைத்துச் செயல்பாடுகளுக்கும் தேவையான அச்சுப் பிரதிகள் (இரகசிய வாக்கியச் சீட்டு, 16-இணைப்பு சோற்று வலை, 12-சூழல் பணித்தாள், 5 யக்ஞ அட்டைகள், 200 ரிஷிகள் பதிவேடு, பற்று நீக்கும் சீட்டு மற்றும் 1-பக்க கையேடு).
+                    5 மணி நேர சுருக்கப் பட்டறையின் அனைத்துச் செயல்பாடுகளுக்கும் தேவையான அச்சுப் பிரதிகள் (இரகசிய வாக்கியச் சீட்டு, 16-இணைப்பு சோற்று வலை, 12-சூழல் பணித்தாள், 5 யக்ஞ அட்டைகள், 50 முக்கிய ரிஷிகள் பதிவேடு, பற்று நீக்கும் சீட்டு மற்றும் 1-பக்க கையேடு).
                 </p>
                 <div style="margin-top:16px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;" class="no-print">
                     <button class="btn-timer btn-timer-primary" onclick="printOnlySection('annexures')">
@@ -2902,17 +2902,17 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                 </div>
             </div>
 
-            <!-- ANNEXURE 6: 200 RISHIS ROSTER (SESSION 3.4) -->
+            <!-- ANNEXURE 6: TOP 50 RISHIS ROSTER (SESSION 3.4) -->
             <div class="annexure-box" id="annexure-6">
                 <div class="annexure-header">
                     <div>
                         <span class="annexure-tag">அனுபந்தம் 6 (Annexure 6)</span>
-                        <h3 class="annexure-title" style="margin-top:6px;">பாரதத்தின் 200 ரிஷிகள் அச்சுப் பதிவேடு &amp; வழிகாட்டி தேர்வுப் படிவம்</h3>
+                        <h3 class="annexure-title" style="margin-top:6px;">பாரதத்தின் 50 முக்கிய ரிஷிகள் அச்சுப் பதிவேடு &amp; வழிகாட்டி தேர்வுப் படிவம்</h3>
                     </div>
                     <a href="#activity-3-4" class="annex-ref-pill" style="font-size:0.8rem;">🔗 செயல்பாடு 3.4 (ரிஷி யக்ஞம்) காண்க ↗</a>
                 </div>
                 <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:14px;">
-                    <strong>பயிற்றுநர் குறிப்பு:</strong> ஒவ்வொரு அணிக்கும் இந்த 200 ரிஷிகள் பட்டியலை வழங்கவும். உங்களுக்கு ஏற்கனவே தெரிந்த ரிஷிகளுக்கு நேராக [✔] செய்யவும். இறுதியில் ஒவ்வொருவரும் தங்கள் வாழ்நாளில் படிக்க வேண்டிய 2 ரிஷிகளைத் தேர்ந்தெடுத்து [★] குறியிட வேண்டும்.
+                    <strong>பயிற்றுநர் குறிப்பு:</strong> ஒவ்வொரு அணிக்கும் இந்த 50 முக்கிய ரிஷிகள் பட்டியலை வழங்கவும். உங்களுக்கு ஏற்கனவே தெரிந்த ரிஷிகளுக்கு நேராக [✔] செய்யவும். இறுதியில் ஒவ்வொருவரும் தங்கள் வாழ்நாளில் படிக்க வேண்டிய 2 ரிஷிகளைத் தேர்ந்தெடுத்து [★] குறியிட வேண்டும்.
                 </p>
 
                 <div class="agenda-master-table-wrap">
@@ -3027,7 +3027,7 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
         </div>
     </footer>
 
-    <!-- Embedded Complete 200 Rishis Data & Interactive Scripts -->
+    <!-- Embedded Top 50 Rishis Data & Interactive Scripts -->
     <script>
         const RISHIS_DATA = {rishis_json_str};
 
@@ -3369,7 +3369,7 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
             initNaraChain();
         }}
 
-        // 10. 200 Rishis Search & Filter Engine
+        // 10. Top 50 Rishis Search & Filter Engine
         let currentRishiCat = 'all';
 
         function renderRishis(list) {{
@@ -3392,7 +3392,7 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                 `;
                 c.appendChild(card);
             }});
-            document.getElementById('rishi-counter-text').innerText = `காண்கிறது: ${{list.length}} / 200 ரிஷிகள்`;
+            document.getElementById('rishi-counter-text').innerText = `காண்கிறது: ${{list.length}} / 50 ரிஷிகள்`;
         }}
 
         function filterRishis() {{
@@ -3403,8 +3403,8 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                     (currentRishiCat === 'vedic' && r.category_ta.includes('வேத')) ||
                     (currentRishiCat === 'rishika' && (r.category_ta.includes('ரிஷிகை') || r.category_ta.includes('பிரம்மவாதினி') || r.category_ta.includes('பெண்'))) ||
                     (currentRishiCat === 'upanishad' && r.category_ta.includes('உபநிடத')) ||
-                    (currentRishiCat === 'siddha' && (r.category_ta.includes('சித்தர்') || r.category_ta.includes('நாயன்மார்') || (r.category_ta.includes('முனிவர்') && r.id >= 146 && r.id <= 175))) ||
-                    (currentRishiCat === 'shastra' && (r.category_ta.includes('சூத்திர') || r.category_ta.includes('சாஸ்திர') || r.category_ta.includes('விஞ்ஞான') || r.category_ta.includes('கணித')));
+                    (currentRishiCat === 'siddha' && (r.category_ta.includes('சித்தர்') || r.category_ta.includes('நாயன்மார்') || (r.orig_id && r.orig_id >= 146))) ||
+                    (currentRishiCat === 'shastra' && (r.category_ta.includes('சூத்திர') || r.category_ta.includes('சாஸ்திர') || r.category_ta.includes('விஞ்ஞான') || r.category_ta.includes('கணித') || r.category_ta.includes('தத்துவ') || r.category_ta.includes('ஆயுர்வேத') || r.category_ta.includes('அறுவை') || r.category_ta.includes('இலக்கண')));
 
                 const matchQuery = !query ||
                     r.name_ta.toLowerCase().includes(query) ||
@@ -3515,9 +3515,26 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
     return html
 
 
+TOP50_RISHI_IDS = [
+    1, 2, 3, 4, 5, 6, 7, 8, 14, 18, 25, 28, 29, 30, 31, 32, 34, 35, 37, 39, 41, 42,
+    45, 55,
+    71, 72, 73, 74, 78,
+    91, 92, 94, 95, 101,
+    125, 126, 127, 129, 132, 136,
+    146, 147, 161, 162, 165, 172, 173, 195, 197, 198
+]
+
+
 def build():
     with open('scripts/rishis_data.json', 'r', encoding='utf-8') as f:
-        rishis = json.load(f)
+        all_rishis_by_id = {r['id']: r for r in json.load(f)}
+
+    rishis = []
+    for idx, orig_id in enumerate(TOP50_RISHI_IDS, start=1):
+        entry = dict(all_rishis_by_id[orig_id])
+        entry['orig_id'] = orig_id
+        entry['id'] = idx
+        rishis.append(entry)
 
     rishi_rows_html = generate_rishi_annexure_rows(rishis)
     rishis_json_str = json.dumps(rishis, ensure_ascii=False)
