@@ -2811,11 +2811,22 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                                 🌅 <strong>காலை விழித்தவுடன்:</strong> கைகளைப் பார்த்து <em>“இக்கைகளால் இன்று பிறருக்கு நன்மையே செய்வேன்”</em> என 1 நிமிடம் அமைதி.<br>
                                 🌙 <strong>இரவு உறங்கும் முன்:</strong> <em>“காயேன வாசா மனஸேந்திரியைர்வா... நாராயணாயேதி ஸமர்ப்பயாமி”</em> — இன்றைய செயல்களையும் பலன்களையும் இறைவனிடம் ஒப்படைத்தல்.
                             </p>
-                            <div style="border-top:1px dashed #888; padding-top:6px; font-size:0.82rem;">
-                                <strong>✍️ என் தனிப்பட்ட 30-நாள் சங்கல்பம்:</strong><br>
-                                • என் 2 வழிகாட்டி ரிஷிகள்: ________________ &amp; ________________<br>
-                                • நான் சமர்ப்பிக்கும் 1 பற்று/எதிர்பார்ப்பு: ________________________<br>
-                                • நான் தொடங்கும் 1 நிஷ்காமியச் சேவை: ________________________
+                            <div style="border-top:1px dashed #888; padding-top:6px; font-size:0.81rem; line-height:1.7;">
+                                <strong>✍️ ஈஸ்வர சமர்ப்பண சங்கல்பம் (பற்று நீக்குதல்):</strong><br>
+                                என் மனதை வாட்டும் <strong>அகந்தை / பாராட்டு எதிர்பார்ப்பு / கோபம் / கவலை:</strong>
+                                <div style="border-bottom:1.2px dashed #888; margin:12px 0 8px 0;"></div>
+                                <div>
+                                    <strong>“நான்</strong>
+                                    <span style="display:inline-block; min-width:110px; border-bottom:1.2px dashed #666; margin:0 3px;">&nbsp;</span>
+                                    <small style="color:var(--text-dim);">(பெயர் / Name)</small>,
+                                    <strong>இதை எனது குலதெய்வம் / இஷ்டதெய்வம்</strong>
+                                    <span style="display:inline-block; min-width:120px; border-bottom:1.2px dashed #666; margin:0 3px;">&nbsp;</span>
+                                    <small style="color:var(--text-dim);">(Kuladeivam / Ishtadeivam)</small>
+                                    <strong>திருவடிகளில் சமர்ப்பித்து, என் இரு கைகளையும் சேவைக்கு விடுவிக்கிறேன்!”</strong>
+                                </div>
+                                <div style="font-size:0.74rem; color:var(--text-muted); margin-top:2px;">
+                                    (I <span style="display:inline-block; min-width:85px; border-bottom:1px dashed #888; margin:0 2px;">&nbsp;</span> give this to God <span style="display:inline-block; min-width:95px; border-bottom:1px dashed #888; margin:0 2px;">&nbsp;</span> [Kuladeivam / Ishtadeivam] and free both hands for selfless service!)
+                                </div>
                             </div>
                         </div>
                     </div>
