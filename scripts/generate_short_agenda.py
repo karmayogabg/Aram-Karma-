@@ -38,8 +38,9 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
             </div>
             <div style="display:flex; gap:8px; flex-wrap:wrap;">
                 <a href="{base_prefix}AgendaAndTeachingShort.html" class="btn-nav"><i data-lucide="arrow-left" style="width:15px; height:15px;"></i> ஊடாடும் பதிப்பு (Interactive)</a>
+                <button class="btn-nav" onclick="printOnlySection('agenda')" style="border-color:#f59e0b; color:#b45309;"><i data-lucide="calendar-check" style="width:15px; height:15px;"></i> 1-பக்க அட்டவணை மட்டும் (1-Pager Agenda)</button>
                 <button class="btn-nav" onclick="printOnlySection('annexures')" style="border-color:#8b5cf6; color:#6d28d9;"><i data-lucide="paperclip" style="width:15px; height:15px;"></i> அனுபந்தங்கள் மட்டும்</button>
-                <button class="btn-nav" onclick="printOnlySection('takeaway')" style="border-color:#10b981; color:#047857;"><i data-lucide="file-check" style="width:15px; height:15px;"></i> 1-பக்க கையேடு மட்டும் (1-Pager)</button>
+                <button class="btn-nav" onclick="printOnlySection('takeaway')" style="border-color:#10b981; color:#047857;"><i data-lucide="file-check" style="width:15px; height:15px;"></i> 1-பக்க கையேடு மட்டும் (1-Pager Takeaway)</button>
                 <button class="btn-nav btn-nav-primary" onclick="printAll()"><i data-lucide="printer" style="width:15px; height:15px;"></i> முழுப் பக்கத்தையும் அச்சிடுக</button>
             </div>
         </div>
@@ -71,6 +72,9 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                     <button class="btn-nav" onclick="toggleTheme()" id="btn-theme" title="பின்னணி நிறத்தை மாற்றுக">
                         <i data-lucide="sun" id="theme-icon" style="width:16px; height:16px;"></i>
                         <span id="theme-label">Bright Theme</span>
+                    </button>
+                    <button class="btn-nav" onclick="printOnlySection('agenda')" style="border-color:#f59e0b; color:#f59e0b;" title="5 மணி நேர அட்டவணையை மட்டும் 1 பக்கத்தில் அச்சிட">
+                        <i data-lucide="calendar-check" style="width:16px; height:16px;"></i> 1-பக்க அட்டவணை அச்சிடு
                     </button>
                     <button class="btn-nav" onclick="printOnlySection('takeaway')" style="border-color:#10b981; color:#10b981;" title="1-பக்க கையேட்டை மட்டும் அச்சிட">
                         <i data-lucide="file-check" style="width:16px; height:16px;"></i> 1-பக்க கையேடு அச்சிடு
@@ -1647,6 +1651,70 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                 border-top: none !important;
             }}
 
+            /* Mode: Print 1-Page Agenda Only */
+            body.print-agenda-only .main-layout,
+            body.print-agenda-only #annexures-section,
+            body.print-agenda-only .page-footer,
+            body.print-agenda-only .hero-quote,
+            body.print-agenda-only .hero-badge-wrap,
+            body.print-agenda-only .agenda-table-header-wrap a {{
+                display: none !important;
+            }}
+            body.print-agenda-only .hero {{
+                padding: 0 !important;
+                margin: 0 !important;
+            }}
+            body.print-agenda-only .hero-title {{
+                font-size: 1.06rem !important;
+                line-height: 1.2 !important;
+                margin-bottom: 6px !important;
+            }}
+            body.print-agenda-only .agenda-table-card {{
+                padding: 6px !important;
+                margin: 0 !important;
+                border: 1.5px solid #000 !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }}
+            body.print-agenda-only .agenda-table-header-wrap {{
+                margin-bottom: 4px !important;
+            }}
+            body.print-agenda-only .agenda-table-title {{
+                font-size: 9.2pt !important;
+                margin-bottom: 2px !important;
+            }}
+            body.print-agenda-only .agenda-master-table th,
+            body.print-agenda-only .agenda-master-table td {{
+                padding: 4px 6px !important;
+                font-size: 6.9pt !important;
+                line-height: 1.26 !important;
+            }}
+            body.print-agenda-only .agenda-master-table ul {{
+                margin: 2px 0 0 0 !important;
+                padding-left: 12px !important;
+            }}
+            body.print-agenda-only .agenda-master-table li {{
+                margin-bottom: 1.5px !important;
+            }}
+            body.print-agenda-only .row-title-text {{
+                font-size: 7.8pt !important;
+                margin-top: 2px !important;
+                margin-bottom: 2px !important;
+            }}
+            body.print-agenda-only .activity-bullet {{
+                margin-bottom: 2.5px !important;
+                padding-left: 12px !important;
+                font-size: 6.8pt !important;
+                line-height: 1.24 !important;
+            }}
+            body.print-agenda-only .session-badge-tag,
+            body.print-agenda-only .time-pill-tag,
+            body.print-agenda-only .annex-ref-pill {{
+                font-size: 6.2pt !important;
+                padding: 1px 4px !important;
+                margin-bottom: 2px !important;
+            }}
+
             * {{
                 overflow: visible !important;
                 box-shadow: none !important;
@@ -1686,6 +1754,9 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
                         <span>5 மணி நேர சுருக்கப் பாடத்திட்ட அட்டவணை (5-Hour Short Format Curriculum Table)</span>
                     </div>
                     <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                        <button class="btn-timer btn-timer-primary no-print" onclick="printOnlySection('agenda')" style="font-size:0.8rem;">
+                            <i data-lucide="printer"></i> 1-பக்க அட்டவணை மட்டும் அச்சிடுக (Print 1-Pager Agenda)
+                        </button>
                         <a href="#one-pager-takeaway" class="btn-timer" style="border-color:#10b981; color:#10b981; font-size:0.8rem;">
                             <i data-lucide="file-check"></i> 1-பக்க கையேடு (Takeaway) ➔
                         </a>
@@ -3230,9 +3301,9 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
             lucide.createIcons();
         }}
 
-        // 2. Targeted Print Helpers (Full, 1-Pager Takeaway Only, Annexures Only)
+        // 2. Targeted Print Helpers (Full, 1-Pager Agenda Only, 1-Pager Takeaway Only, Annexures Only)
         function clearPrintModes() {{
-            document.body.classList.remove('print-takeaway-only', 'print-annexures-only');
+            document.body.classList.remove('print-agenda-only', 'print-takeaway-only', 'print-annexures-only');
         }}
         window.addEventListener('afterprint', clearPrintModes);
 
@@ -3243,7 +3314,9 @@ def build_html(rishis, rishi_rows_html, rishis_json_str, printable_mode=False, b
 
         function printOnlySection(mode) {{
             clearPrintModes();
-            if (mode === 'takeaway') {{
+            if (mode === 'agenda') {{
+                document.body.classList.add('print-agenda-only');
+            }} else if (mode === 'takeaway') {{
                 document.body.classList.add('print-takeaway-only');
             }} else if (mode === 'annexures') {{
                 document.body.classList.add('print-annexures-only');
