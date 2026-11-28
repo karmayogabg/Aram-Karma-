@@ -1204,7 +1204,8 @@
                 border: 2px solid #222 !important;
                 padding: 8px !important;
                 box-shadow: none !important;
-                page-break-inside: avoid;
+                page-break-inside: auto !important;
+                break-inside: auto !important;
                 margin: 8px 0 16px 0 !important;
                 display: block !important;
                 width: 100% !important;
@@ -1226,6 +1227,13 @@
                 border-collapse: collapse !important;
                 table-layout: fixed !important;
                 display: table !important;
+            }
+            .agenda-master-table thead {
+                display: table-header-group !important;
+            }
+            .agenda-master-table tr {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
             }
             .agenda-master-table th, .agenda-master-table td {
                 border: 1px solid #444 !important;
@@ -1267,40 +1275,170 @@
             .col-brief { width: 39% !important; }
             .col-activities { width: 37% !important; }
 
-            .base-card, .activity-card-large, .interactive-widget {
-                border: 1px solid #777 !important;
+            /* Clean Section & Card Pagination (No tall container page-break-inside: avoid!) */
+            .section-block {
+                padding: 18px 0 !important;
+                border-bottom: 1.5px solid #444 !important;
+                page-break-inside: auto !important;
+                break-inside: auto !important;
+            }
+            .section-title-wrap {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                page-break-after: avoid !important;
+                break-after: avoid !important;
+                margin-bottom: 12px !important;
+            }
+            .section-badge, .badge-pill, .time-pill-tag, .annex-ref-pill {
+                background: #f3f4f6 !important;
+                color: #000 !important;
+                border: 1px solid #666 !important;
+            }
+            .section-heading, .activity-title, h1, h2, h3, h4, h5 {
+                color: #000 !important;
+            }
+            .section-lead, p, li, small {
+                color: #111 !important;
+            }
+            .activity-card-large, .interactive-widget {
+                border: 1px solid #555 !important;
                 background: #ffffff !important;
                 color: #000000 !important;
-                page-break-inside: avoid;
+                page-break-inside: auto !important;
+                break-inside: auto !important;
                 box-shadow: none !important;
                 margin: 10px 0 !important;
                 padding: 10px !important;
+            }
+            .activity-header {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                page-break-after: avoid !important;
+                break-after: avoid !important;
+                border-bottom: 1px solid #888 !important;
+                padding-bottom: 8px !important;
+                margin-bottom: 10px !important;
             }
             .activity-card-large::before {
                 background: #444 !important;
                 width: 4px !important;
             }
-            .quote-callout, .debrief-box {
-                background: #fafafa !important;
-                border-color: #666 !important;
-                color: #000 !important;
-                page-break-inside: avoid;
+            .base-card {
+                border: 1px solid #777 !important;
+                background: #ffffff !important;
+                color: #000000 !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                box-shadow: none !important;
+                margin: 0 0 8px 0 !important;
+                padding: 9px 11px !important;
             }
+            /* Convert multi-row grids to clean block flow in print to prevent Chromium grid overlap */
+            .card-grid-2, .card-grid-3, #karma-scenario-list, #nara-chain-list {
+                display: block !important;
+            }
+            .card-grid-4 {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 8px !important;
+            }
+            .star-columns-grid {
+                display: grid !important;
+                grid-template-columns: repeat(5, 1fr) !important;
+                gap: 6px !important;
+            }
+            .star-col, .rice-chain-node {
+                border: 1px solid #666 !important;
+                background: #fff !important;
+                color: #000 !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+            .quote-callout, .debrief-box, .meditation-timer-box, .star-board-wrap {
+                background: #fafafa !important;
+                border: 1px solid #666 !important;
+                color: #000 !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                padding: 10px !important;
+                margin: 10px 0 !important;
+            }
+            .meditation-countdown {
+                font-size: 2rem !important;
+                color: #000 !important;
+            }
+            .balloon-stage {
+                background: #fafafa !important;
+                border: 1px solid #666 !important;
+                color: #000 !important;
+                min-height: auto !important;
+                padding: 10px !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+            .divine-light-glow {
+                display: none !important;
+            }
+            .floating-balloon {
+                width: auto !important;
+                height: auto !important;
+                border-radius: 10px !important;
+                background: #fff !important;
+                color: #000 !important;
+                border: 1.5px solid #333 !important;
+                padding: 6px 14px !important;
+            }
+            .floating-balloon::after {
+                display: none !important;
+            }
+
+            /* Fix Rishi Explorer in Print: remove 280px cap so all 50 cards flow naturally without overlapping Session 4 */
             .rishi-list-scroll {
-                max-height: 280px !important;
+                max-height: none !important;
+                height: auto !important;
+                overflow: visible !important;
+                display: block !important;
+                border: 1px solid #777 !important;
+                padding: 8px !important;
+                background: #fff !important;
+            }
+            .rishi-item-card {
+                display: block !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                margin-bottom: 6px !important;
+                padding: 7px 10px !important;
+                border: 1px solid #bbb !important;
+                background: #fff !important;
+                color: #000 !important;
             }
 
             .annexures-hub {
                 border-top: 2px solid #000 !important;
-                padding: 14px 0 !important;
-                margin-top: 16px !important;
+                padding: 10px 0 !important;
+                margin-top: 12px !important;
+                page-break-before: always !important;
+                break-before: page !important;
             }
             .annexure-box {
                 border: 1.5px solid #000 !important;
                 background: #fff !important;
-                page-break-before: always;
-                margin: 12px 0 !important;
-                padding: 14px !important;
+                page-break-before: always !important;
+                break-before: page !important;
+                page-break-inside: auto !important;
+                break-inside: auto !important;
+                margin: 10px 0 !important;
+                padding: 12px !important;
+            }
+            #annexure-1 {
+                page-break-before: auto !important;
+                break-before: auto !important;
+            }
+            .annexure-header {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                page-break-after: avoid !important;
+                break-after: avoid !important;
             }
             .annexure-tag {
                 background: #ddd !important;
@@ -1310,11 +1448,20 @@
             .tear-off-border {
                 border: 2px dashed #000 !important;
                 background: #fafafa !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
             }
             .rishi-annex-table {
                 width: 100% !important;
                 border-collapse: collapse !important;
                 font-size: 7.4pt !important;
+            }
+            .rishi-annex-table thead {
+                display: table-header-group !important;
+            }
+            .rishi-annex-table tr {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
             }
             .rishi-annex-table th, .rishi-annex-table td {
                 border: 1px solid #666 !important;
